@@ -85,23 +85,24 @@ function hideAllViews() {
 }
 
 function renderCategories() {
-  const grid = document.getElementById("category-grid");
-  grid.innerHTML = "";
+  const tbody = document.querySelector("#category-table tbody");
+  tbody.innerHTML = "";
 
-  categories.forEach((cat, i) => {
+  categories.forEach((cat) => {
     const tagCount = Object.keys(cat.tags).length;
     const total = Object.values(cat.tags).reduce((a, b) => a + b, 0);
 
-    const card = document.createElement("div");
-    card.className = "category-card";
-    card.innerHTML = `
-      <h2>${cat.name}</h2>
-      <span class="tag-count">${tagCount} Tags &middot; ${total} gesamt</span>
+    const row = document.createElement("tr");
+    row.style.cursor = "pointer";
+    row.innerHTML = `
+      <td class="cat-count">${tagCount}</td>
+      <td class="cat-count">${total}</td>
+      <td class="cat-name">${cat.name}</td>
     `;
-    card.addEventListener("click", () => {
+    row.addEventListener("click", () => {
       window.location.hash = `category/${slugify(cat.name)}`;
     });
-    grid.appendChild(card);
+    tbody.appendChild(row);
   });
 }
 

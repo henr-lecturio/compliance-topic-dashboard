@@ -1,213 +1,1939 @@
-{
+ {
   "items": [
     {
-      "id": "demo-001",
+      "id": "19c7498513f9d6cc",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 1",
-      "email_date": "2026-02-19",
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
       "topics": {
-        "topic_name": "Aktuelle kartellrechtliche Fragen",
-        "topic_category": "Kartellrecht",
-        "topic_summary": "Ein Vortrag zu kartellrechtlichen Fragen.",
-        "topic_link": "",
-        "matched_courses": ["Kartellrecht"]
+        "topic_name": "Böhmermann gegen Böhmermann-Fake",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Das LG Köln hat X verpflichtet, einen Account zu löschen, der den falschen Anschein erweckte, von Jan Böhmermann betrieben zu werden. Der Account erfülle nicht die formalen Anforderungen der X-Richtlinien für Parodie-Profile.",
+        "topic_link": "https://www.lto.de/recht/hintergruende/h/lg-koeln-28o3026-jan-boehmermann-x-parodie-account-loeschen-einstweilige-verfuegung?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-002",
+      "id": "19c7498513f9d6cc",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 1",
-      "email_date": "2026-02-19",
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
       "topics": {
-        "topic_name": "Werbung mit Selbstverstaendlichkeiten",
-        "topic_category": "Unlauterer Wettbewerb",
-        "topic_summary": "Diskussion ueber Werbung.",
-        "topic_link": "",
-        "matched_courses": ["Unlauterer Wettbewerb"]
+        "topic_name": "Schmerzensgeld für Vater von Emily",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Dem Vater der 13-jährigen diabetes-kranken Emily, die 2019 auf einer schulischen Studienfahrt nach London starb und deren Lehrerinnen deshalb wegen fahrlässiger Tötung verurteilt wurden, steht Schmerzensgeld zu.",
+        "topic_link": "https://www.lto.de/recht/nachrichten/n/lg-duesseldorf-zu-klage-eines-vaters?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-003",
+      "id": "19c7498513f9d6cc",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 2",
-      "email_date": "2026-02-19",
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
       "topics": {
-        "topic_name": "KI in der Personalentwicklung",
-        "topic_category": "Technologie",
-        "topic_summary": "Podcast ueber KI.",
-        "topic_link": "",
-        "matched_courses": ["KI Anwendungen im Unternehmen"]
+        "topic_name": "Combat 18-Verfahren",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Das Landgericht Dortmund stellte das Verfahren gegen vier Rechtsextreme, die die verbotene rechtsextremistische Vereinigung Combat 18 weiterbetrieben haben sollen, nach 25 Prozesstagen gegen Zahlung einer Geldauflage vorläufig ein.",
+        "topic_link": "https://www.lto.de/recht/nachrichten/n/lg-dortmund-32kls2824-combat-18-verfahren-eingestellt?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-004",
+      "id": "19c7498513f9d6cc",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
       "topics": {
-        "topic_name": "Videoueberwachung von Mitarbeitern",
-        "topic_category": "Recht",
-        "topic_summary": "Schadensersatz bei Videoueberwachung.",
+        "topic_name": "Rechtspolitik",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Die E-Mail enthält verschiedene Themen zur Rechtspolitik, wie Disziplinarrecht, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität und weitere rechtspolitische Themen.",
         "topic_link": "",
-        "matched_courses": ["Arbeitsschutz", "Datenschutz"]
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-005",
+      "id": "19c7498513f9d6cc",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
+      "topics": {
+        "topic_name": "Jugendschutz in sozialen Netzwerken",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Bundeskanzler Friedrich Merz (CDU) zeigte sich offen für die von der SPD in einem Positionspapier geforderte differenzierte Altersregulierung für die sozialen Netzwerke.",
+        "topic_link": "https://www.sueddeutsche.de/politik/merz-altersgrenze-social-media-jugendliche-soeder-li.3389611?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7498513f9d6cc",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
+      "topics": {
+        "topic_name": "Bundestags-Wahlrecht/Parität",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Rechtsprofessorin Monika Polzin argumentiert, dass eine verpflichtende Paritätsvorgabe für Bundestags-Wahllisten verfassungswidrig wäre, weil sie gegen die in Art. 38 GG garantierten Grundsätze der freien und gleichen Wahl verstoße.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7498513f9d6cc",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
+      "topics": {
+        "topic_name": "Justiz",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Die E-Mail enthält verschiedene Themen zur Justiz, wie LG Düsseldorf – Diabetes-Tod auf Studienfahrt/Schmerzensgeld, LG Dortmund zu Combat 18, BVerfG – Morde von Hanau und weitere justizielle Themen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7498513f9d6cc",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
+      "topics": {
+        "topic_name": "Recht in der Welt",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Die E-Mail enthält verschiedene Themen zum Recht in der Welt, wie Irak – Deutsche Dschihadisten, USA – Bayer, USA – Verfassungsrichterin Amy Coney Barrett, Frankreich – US-Sanktionen gegen Richter und weitere rechtliche Themen im Ausland.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7498513f9d6cc",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 19. Februar 2026, die verschiedene Themen wie Böhmermann gegen Böhmermann-Fake, Schmerzensgeld für Vater von Emily, Combat 18-Verfahren, Rechtspolitik, Jugendschutz in sozialen Netzwerken, Bundestags-Wahlrecht/Parität, Justiz, Recht in der Welt und Sonstiges behandelt.",
+      "email_date": "2026-02-19T06:31:04.000Z",
+      "topics": {
+        "topic_name": "Sonstiges",
+        "topic_category": "Recht & Justiz",
+        "topic_summary": "Die E-Mail enthält verschiedene sonstige Themen, wie Ziviler Ungehorsam, Rassismus in Behörden, Asyl für Iraner:innen und weitere rechtliche Themen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Reform des Disziplinarrechts",
+        "topic_category": "Disziplinarrecht",
+        "topic_summary": "Bund und Länder wollen Disziplinarverfahren gegen Beamte beschleunigen, doch die bisherigen Maßnahmen versprechen wenig Erfolg. Artur Geier erklärt, wie das Verfahren abzukürzen ist, sobald es strafrechtlich relevant wird.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": [
+          "Disziplinarrecht"
+        ]
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Teslas kosten Geld",
+        "topic_category": "Vertragsrecht",
+        "topic_summary": "Der Kaufvertrag eines Tesla-Kaufs im Hersteller-Shop wurde vom OLG Braunschweig für unwirksam erklärt, da der Bestellbutton die Zahlungspflicht nicht hinreichend hervorgehoben hat. Der Fall liegt jetzt beim BGH.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
       "topics": {
         "topic_name": "Urheberrecht an KI-Logos",
         "topic_category": "Urheberrecht",
-        "topic_summary": "KI-Logos ohne Urheberrechtsschutz.",
-        "topic_link": "",
-        "matched_courses": ["Urheberrecht"]
+        "topic_summary": "Ein Mann, der sich mittels KI erzeugte Logos schützen lassen wollte, kam vor dem AG München nicht durch. Die schöpferische Tiefe ließ aus Sicht des Gerichts zu wünschen übrig.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": [
+          "Urheberrecht"
+        ]
       }
     },
     {
-      "id": "demo-006",
+      "id": "19c71c7abb8df50d",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Bayer und Glyphosat-Klagen",
-        "topic_category": "Unternehmensrecht",
-        "topic_summary": "Milliardenvergleich.",
-        "topic_link": "",
-        "matched_courses": ["Produkthaftung"]
-      }
-    },
-    {
-      "id": "demo-007",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Rassismus in Behoerden",
-        "topic_category": "Recht",
-        "topic_summary": "Studie zu Rassismus.",
-        "topic_link": "",
-        "matched_courses": ["Diversity"]
-      }
-    },
-    {
-      "id": "demo-008",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "Datenschutz bei Verschlusssachen",
-        "topic_category": "Internationales Recht",
-        "topic_summary": "Deutsch-indisches Abkommen.",
-        "topic_link": "",
-        "matched_courses": ["Datenschutz", "Informationssicherheit"]
+        "topic_name": "Irgendwann ist Schluss",
+        "topic_category": "Studienrecht",
+        "topic_summary": "Wer seit über 34 Jahren studiert, muss sich selbst um seine Miete kümmern. Ein Anspruch auf Wohngeld besteht nicht.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-009",
+      "id": "19c71c7abb8df50d",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Zuckerberg sagt in Prozess aus",
-        "topic_category": "Technologie",
-        "topic_summary": "Social-Media-Sucht Klage.",
-        "topic_link": "",
-        "matched_courses": ["KI Anwendungen im Unternehmen"]
-      }
-    },
-    {
-      "id": "demo-010",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
       "email_date": "2026-02-18",
       "topics": {
         "topic_name": "Gemeinsames Beten als Versammlung",
-        "topic_category": "Religion",
-        "topic_summary": "Versammlungsfreiheit.",
-        "topic_link": "",
-        "matched_courses": ["Diversity", "Unconscious Bias"]
+        "topic_category": "Versammlungsfreiheit",
+        "topic_summary": "Religiöse Handlungen können unter dem Schutz der Versammlungsfreiheit stehen, sofern als Mittel der Kommunikation eingesetzt. Dies wurde bei den regelmäßigen Kundgebungen vor der Imam-Ali-Moschee in Frankfurt-Rödelheim bestätigt.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-011",
+      "id": "19c71c7abb8df50d",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "Glyphosat ESG-Auswirkungen",
-        "topic_category": "Wirtschaft",
-        "topic_summary": "ESG und Produkthaftung.",
-        "topic_link": "",
-        "matched_courses": ["Environmental Social Governance (ESG)", "Produkthaftung"]
+        "topic_name": "Kündigungs-Chaos",
+        "topic_category": "Mietrecht",
+        "topic_summary": "Ein Vermieter holte Gutachten von zwei Großkanzleien ein, um seine Kündigung wegen eines vermeintlichen Formfehlers abzusichern. Nach Abweisung der Räumungsklage konnten ihn diese jedoch nicht vor einem Schadensersatzanspruch retten.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-012",
+      "id": "19c71c7abb8df50d",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "Exportkontrolle Haager Uebereinkommen",
+        "topic_name": "Keine Videoverhandlung für Unterbevollmächtigte",
+        "topic_category": "Prozessrecht",
+        "topic_summary": "Ein unterbevollmächtigter Rechtsanwalt darf nicht per Video an einer mündlichen Verhandlung teilnehmen. Das LG Frankfurt a.M. zeigte wenig Verständnis für einen Unterbevollmächtigten, der nicht am Ort des Gerichts saß.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Emilys Tod auf Klassenfahrt",
+        "topic_category": "Schadensersatzrecht",
+        "topic_summary": "Dem Vater der Schülerin Emily (13), die auf einer Klassenfahrt nach London starb, steht Schmerzensgeld zu. Über die Höhe wird weiter gestritten.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Bericht empfiehlt Regeln für Friedensprozess mit PKK",
         "topic_category": "Internationales Recht",
-        "topic_summary": "Legalisation.",
-        "topic_link": "",
-        "matched_courses": ["Exportkontrolle"]
+        "topic_summary": "Nach einem jahrzehntelangen Konflikt befindet sich die in der EU als Terrororganisation eingestufte PKK in einem Friedensprozess mit dem türkischen Staat. Dieser soll nun konkreter werden.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-013",
+      "id": "19c71c7abb8df50d",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "TIR-Uebereinkommen",
+        "topic_name": "Bayer: Milliardenvergleich in US-Rechtsstreit über Glyphosat",
+        "topic_category": "Umweltrecht",
+        "topic_summary": "2018 schluckte Bayer den Wettbewerber Monsanto. Die Übernahme brachte erhebliche Glyphosat-Risiken mit sich. Nun könnte ein Befreiungsschlag gelungen sein.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "BSW hat Wahlprüfungsbeschwerde in Karlsruhe eingereicht",
+        "topic_category": "Wahlrecht",
+        "topic_summary": "Das BSW zweifelt am amtlichen Endergebnis der Bundestagswahl vom Februar 2025. Nun setzt die Partei auf das BVerfG.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "\"Combat 18\"-Prozess endet mit Geldauflage für Angeklagte",
+        "topic_category": "Strafrecht",
+        "topic_summary": "25 Prozesstage lang saßen vier mutmaßliche Rechtsextreme auf der Anklagebank. Sie sollen eine verbotene Organisation weiterbetrieben haben.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71c7abb8df50d",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter vom 18. Februar 2026 behandelt verschiedene rechtliche Themen, darunter Reform des Disziplinarrechts, Tesla-Kaufverträge, Urheberrecht an KI-Logos, Wohngeld für Studierende, religiöse Versammlungen, Vermieterverantwortlichkeiten, Videoverhandlungen, Schmerzensgeld für Eltern, Friedensprozess mit der PKK, Bayer-Glyphosat-Streit, Wahlprüfungsbeschwerden, Rechtsextremismus-Prozess und Social-Media-Sucht.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Zuckerberg sagt in Prozess um Social-Media-Sucht aus",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Online-Plattformen werden in einer US-Klage vorgeworfen, ihre Dienste machten süchtig. Die Firmen weisen die Vorwürfe zurück. Nun muss Facebook-Gründer Mark Zuckerberg in den Zeugenstand.",
+        "topic_link": "http://beck-aktuell.beck.de",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c7114130a80795",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Bekanntmachungen über verschiedene internationale Abkommen und Übereinkommen, darunter das Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation, das Abkommen zur friedlichen Erledigung internationaler Streitfälle, das TIR-Übereinkommen 1975 und das deutsch-indische Abkommen über den Austausch und gegenseitigen Schutz von Verschlusssachen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Bekanntmachung über den Geltungsbereich des Haager Übereinkommens zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation",
         "topic_category": "Internationales Recht",
-        "topic_summary": "TIR 1975.",
-        "topic_link": "",
-        "matched_courses": ["Exportkontrolle"]
+        "topic_summary": "Das Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation wurde bekannt gemacht. Es gilt für bestimmte Staaten und dient der Vereinfachung von Dokumentenabwicklungen.",
+        "topic_link": "https://www.recht.bund.de/bgbl/2/2026/22/VO.html",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-014",
+      "id": "19c7114130a80795",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Bekanntmachungen über verschiedene internationale Abkommen und Übereinkommen, darunter das Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation, das Abkommen zur friedlichen Erledigung internationaler Streitfälle, das TIR-Übereinkommen 1975 und das deutsch-indische Abkommen über den Austausch und gegenseitigen Schutz von Verschlusssachen.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "Tesla Kaufvertrag Bestellbutton",
+        "topic_name": "Bekanntmachung über den Geltungsbereich des Abkommens zur friedlichen Erledigung internationaler Streitfälle",
+        "topic_category": "Internationales Recht",
+        "topic_summary": "Das Abkommen zur friedlichen Erledigung internationaler Streitfälle wurde bekannt gemacht. Es dient der Beilegung von internationalen Konflikten und strebt eine friedliche Lösung an.",
+        "topic_link": "https://www.recht.bund.de/bgbl/2/2026/23/VO.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7114130a80795",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Bekanntmachungen über verschiedene internationale Abkommen und Übereinkommen, darunter das Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation, das Abkommen zur friedlichen Erledigung internationaler Streitfälle, das TIR-Übereinkommen 1975 und das deutsch-indische Abkommen über den Austausch und gegenseitigen Schutz von Verschlusssachen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Bekanntmachung über den Geltungsbereich des TIR-Übereinkommens 1975",
+        "topic_category": "Internationales Recht",
+        "topic_summary": "Das TIR-Übereinkommen 1975 wurde bekannt gemacht. Es gilt für bestimmte Staaten und dient der Vereinfachung von Dokumentenabwicklungen.",
+        "topic_link": "https://www.recht.bund.de/bgbl/2/2026/24/VO.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7114130a80795",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Bekanntmachungen über verschiedene internationale Abkommen und Übereinkommen, darunter das Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation, das Abkommen zur friedlichen Erledigung internationaler Streitfälle, das TIR-Übereinkommen 1975 und das deutsch-indische Abkommen über den Austausch und gegenseitigen Schutz von Verschlusssachen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Bekanntmachung des deutsch-indischen Abkommens über den Austausch und gegenseitigen Schutz von Verschlusssachen",
+        "topic_category": "Internationales Recht",
+        "topic_summary": "Das deutsch-indische Abkommen über den Austausch und gegenseitigen Schutz von Verschlusssachen wurde bekannt gemacht. Es dient dem Schutz von Verschlusssachen zwischen Deutschland und Indien.",
+        "topic_link": "https://www.recht.bund.de/bgbl/2/2026/25/VO.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7112acd6dd7e2",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Informationen über die neunzehnte Verordnung zur Änderung der Hundertfünfundfünfzigsten Durchführungsverordnung zur Luftverkehrs-Ordnung, die Flugverfahren für An- und Abflüge nach Instrumentenflugregeln zum und vom Verkehrslandeplatz Leipzig-Altenburg Airport festlegt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Neunzehnte Verordnung zur Änderung der Hundertfünfundfünfzigsten Durchführungsverordnung zur Luftverkehrs-Ordnung",
+        "topic_category": "Luftverkehrsrecht",
+        "topic_summary": "Die neunzehnte Verordnung zur Änderung der Hundertfünfundfünfzigsten Durchführungsverordnung zur Luftverkehrs-Ordnung (Festlegung von Flugverfahren für An- und Abflüge nach Instrumentenflugregeln zum und vom Verkehrslandeplatz Leipzig-Altenburg Airport) wurde veröffentlicht. Diese Verordnung legt die Flugverfahren für An- und Abflüge nach Instrumentenflugregeln zum und vom Verkehrslandeplatz Leipzig-Altenburg Airport fest.",
+        "topic_link": "https://www.recht.bund.de/bgbl/1/2026/42/VO.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c711147d7a8a28",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@bundesregierung.de",
+      "summary_general": "Bundeskanzler Friedrich Merz hat heute mit dem Präsidenten der Bundesrepublik Nigeria, Bola Ahmed Adekunle Tinubu, telefoniert.",
+      "email_date": "2026-02-18T14:01:14.000Z",
+      "topics": {
+        "topic_name": "Telefonat zwischen Bundeskanzler Merz und Präsident Tinubu",
+        "topic_category": "Internationale Beziehungen",
+        "topic_summary": "Bundeskanzler Friedrich Merz hat heute mit dem Präsidenten der Bundesrepublik Nigeria, Bola Ahmed Adekunle Tinubu, telefoniert. Beide tauschten sich über die Lage in der Region aus und vereinbarten, die Zusammenarbeit u.a. im wirtschaftlichen Bereich weiter zu vertiefen.",
+        "topic_link": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-merz-telefoniert-mit-dem-praesidenten-der-bundesrepublik-nigeria-bola-ahmed-adekunle-tinubu-2407966",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Seminar informiert Gründerinnen und Gründer",
+        "topic_category": "Gründung, Sicherung, Nachfolge",
+        "topic_summary": "Die IHK Hannover bietet ein ganztägiges Grundlagen-Seminar am 25. Februar in Hannover an, um Gründerinnen und Gründer über wichtige Aspekte einer Unternehmensgründung zu informieren.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Beratungssprechtage zu Förderprogrammen im März",
+        "topic_category": "Gründung, Sicherung, Nachfolge",
+        "topic_summary": "Die IHK Hannover organisiert gemeinsam mit der NBank im März in Hannover und Göttingen kostenfreie Beratungssprechtage zu Förderprogrammen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Kenia: Änderungen bei Importanforderungen (PVoC-Programm)",
+        "topic_category": "International",
+        "topic_summary": "Das Kenya Bureau of Standards (KEBS) hat die Pre-Export-Inspektionen (PVoC) für allgemeine Waren am 8. Februar als ausgelaufen erklärt. Ab sofort werden alle Importe ohne gültiges Zertifikat einer Destination Inspection am kenianischen Einfuhrhafen unterzogen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Online-Sprechtag Indien am 11. März",
+        "topic_category": "International",
+        "topic_summary": "Die IHK Hannover bietet am 11. März einen Online-Sprechtag durch, um Unternehmen über Wirtschaftsbeziehungen mit Indien zu informieren.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Webinar: E-Rechnung in der Praxis",
+        "topic_category": "Steuern",
+        "topic_summary": "Ein kostenfreies Webinar am 3. März informiert über die E-Rechnung, die ab 2025 verbindlich sein wird.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7104f196325ce",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Der Newsletter der IHK Hannover vom 18.02.2026 enthält Informationen zu Gründungsberatung, internationalen Themen, Steuern, Umwelt und Nachhaltigkeit.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Webinar-Reihe zur EU-Verpackungsverordnung",
+        "topic_category": "Umwelt, Nachhaltigkeit, Arbeitsschutz",
+        "topic_summary": "Das Unternehmensnetzwerk Klimaschutz und die DIHK laden zu einer dreiteiligen Webinar-Reihe zur EU-Verpackungsverordnung ein, die ab dem 12. August 2026 verbindlich anzuwenden ist.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71003512b9951",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@bundesregierung.de",
+      "summary_general": "Staatsminister Weimer erinnert an den Jahrestag des rassistischen Anschlags von Hanau und setzt sich für kulturelle Integration und gegen Rassismus und Extremismus ein.",
+      "email_date": "2026-02-18T13:42:31.000Z",
+      "topics": {
+        "topic_name": "Jahrestag des rassistischen Anschlags von Hanau",
+        "topic_category": "Gesellschaftspolitik",
+        "topic_summary": "Am 19. Februar jährt sich der rassistische Anschlag von Hanau zum sechsten Mal. Neun Menschen wurden ermordet, sechs weitere verletzt. Staatsminister Weimer erinnert an die Opfer und setzt sich gegen Rassismus und Extremismus ein.",
+        "topic_link": "https://www.bundesregierung.de/breg-de/aktuelles/staatsminister-weimer-zum-jahrestag-des-rassistischen-anschlags-von-hanau-angriff-auf-unsere-demokratische-und-weltoffene-gesellschaft--2407964",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c71003512b9951",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@bundesregierung.de",
+      "summary_general": "Staatsminister Weimer erinnert an den Jahrestag des rassistischen Anschlags von Hanau und setzt sich für kulturelle Integration und gegen Rassismus und Extremismus ein.",
+      "email_date": "2026-02-18T13:42:31.000Z",
+      "topics": {
+        "topic_name": "Aktionstag Hanau",
+        "topic_category": "Kulturelle Integration",
+        "topic_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien und die Initiative kulturelle Integration haben den Aktionstag Hanau ins Leben gerufen. Der Aktionstag umfasst bundesweite künstlerische Schulwettbewerbe, die junge Menschen dazu ermutigen, sich mit Antisemitismus, Rechtsextremismus und anderen Formen von Ausgrenzung auseinanderzusetzen.",
+        "topic_link": "https://www.kulturelle-integration.de/veranstaltungen/aktionstag-hanau/",
+        "matched_courses": [
+          "Diversity"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Warum “Connectivity” jetzt zum Prüfstein moderner Unternehmensberichterstattung wird",
+        "topic_category": "Finanz- und Nachhaltigkeitsberichterstattung",
+        "topic_summary": "Der Artikel beleuchtet die Bedeutung von “Connectivity” in der modernen Unternehmensberichterstattung, insbesondere in Bezug auf die enge Verzahnung von Finanz- und Nachhaltigkeitsberichterstattung. Er zeigt auf, wie Anticipated Financial Effects als Prüfstein für die inhaltliche und strukturelle Verbindung zwischen Nachhaltigkeitsbericht, Jahres- bzw. Konzernabschluss und weiteren Elementen der Unternehmensberichterstattung dienen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2EwNWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Digital Omnibus on AI – Was steckt dahinter?",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "Der Artikel erklärt die Gesetzesvorschläge der Europäischen Kommission vom 19.11.2025, die die digitale Regulierung von KI, Datenschutz, Datenrecht, Cookies und Meldeverfahren bei Sicherheitsvorfällen vereinfachen sollen. Die Vorschläge zielen darauf ab, die KI-VO zu ändern und datenschutzrechtliche Rechtsgrundlagen für die Verarbeitung von personenbezogenen Daten, insbesondere sensiblen Daten, zum Zwecke der Entwicklung und des Betriebs von KI-Systemen und KI-Modellen zu schaffen oder klarzustellen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Das neue BSIG 2025 bringt neue Cybersicherheitspflichten für unzählige Branchen: NIS-2-Richtlinie jetzt auch in Deutschland umgesetzt",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Der Artikel berichtet über die Umsetzung der NIS-2-Richtlinie in Deutschland, die am 6.12.2025 in Kraft getreten ist. Die Richtlinie enthält neue Pflichten für rund 30.000 Unternehmen, die diese ohne Übergangsfrist einzuhalten haben.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "EuGH x Transparenzgrundsatz: Ein Bürokratiemonster?",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Der Artikel diskutiert die Umsetzung der Informationspflichten aus Art. 13, 14 DSGVO und die damit verbundenen Herausforderungen für Unternehmen. Er beleuchtet die Pflicht des Verantwortlichen zu Datenschutzhinweisen, Datenschutzerklärungen und Privacy Policies und die damit verbundenen juristischen und praktischen Herausforderungen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "USA beschränken internationale Datentransfers aus Sicherheitsgründen",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Der Artikel berichtet über die neuen Gesetze und die strafbewehrte Verordnung der USA, die geopolitische Sicherheitsziele verfolgen und deutlich von herkömmlichen Datenschutzregeln, Datenvorhaltepflichten und Datenresidenzgesetzen abweichen. Die Artikel beleuchtet die Auswirkungen dieser neuen Regelungen auf europäische Unternehmen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Gesetzeswandel trifft Unternehmen",
+        "topic_category": "Lieferkettengesetz",
+        "topic_summary": "Der Artikel berichtet über die politischen Entwicklungen und ihre Auswirkungen auf die Gesetzgebung zu Berichts- und Sorgfaltspflichten. Er beleuchtet die Neufassung des nationalen Lieferkettensorgfaltspflichtengesetzes (LkSG) und die damit verbundenen Pflichten für Unternehmen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "Lieferkettengesetz"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Blick in die Zukunft",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "Der Artikel berichtet über die Vorstellung der neuen App „Codex“ von OpenAI, eine Art Kommandozentrale für KI-Codier-Agenten. Die App ermöglicht es Usern, mehrere Agenten gleichzeitig zu verwalten und ihnen komplexe Programmier-Aufgaben zu übertragen, die dann in hohem Tempo erledigt werden.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Kapitalaufbringungsgrundsatz im Lichte von Online-Zahlungsdienstleistungen, E-Geld und Kryptowährungen",
+        "topic_category": "Kryptowährungen",
+        "topic_summary": "Der Artikel beleuchtet die Bedeutung des Kapitalaufbringungsgrundsatzes und der damit verbundenen Einlageverpflichtungen für Gesellschaften mit beschränkter Haftung (GmbH) und Aktiengesellschaften (AG). Er erklärt die rechtlichen Herausforderungen, die durch die dynamische Entwicklung im Bereich von Online-Zahlungsdienstleistungen, sog. E-Geld und Kryptowährungen entstehen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "EU und VAE am Verhandlungstisch – Weg zum Freihandelsabkommen",
+        "topic_category": "Recht der internationalen Wirtschaft",
+        "topic_summary": "Der Artikel berichtet über die Entwicklung der Vereinigten Arabischen Emirate (VAE) zu einem bedeutenden Wirtschaftsstandort in der Region des Nahen und Mittleren Ostens. Er beleuchtet die Bedeutung der Emirate Dubai und Abu Dhabi als attraktive und global bedeutsame Unternehmens- und Investitionsstandorte.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Der Schutz (besonders) wichtiger und kritischer Netzinfrastrukturen",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Der Artikel beleuchtet den Schutz kritischer Infrastrukturen in den Netzwirtschaften im Rahmen der Umsetzung der Netz-und-Informations-Sicherheits-Richtlinie (EU) 2022/2555 (NIS-2-Richtlinie) und der Richtlinie (EU) 2022/2557 über die Resilienz kritischer Infrastrukturen („Critical Entities Resilience“- bzw. CER-Richtlinie). Er erläutert die Differenzierung nach verschiedenen Stufen der Kritikalität und die damit verbundenen Pflichten für Unternehmen in den Sektoren Energie, Telekommunikation, Verkehr, Post und Wasser.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Entwurf zur Entgelttransparenz steht aus",
+        "topic_category": "Entgelttransparenz",
+        "topic_summary": "Der Artikel berichtet über die bevorstehende Umsetzung der EU-Richtlinie zur Lohntransparenz in deutsches Recht. Er beleuchtet die aktuellen Entwicklungen und die damit verbundenen Herausforderungen für Unternehmen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Prof. Dr. Michael Stahlschmidt im Gespräch mit den Freshfields-Partnern",
+        "topic_category": "Global Strategic Risk Management",
+        "topic_summary": "Der Artikel berichtet über ein Gespräch zwischen Prof. Dr. Michael Stahlschmidt und den Freshfields-Partnern Prof. Dr. Christoph H. Seibt und Beth George. Es wird über die neue „Global Strategic Risk Management Group“ der Kanzlei gesprochen und die Bedeutung von Risikomanagement für Unternehmen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Wettbewerb als die DNA des Telekommunikationsrechts",
+        "topic_category": "Telekommunikationsrecht",
+        "topic_summary": "Der Artikel beleuchtet die Bedeutung des Wettbewerbs als grundlegendes Prinzip im Telekommunikationsrecht. Er zeigt auf, wie der Wettbewerb als begrifflicher Fixstern in § 1 TKG an exponierter Stelle steht und die Liberalisierung des Telekommunikationssektors geprägt hat.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70d7ddfb46dcd",
+      "email_typ_is_newsletter": true,
+      "sender": "bb-in-house-update@mc.ruw.de",
+      "summary_general": "Der Newsletter BB IN-HOUSE UPDATE vom 18.02.2026 bietet eine Zusammenfassung der wichtigsten unternehmensrelevanten Beiträge aus den Rechtspublikationen und Wirtschafts-News der dfv Mediengruppe.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Der Investitions-Booster: Steuerliche Kurztherapie oder nachhaltiger Wandel?",
+        "topic_category": "Steuerrecht",
+        "topic_summary": "Der Artikel analysiert das deutsche steuerliche Investitionssofortprogramm und beleuchtet die damit verbundenen fiskalischen, systemischen und Zielgenauigkeitsaspekte. Er zeigt auf, wie das Programm unter anderem degressive Abschreibungen und Körperschaftsteuersenkungen kombiniert, um die Wirtschaftsbelebung zu fördern.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQ2Y2VmNzJjLWFmMDctNDZkMS1iMzEwLTRlYzc3M2E0NWExMSIsImRla1ZlcnNpb24iOjEsIml2IjoiUWY0Nnhub0hUSnhFMHh3eVdqRVBadz09IiwiY2lwaGVyVGV4dCI6ImUzVDBLWHFvc1hhM0d6TENaOE5TaFdSY1lVb1lidmtXc3E2WVdYNU4wMEwzczZINFkwM2gwZUY4ejNEeEl4WitJaGFlRHd4WUkwMnRoNDQwa1JjSTUySmJYbEZZQXdSdW9rSCtPc1o2QjB5Y1JOTWNNbG94RDJjPSIsImF1dGhUYWciOiJoNDQwa1JjSTUySmJYbEZZQXdSdW9nPT0ifQ%3D%3D",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c70a54815827ba",
+      "email_typ_is_newsletter": true,
+      "sender": "COMM-REP-DE-NEWSLETTER@ec.europa.eu",
+      "summary_general": "Der Newsletter informiert über aktuelle Entwicklungen in den östlichen Grenzregionen der EU und enthält Termine.",
+      "email_date": "2026-02-18T12:06:32.000Z",
+      "topics": {
+        "topic_name": "EU-Aktuell: Östliche EU-Grenzregionen",
+        "topic_category": "Politik und internationale Beziehungen",
+        "topic_summary": "Der Artikel behandelt aktuelle Entwicklungen und Herausforderungen in den östlichen Grenzregionen der EU. Es werden auch Termine für Veranstaltungen und Treffen erwähnt.",
+        "topic_link": "https://ec.europa.eu/newsroom/representations/newsletter-archives/72242",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7084318a92d5f",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Artikel zu verschiedenen rechtlichen Themen, darunter Influencer-Marketing, Sanktionen, Gesellschafterklagen und weitere rechtliche Entwicklungen.",
+      "email_date": "2026-02-18T11:30:36.000Z",
+      "topics": {
+        "topic_name": "Influencer als Handelsvertreter",
+        "topic_category": "Wirtschaftsrecht",
+        "topic_summary": "Influencer können als Handelsvertreter eingestuft werden, was finanzielle Risiken für Unternehmen birgt. Unternehmen sollten ihre Vertragsgestaltung prüfen, um solche Risiken zu vermeiden.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/wirtschaftsrecht/influencer-als-unerkannte-handelsvertreter_210_672120.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7084318a92d5f",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Artikel zu verschiedenen rechtlichen Themen, darunter Influencer-Marketing, Sanktionen, Gesellschafterklagen und weitere rechtliche Entwicklungen.",
+      "email_date": "2026-02-18T11:30:36.000Z",
+      "topics": {
+        "topic_name": "Sanctions Compliance",
+        "topic_category": "Wirtschaftsrecht",
+        "topic_summary": "Der Bundestag hat das Sanktionsstrafrecht verschärft, was für Unternehmen erhöhte Haftungsrisiken und die Notwendigkeit grundlegender Überarbeitungen der Compliance-Systeme bedeutet.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/wirtschaftsrecht/sanctions-compliance-verschaerfung-des-sanktionsstrafrechts_210_674118.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7084318a92d5f",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Artikel zu verschiedenen rechtlichen Themen, darunter Influencer-Marketing, Sanktionen, Gesellschafterklagen und weitere rechtliche Entwicklungen.",
+      "email_date": "2026-02-18T11:30:36.000Z",
+      "topics": {
+        "topic_name": "Gesellschafterklage nach § 715b BGB",
+        "topic_category": "Wirtschaftsrecht",
+        "topic_summary": "Die Zulässigkeit der Gesellschafterklage nach § 715b BGB setzt voraus, dass sich der klagewillige Gesellschafter um einen Gesellschafterbeschluss bemüht hat, wenn die Geltendmachung eines Anspruchs als außergewöhnliche Maßnahme gilt.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/wirtschaftsrecht/zulaessigkeit-der-gesellschafterklage-nach-715b-bgb_210_674006.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7084318a92d5f",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Artikel zu verschiedenen rechtlichen Themen, darunter Influencer-Marketing, Sanktionen, Gesellschafterklagen und weitere rechtliche Entwicklungen.",
+      "email_date": "2026-02-18T11:30:36.000Z",
+      "topics": {
+        "topic_name": "Mercosur-Abkommen",
+        "topic_category": "Wirtschaftsrecht",
+        "topic_summary": "Das Mercosur-Abkommen könnte trotz des Gutachtenverfahrens beim EuGH vorläufig in Kraft treten. Dies hängt von der Entscheidung des Europäischen Parlaments ab.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/wirtschaftsrecht/kann-das-mercosur-abkommen-vorlaeufig-in-kraft-treten_210_675662.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7084318a92d5f",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Artikel zu verschiedenen rechtlichen Themen, darunter Influencer-Marketing, Sanktionen, Gesellschafterklagen und weitere rechtliche Entwicklungen.",
+      "email_date": "2026-02-18T11:30:36.000Z",
+      "topics": {
+        "topic_name": "Verjährung des Abfindungsanspruchs",
+        "topic_category": "Wirtschaftsrecht",
+        "topic_summary": "Der Abfindungsanspruch eines Gesellschafters bei Einziehung seiner Geschäftsanteile lässt sich in vielfältiger Weise gestalten, u.a. mit Regelungen zu Zahlungsmodalitäten, Fristen, Zinsen und Fälligkeit.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/wirtschaftsrecht/einziehung-der-gesellschaftsanteile-verjaehrung-abfindung_210_675688.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7083ebec9eed8",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Fashion meets Tax",
+        "topic_category": "Umsatzsteuer",
+        "topic_summary": "Webinar zur Steueroptimierung in der Modebranche, mit Fokus auf Warenbewegungen, Sourcing aus Drittländern und Mitarbeiterrabatte.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImIxNDM0MzJmLThlZjktNDkyOS04OGYwLTc4YWQzNmUyOGQ4NyIsImRla1ZlcnNpb24iOjEsIml2Ijoiekh0MzRld05xYmNPdjB6R2ZvM2h4UT09IiwiY2lwaGVyVGV4dCI6ImFNNXVJc1ZnUTU3YUxtT3N5cW9jbGhqbmJRcmFzSWhaamkzZTRDbnNkWFlucVQ0d2haOTFEbWU0cll6cjNrcFZPVnZadjJsQjZmYXlIelkzSm1Hb1BPNnh5ZkFuTE14N2QrSHNEYW0zRHI5TXhuNk40Y1U9IiwiYXV0aFRhZyI6IjZmYXlIelkzSm1Hb1BPNnh5ZkFuTEE9PSJ9",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7083ebec9eed8",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Cyber-Angriff",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Fachtagung zur Vorbereitung auf Cyber-Angriffe, mit Fokus auf technische Maßnahmen, Datensicherheit und Kommunikation.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjRmYzA0OGUzLTFiZTctNDE5ZC04NzMxLWUxMmVhZjUyNWRkMCIsImRla1ZlcnNpb24iOjEsIml2IjoiQzFyVDAvaHJBNHZiUWtpaEMwTkJzdz09IiwiY2lwaGVyVGV4dCI6Ik5WMGl3WnlDYkZxUlRJM2prb0RkbmVGeUpMM1JlZXdtU3ZiUUxtMW5xaFJ3WnJNM1U1dmtlQ2FxVVJySzJZcG1WaUt5Q1lBdVhZVklUWkJWQ0RLL1E0T0JYemg0RkF0YTA5UDRhd09MMjBKSW9RdERRYk09IiwiYXV0aFRhZyI6IlhZVklUWkJWQ0RLL1E0T0JYemg0RkE9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7083ebec9eed8",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Fashion meets Law",
         "topic_category": "Recht",
-        "topic_summary": "Widerrufsrecht bei Online-Kauf.",
-        "topic_link": "",
-        "matched_courses": ["Widerrufsrecht"]
+        "topic_summary": "Webinar-Reihe zu rechtlichen Themen im Fashion Business, mit Fokus auf Geschaftsleitung, Einkauf und Design.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImRkZWJlYjViLWQ2MWMtNDVkZC05Nzg4LWQzZmMzYTdhNTRjYSIsImRla1ZlcnNpb24iOjEsIml2IjoiaThPTzY4UHk4M3YzYk9sd1B4TkpvQT09IiwiY2lwaGVyVGV4dCI6IkE2QmRIa1Z2QTZ5RGdQZDl2Y3lTTDd6bjN6MGhkYmJpajZXZEdDVlp5SmgrZ1Z3ZTl6S0VRT3BLZEdUaXlYZTNZck05TW5XWmJwbkRKWVY0bTlkZEJpTWJkTGVhQll2RGp1dkQ4dk43OTJ6cGNEOFRTYUE9IiwiYXV0aFRhZyI6ImJwbkRKWVY0bTlkZEJpTWJkTGVhQlE9PSJ9",
+        "matched_courses": []
       }
     },
     {
-      "id": "demo-015",
+      "id": "19c7083ebec9eed8",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
       "email_date": "2026-02-18",
       "topics": {
-        "topic_name": "Logistik von Lebensmitteln",
-        "topic_category": "Lebensmittelrecht",
-        "topic_summary": "Transportrecht und Lebensmittelrecht.",
+        "topic_name": "i:sec & Law",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Tagung zu neuen Anforderungen durch die NIS2-Richtlinie, mit Fokus auf ISMS, Lieferkettenmanagement und Vorfallsbewaltigung.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjUzYzY3ZDZkLWVhNmItNDRmZi05NzE3LTllNjE2MjQ0YmExNiIsImRla1ZlcnNpb24iOjEsIml2IjoiK0xxTThQcmUrb2s1bGZxQ2pjL1NWQT09IiwiY2lwaGVyVGV4dCI6ImZQMUlCMHhZTEUrcGxXOUI5TVNtUkpPL25ROHpRT0hWM0Nrc0RlSmZ0cUZOczB0QzliaEt1cytOZDYvb1RxZHJWZ3RwYXVoWXlwQXJhNXJSOFArcDFoWFdmQTE0Ni9pNmpQRDYzdnFKT1pYNmdvM1AwbFE9IiwiYXV0aFRhZyI6InlwQXJhNXJSOFArcDFoWFdmQTE0Nnc9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7083ebec9eed8",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Barrierefreiheit & Recht",
+        "topic_category": "Recht",
+        "topic_summary": "Fachtagung zur Umsetzung des BFSG, mit Fokus auf digitale und physische Barrierefreiheit.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjJkYmU4YTgyLTE3ZjgtNGRhMS1hMzdhLTFiOGM2MzM1N2MzYiIsImRla1ZlcnNpb24iOjEsIml2IjoiS0F0aUdma1ZTS0hLNFF1UG51eThRUT09IiwiY2lwaGVyVGV4dCI6IjFVaTBwbjdtM3EvZmZ6NTZIcXR3VFBnMlU0TzJsRGJ0WkgyUS91NmJjeFhxcHFoME9YNktRZlVsalRpTFhOVDZvNDBJT2dnSGd0MEVhcnFzMFF1VElXTzBpRGNoSENnTFlobjVGVWloeXVFTGo1N3N2RUU9IiwiYXV0aFRhZyI6Imd0MEVhcnFzMFF1VElXTzBpRGNoSEE9PSJ9",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7083ebec9eed8",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Newsletter mit Informationen zum Webinar 'Fashion meets Tax' und anderen relevanten Veranstaltungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "KI-VO",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "Buchkommentar zur Kunstlichen Intelligenz-Verordnung (KI-VO), mit Fokus auf Entwicklung, Einsatz und Vertrieb von KI-Systemen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjViYTJkY2M0LTFlOGYtNGUwMi05ODdmLTk5ZjI0YmY5ZjQ0YiIsImRla1ZlcnNpb24iOjEsIml2IjoiQnI0TU5pNDZnSXBEc1RXOGFkVHI0dz09IiwiY2lwaGVyVGV4dCI6IlN4WGFUN3d2OW1nKzVvbDdNMElkVk16cm5POUk0QjN6OGNpaStFeW5RR0U4YVRJQ2duL2tzUXpqU0tnWDJ6dFJNeGNvSkVuYklCUlYvczBiQ04rSGpUUFdHNk9WRlFhK0REWXVPb0NLUTdFMXZHblU2K009IiwiYXV0aFRhZyI6IklCUlYvczBiQ04rSGpUUFdHNk9WRlE9PSJ9",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Reality Check Kreislaufwirtschaft",
+        "topic_category": "Umwelt",
+        "topic_summary": "Der Reality Check Kreislaufwirtschaft untersucht die aktuellen Herausforderungen und Möglichkeiten der Kreislaufwirtschaft in Deutschland. Es wird gezeigt, wo es hakt und wie es besser gehen könnte.",
+        "topic_link": "https://www.haufe.de/sustainability/umwelt/reality-check-kreislaufwirtschaft_575774_675354.html",
+        "matched_courses": [
+          "Lieferkettengesetz"
+        ]
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Daniel Dahm – Lebensdienlichkeit als Maßstab",
+        "topic_category": "Debatte",
+        "topic_summary": "Daniel Dahm fordert eine radikalere, aber einfache Denkweise für Nachhaltigkeit. Er setzt Maßstäbe mit Konzepten wie der Sustainability Zeroline und betont Lebensdienlichkeit und Regeneration.",
+        "topic_link": "https://www.haufe.de/sustainability/debatte/treiber-des-wandels-daniel-dahm_575768_675326.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Nachhaltigkeit trotz Krisen durchsetzen - fünf Tipps",
+        "topic_category": "Debatte",
+        "topic_summary": "Der Artikel bietet fünf Tipps, wie Nachhaltigkeit in Unternehmen trotz globaler Krisen auf der Agenda gehalten werden kann.",
+        "topic_link": "https://www.haufe.de/sustainability/debatte/nachhaltigkeit-trotz-krisen-durchsetzen-fuenf-tipps_575768_674698.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Wenn Unternehmenskultur Transformation verhindert",
+        "topic_category": "Strategie",
+        "topic_summary": "Der Artikel zeigt, wie Unternehmenskultur Transformationen behindern kann und wie man diese Herausforderungen meistern kann.",
+        "topic_link": "https://www.haufe.de/sustainability/strategie/wenn-unternehmenskultur-transformation-verhindert_575772_674744.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "VSME Plus: Freiwillige Nachhaltigkeitsberichterstattung mit Wirkung",
+        "topic_category": "Strategie",
+        "topic_summary": "Der Gastbeitrag zeigt, wie der VSME als freiwilliger Standard Orientierung bietet und warum ein VSME Plus-Bericht eine strategische Chance für Unternehmen darstellt.",
+        "topic_link": "https://www.haufe.de/sustainability/strategie/vsme-plus-freiwillige-nachhaltigkeitsberichterstattung_575772_675062.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Wie Landwirtschaft mit High-Tech nachhaltiger wird",
+        "topic_category": "Umwelt",
+        "topic_summary": "Der Artikel beschreibt, wie die Landwirtschaft durch Digitalisierung und High-Tech nachhaltiger werden kann, indem Ressourcenverbrauch und Umweltbelastung gesenkt werden.",
+        "topic_link": "https://www.haufe.de/sustainability/umwelt/wie-landwirtschaft-mit-high-tech-nachhaltiger-wird_575774_675118.html",
+        "matched_courses": [
+          "Lieferkettengesetz"
+        ]
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Neue ADR-Vorschrift für Lithium- und Natrium-Ionen-Batterien",
+        "topic_category": "Umwelt",
+        "topic_summary": "Die überarbeitete ADR 2025 berücksichtigt das Brandrisiko von Lithiumbatterien und führt erstmals Regelungen für Natrium-Ionen-Batterien ein.",
+        "topic_link": "https://www.haufe.de/sustainability/umwelt/neue-adr-vorschrift-fuer-lithium-und-natrium-ionen-batterien_575774_675892.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Wirtschaftswachstum durch Bestandssanierung",
+        "topic_category": "Umwelt",
+        "topic_summary": "Der Artikel zeigt, wie die Energiewende im Wohnungsbestand Klimaschutz und Wirtschaftswachstum verbinden kann.",
+        "topic_link": "https://www.haufe.de/sustainability/umwelt/dena-gebaeudereport_575774_675152.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Die wichtigsten Sustainability-Events 2026",
+        "topic_category": "Debatte",
+        "topic_summary": "Der Artikel listet die wichtigsten Sustainability-Events 2026 auf, die für das Thema Corporate Sustainability, Nachhaltigkeitsmanagement und ESG relevant sind.",
+        "topic_link": "https://www.haufe.de/sustainability/debatte/events_575768_585264.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Senior Sales Manager (m/w/d) Erneuerbare Energien",
+        "topic_category": "Stellenmarkt",
+        "topic_summary": "Stellenausschreibung für einen Senior Sales Manager in der Erneuerbaren Energien-Branche.",
+        "topic_link": "https://www.stellenmarkt.haufe.de/Job/Senior-Sales-Manager-m-w-d-Erneuerbare-Energien.1933012215.html?jw_chl_seg=sf-hmg-sustainability",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Sachbearbeiter (m/w/d) Umweltmanagement",
+        "topic_category": "Stellenmarkt",
+        "topic_summary": "Stellenausschreibung für einen Sachbearbeiter im Umweltmanagement.",
+        "topic_link": "https://www.stellenmarkt.haufe.de/Job/Sachbearbeiter-m-w-d-Umweltmanagement-und-Umweltkommunikation.1932981865.html?jw_chl_seg=sf-hmg-sustainability",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Umwelttechniker:in-Umweltschützer:in für das technische Referendariat",
+        "topic_category": "Stellenmarkt",
+        "topic_summary": "Stellenausschreibung für einen Umwelttechniker oder Umweltschützer für das technische Referendariat.",
+        "topic_link": "https://www.stellenmarkt.haufe.de/Job/Umwelttechniker-in-Umweltschuetzer-in-fuer-das-technische-Referendariat.1933001785.html?jw_chl_seg=sf-hmg-sustainability",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Energie- und Gebäudetechnik / Maschinenbau (m/w/d) Master Traineeprogramm Maschinenwesen Staatsbauverwaltung des Freistaats Bayern",
+        "topic_category": "Stellenmarkt",
+        "topic_summary": "Stellenausschreibung für einen Energie- und Gebäudetechnik / Maschinenbau (m/w/d) Master Traineeprogramm Maschinenwesen Staatsbauverwaltung des Freistaats Bayern.",
+        "topic_link": "https://www.stellenmarkt.haufe.de/Job/Energie-und-Gebaeudetechnik-Maschinenbau-m-w-d-Master-Traineeprogramm-Maschinenwesen-Staatsbauverwaltung-des-Freistaats-Bayern.1932861375.html?jw_chl_seg=sf-hmg-sustainability",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7061e8f63cfeb",
+      "email_typ_is_newsletter": true,
+      "sender": "sustainability@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Nachhaltigkeit, darunter Kreislaufwirtschaft, Klimaanpassung, Nachhaltigkeitsberichterstattung und aktuelle Entwicklungen im Bereich Umwelt und Energie.",
+      "email_date": "2026-02-18T10:53:10.000Z",
+      "topics": {
+        "topic_name": "Referent/-in für Grundsatzangelegenheiten Informationssicherheit, Notfallmanagement in der Abteilung Z (m/w/d)",
+        "topic_category": "Stellenmarkt",
+        "topic_summary": "Stellenausschreibung für einen Referent/-in für Grundsatzangelegenheiten Informationssicherheit, Notfallmanagement in der Abteilung Z (m/w/d).",
+        "topic_link": "https://www.stellenmarkt.haufe.de/Job/Referent-in-fuer-Grundsatzangelegenheiten-Informationssicherheit-Notfallmanagement-in-der-Abteilung-Z-m-w-d.1922172685.html?jw_chl_seg=sf-hmg-sustainability",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7050ed549add4",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter informiert über die bevorstehenden Betriebsratswahlen, unzulässige Wahlbeeinflussung durch Arbeitgeber und aktuelle Entscheidungen zum Thema Altersgrenze für Geschäftsführer.",
+      "email_date": "2026-02-18T10:34:36.000Z",
+      "topics": {
+        "topic_name": "Betriebsratswahlen",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Der Newsletter enthält Informationen über die bevorstehenden Betriebsratswahlen und ein Online-Dossier zum Thema.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-viewonline2/3298/23882/13218/gHmWk3yd/VA9c5DRFJM/1",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c7050ed549add4",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter informiert über die bevorstehenden Betriebsratswahlen, unzulässige Wahlbeeinflussung durch Arbeitgeber und aktuelle Entscheidungen zum Thema Altersgrenze für Geschäftsführer.",
+      "email_date": "2026-02-18T10:34:36.000Z",
+      "topics": {
+        "topic_name": "Unzulässige Wahlbeeinflussung durch Arbeitgeber",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Der Newsletter behandelt das Thema unzulässige Wahlbeeinflussung durch Arbeitgeber und gibt einen Link zu einem ArbRB-Beitrag von Prof. Dr. Wolfgang Kleinebrink.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-viewonline2/3298/23882/13218/gHmWk3yd/VA9c5DRFJM/1",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c7050ed549add4",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter informiert über die bevorstehenden Betriebsratswahlen, unzulässige Wahlbeeinflussung durch Arbeitgeber und aktuelle Entscheidungen zum Thema Altersgrenze für Geschäftsführer.",
+      "email_date": "2026-02-18T10:34:36.000Z",
+      "topics": {
+        "topic_name": "Aktuelle Entscheidungen zur Zulässigkeit einer Altersgrenze für Geschäftsführer",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Der Newsletter informiert über aktuelle Entscheidungen zur Zulässigkeit einer Altersgrenze für Geschäftsführer.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-viewonline2/3298/23882/13218/gHmWk3yd/VA9c5DRFJM/1",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c703b104f249bc",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter behandelt aktuelle Entscheidungen im Immobilienkredit und die Autorisierung im Zahlungsverkehr, mit einem Fokus auf Willensmängel und Anfechtung.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Immobilienkredite und EuGH-Urteil",
+        "topic_category": "Immobilienrecht",
+        "topic_summary": "Banken müssen Verbrauchern nicht die Einzelheiten der Methodik eines Referenzindexes mitteilen, der zur Berechnung eines variablen Zinssatzes verwendet wird. Der XI. Zivilsenat des BGH hat entschieden, dass ein abstraktes Schuldanerkenntnis mit Vollstreckungsunterwerfung kondizierbar ist, wenn die zugrunde liegende Darlehensforderung verjährt und nicht durch eine Grundschuld gesichert ist.",
         "topic_link": "",
-        "matched_courses": ["Hygiene und Sicherheit im Lebensmittelbereich"]
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c703b104f249bc",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter behandelt aktuelle Entscheidungen im Immobilienkredit und die Autorisierung im Zahlungsverkehr, mit einem Fokus auf Willensmängel und Anfechtung.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Autorisierung im Zahlungsverkehr",
+        "topic_category": "Zahlungsverkehrsrecht",
+        "topic_summary": "Der Artikel untersucht die Rechtsfolgen von Willensmängeln im Zahlungsverkehr und die Frage, ob eine Anfechtung in Betracht kommt. Ein Erklärungsmodell für die Autorisierung wird vorgestellt.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-viewonline2/3298/23878/8730/gHmWk3yd/ORWcyb4VBB/1",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701f9f74ee16f",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter behandelt die Pillar Two Compliance-Lifecycle und die Aktivrente 2026, mit Fokus auf Compliance-Readiness und steuerliche Arbeitsanreize.",
+      "email_date": "2026-02-18T09:40:45.000Z",
+      "topics": {
+        "topic_name": "Pillar Two Compliance-Lifecycle",
+        "topic_category": "Unternehmensrecht",
+        "topic_summary": "Der Pillar Two Compliance-Lifecycle ist ein pragmatischer Projektansatz, der Unternehmensgruppen von der Rückstellungsbildung im Konzernabschluss bis zur Abgabe der finalen Mindeststeuererklärung begleitet. Die Autoren analysieren die Anforderungen an den Mindeststeuerbericht sowie die notwendigen Governance-Strukturen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701f9f74ee16f",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@otto-schmidt.de",
+      "summary_general": "Der Newsletter behandelt die Pillar Two Compliance-Lifecycle und die Aktivrente 2026, mit Fokus auf Compliance-Readiness und steuerliche Arbeitsanreize.",
+      "email_date": "2026-02-18T09:40:45.000Z",
+      "topics": {
+        "topic_name": "Aktivrente 2026",
+        "topic_category": "Unternehmensrecht",
+        "topic_summary": "Dr. Sascha Schewiola und Laura Soltysiak behandeln die wichtigsten Fragen zur Aktivrente sowie Hintergründe und Auswirkungen auf die Arbeitswelt. Der BMF hat einen FAQ-Katalog zur Aktivrente veröffentlicht.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701e5719e818d",
+      "email_typ_is_newsletter": true,
+      "sender": "cfm@mediate.de",
+      "summary_general": "Newsletter über den Zulauf auf private Schlichtungs- und Ombudsstellen mit Diskussionen über die Nutzung von Künstlicher Intelligenz und Beiträgen zu Konfliktbearbeitung und mediativer Durchlässigkeit.",
+      "email_date": "2026-02-18T09:39:21.000Z",
+      "topics": {
+        "topic_name": "Zulauf auf Schlichtungs- und Ombudsstellen",
+        "topic_category": "Schlichtung und Mediation",
+        "topic_summary": "Die Schlichtungsstelle der Rechtsanwaltschaft meldet 50 Prozent mehr Anträge, bei der Versicherungsombudsfrau liegt der Anstieg bei 35 Prozent - rund 7.500 zusätzliche Fälle.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701e5719e818d",
+      "email_typ_is_newsletter": true,
+      "sender": "cfm@mediate.de",
+      "summary_general": "Newsletter über den Zulauf auf private Schlichtungs- und Ombudsstellen mit Diskussionen über die Nutzung von Künstlicher Intelligenz und Beiträgen zu Konfliktbearbeitung und mediativer Durchlässigkeit.",
+      "email_date": "2026-02-18T09:39:21.000Z",
+      "topics": {
+        "topic_name": "Nutzung von Künstlicher Intelligenz",
+        "topic_category": "Künstliche Intelligenz",
+        "topic_summary": "Diskussion darüber, ob der Einsatz von Künstlicher Intelligenz den Zugang zur außergerichtlichen Streitbeilegung erleichtert hat.",
+        "topic_link": "",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c701e5719e818d",
+      "email_typ_is_newsletter": true,
+      "sender": "cfm@mediate.de",
+      "summary_general": "Newsletter über den Zulauf auf private Schlichtungs- und Ombudsstellen mit Diskussionen über die Nutzung von Künstlicher Intelligenz und Beiträgen zu Konfliktbearbeitung und mediativer Durchlässigkeit.",
+      "email_date": "2026-02-18T09:39:21.000Z",
+      "topics": {
+        "topic_name": "Konfliktbearbeitung durch Deliberation",
+        "topic_category": "Konfliktbearbeitung",
+        "topic_summary": "Prof. Dr. Gesine Schwan und Laura Gerards Iglesias erläutern, wie sich Konflikte konstruktiv bearbeiten lassen und Bürgerinnen und Bürger stärker in Entscheidungsprozesse eingebunden werden können.",
+        "topic_link": "hier geht's zum vergünstigten Start-Abo",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701e5719e818d",
+      "email_typ_is_newsletter": true,
+      "sender": "cfm@mediate.de",
+      "summary_general": "Newsletter über den Zulauf auf private Schlichtungs- und Ombudsstellen mit Diskussionen über die Nutzung von Künstlicher Intelligenz und Beiträgen zu Konfliktbearbeitung und mediativer Durchlässigkeit.",
+      "email_date": "2026-02-18T09:39:21.000Z",
+      "topics": {
+        "topic_name": "Mediativer Durchlässigkeit",
+        "topic_category": "Mediation",
+        "topic_summary": "Dr. Hemma Mayrhofer erläutert, warum sich die österreichische Richterschaft mehr mediativer Durchlässigkeit wünscht und weshalb die Anwaltschaft der Mediation skeptisch bleibt.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c701e5719e818d",
+      "email_typ_is_newsletter": true,
+      "sender": "cfm@mediate.de",
+      "summary_general": "Newsletter über den Zulauf auf private Schlichtungs- und Ombudsstellen mit Diskussionen über die Nutzung von Künstlicher Intelligenz und Beiträgen zu Konfliktbearbeitung und mediativer Durchlässigkeit.",
+      "email_date": "2026-02-18T09:39:21.000Z",
+      "topics": {
+        "topic_name": "Webinar \"Vom Entscheider zum Gestalter\"",
+        "topic_category": "Webinar",
+        "topic_summary": "Ein Webinar mit Stefan Kessen über die Rolle von Entscheider zu Gestalter.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6ffc0c5daa728",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Der Newsletter informiert über die Vorteile von Dienstradleasing und bietet Zugang zu einem kostenlosen Online-Event mit Praxiserfahrungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Dienstradleasing",
+        "topic_category": "Personal",
+        "topic_summary": "Dienstradleasing wird als beliebter Benefit in Deutschland vorgestellt. Es wird erklärt, wie es zum Unternehmen passt, der Aufwand und der Mehrwert. Ein kostenfreies Online-Event mit Praxiserfahrungen wird empfohlen.",
+        "topic_link": "https://redaktion.haufe.de/d?l00txrsy0nimck00d0000000000000000znvyr62txcs5fdfj6ztmxty000edo00b000000h5wf6s2&params=FS0iNaLGsM2BEpAyY02BSmrE6hlhpUoitA%2FCWqS9HnikEzNi3iUUXIfmMtcoxIUT7KxYn9Mf4WSQxAhr8%2B6wOBEnwY9amzGXKfHZoA3BuX3atnX6wFU5UF2aguBvjTbC",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6fdfa327efe8c",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "RAW Summit – Future of Automotive Law",
+        "topic_category": "Produkthaftung, Innovation, Data Act",
+        "topic_summary": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche. Die Veranstaltung deckt Themen wie die Umsetzung der neuen Produkthaftungsrichtlinie, den Data Act, Aftersales, Innovationsfinanzierung, EU-Umweltstrafrechtsrichtlinie und transatlantisches Vakuum ab.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjcwOGM5NDBiLTFlYzYtNGNjMy04NmIzLWEzMWE0OTA3OThkYSIsImRla1ZlcnNpb24iOjEsIml2IjoiNmp2cUxZUjc4eEJKWTJnY1hvSWRTUT09IiwiY2lwaGVyVGV4dCI6IktRbkZtZithdnc0WVpzY1JiRGsxUnFxbG82RUlvY2RmZDM0YzFtc3phaTVXSkpvWGVEQklOaTh6THppQ3hweUhkTnpMcGw5UDRjNUNkZHRUV3diRWJjcmFOREdBaU9vNzZpMkVlL01RU1dOb0hGNkNIVWs9IiwiYXV0aFRhZyI6IjRjNUNkZHRUV3diRWJjcmFOREdBaUE9PSJ9",
+        "matched_courses": [
+          "Produkthaftung",
+          "Innovation",
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c6fdfa327efe8c",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Rechtsprechungsreport 2026",
+        "topic_category": "Rechtsprechung",
+        "topic_summary": "Recht & Wirtschaft Fachkonferenzen und Graf von Westphalen (GvW) stellen vom 12. Januar bis 27. Februar 2026 eine Webinarreihe zur Rechtsprechung des letzten Jahres bereit.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjExZTlmM2EyLTBjZWQtNGU1ZC1iOTk4LTMzMTA5MDg4MDdmYSIsImRla1ZlcnNpb24iOjEsIml2IjoiYmp4RTh1UURnS2ZmYW1aSU1ubzE0UT09IiwiY2lwaGVyVGV4dCI6ImI0WjYxWmU4cnNiK0lXUUZqTzdWMWp4bE9XTHVPSWhnVjZweHh2Zmx3cW5Pd3k1bDJaalYydXZBMTM3MkRYK1Nzc3pxWVFPR29YQ1VTR251K2FXbERqSlkxQnVSNEc0OFJQTGtBNENuMzJwbVNESjZOZUU9IiwiYXV0aFRhZyI6Im9YQ1VTR251K2FXbERqSlkxQnVSNEE9PSJ9",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6fdfa327efe8c",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Fachtagung „Cyber-Angriff",
+        "topic_category": "Cyber-Angriff",
+        "topic_summary": "Die Fachtagung „Cyber-Angriff",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImQ1OWI1OWJlLTgzMzItNGM0ZC04NDA5LTMwYjA1OTVhOGQxNiIsImRla1ZlcnNpb24iOjEsIml2IjoiV1dMQTEyenFJL0tzRGE1WGhWOUF1UT09IiwiY2lwaGVyVGV4dCI6IklINGFyNGVZdG9mclZaanZ0NVJPMGtIOHJlVGlxTVFTYU1KOENsMnJPc3VzcE1sMWNYUit2OENFK05FRjNZV1lSVVRhZ1BMQ0hHU2wzd1RnUUVrRE9rRDFrd090TmxsaXdOZHM2aVB5ckEydVY0VmZRTGs9IiwiYXV0aFRhZyI6IkhHU2wzd1RnUUVrRE9rRDFrd090Tmc9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c6fdfa327efe8c",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Munchner Data-Litigation Forum",
+        "topic_category": "Data-Litigation",
+        "topic_summary": "Das Munchner Data-Litigation-Forum am 11. Juni 2026 in München behandelt streitige Fragen des Datenrechts, einschließlich Betroffenenrechte, Schadensersatz, Massenverfahren und Zivilgerichte.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjM4NDg0YTI4LTQ1MmItNGY1Ni1hMzhhLWJlNzFkYTUxY2U4NiIsImRla1ZlcnNpb24iOjEsIml2IjoiYzREaWlvem5iT21FS2RZSXU0VVdIdz09IiwiY2lwaGVyVGV4dCI6InM2WmVSQWxPaUk5TlBpeVpVRExmN3NESStxYWJKMDBybmxJZGlFWnA1ZmdIU2FRZ1lsdC8welJuNjBlbzNvYTkyUVRUVE9mWjc4OFhGVGR3c3F1Zk1Wd0QvY2Y4bFhPQTRvcU01MnpwaENuV0NMdUZGaDg9IiwiYXV0aFRhZyI6Ijc4OFhGVGR3c3F1Zk1Wd0QvY2Y4bFE9PSJ9",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c6fdfa327efe8c",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Der RAW Summit – Future of Automotive Law findet am 16. April 2026 in Frankfurt am Main statt und bietet einen Austausch über rechtliche und strategische Herausforderungen in der Automobilbranche.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "CYBER//RESILIENT – Cyber-Security Anforderungen in der Produkt Compliance",
+        "topic_category": "Cyber-Security",
+        "topic_summary": "Die Konferenz CYBER//RESILIENT am 16. Juni 2026 in Frankfurt am Main beleuchtet Cyber-Security-Vorgaben und Anforderungen in der Produkt-Compliance.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjM1NDlmMTQ5LTc3YTgtNDUyMS1hZmY0LTk5NmE3Y2NkOTg2ZiIsImRla1ZlcnNpb24iOjEsIml2IjoiODR4d04zU0p2aVlhZ3BTbGVjcGtxUT09IiwiY2lwaGVyVGV4dCI6IjhEZVJQeXBFbk1PdnQxTk1Xa0ZISWVkQ0lLNmcwRnFLOTRYK2xXaUdZd0J2YVlVbkdXRFRjeVoyK1lydllQTkJOV3NTMHU3K1kxa2kzbFhZcnZTWGFwR2FXUllRN3ZPTWNEZDBpYjRtR29LVXBYbktaS2s9IiwiYXV0aFRhZyI6Ilkxa2kzbFhZcnZTWGFwR2FXUllRN2c9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Aktuelles Steuerrecht 2026",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Im Webinar Aktuelles Steuerrecht 2026 erhalten Sie einen kompakten Überblick zu den jüngsten Entwicklungen im Steuerrecht. Neuerungen werden kurz und prägnant besprochen – das schafft ein Problembewusstsein sowie die Möglichkeit, Lösungsansätze zu erarbeiten.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/156/146/7896/gHmWk3yd/RGvXiCWqta/0/b3LXekgFnQ8Md5us_lmvbrgTPN4ElRPdjZf494Ztz7M",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Digital-Dialog Grunderwerbsteuer",
+        "topic_category": "Grunderwerbsteuer",
+        "topic_summary": "Am 29. April werden im Digital-Dialog Grunderwerbsteuer die wesentlichen Neuerungen im Grunderwerbsteuerrecht durch Gesetzgeber, Rechtsprechung und Finanzverwaltung systematisch, fallorientiert und verständlich aufbereitet. Diskutieren Sie in dieser Veranstaltung interaktiv mit Experten aus der Finanzverwaltung und der Beratung!",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/6/148/7896/gHmWk3yd/RGvXiCWqta/0/Js6sLVHkyDRM84gZFwNMRJb3XQ0Bsu9N_H94SuBM6z4",
+        "matched_courses": [
+          "Grunderwerbsteuer"
+        ]
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Update Familienunternehmen",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "In dem Webinar Update Familienunternehmen werden am 11. Juni aktuelle rechtliche und steuerliche Entwicklungen in den Blick genommen, die für Familienunternehmen und ihre Gesellschafter relevant sind. Themen sind u.a. Publizitätspflichten und was bei der Nachfolgeplanung zu beachten ist.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/158/150/7896/gHmWk3yd/RGvXiCWqta/0/bSNvPjoBwCHb0JraCM24ybhiWKwJUX4698vNr4Y0yd8",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "RÖDL Steuerkonferenz 2026",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Die hochrangig besetzte RÖDL Steuerkonferenz 2026 bietet spannende Vorträge zu aktuellen Brennpunkten aus dem Bereich Internationales Steuerrecht/Ertragsteuern. Seien Sie am 29. April 2026 in Nürnberg (kostenfrei) dabei.",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/10/152/7896/gHmWk3yd/RGvXiCWqta/0/33Yk2L1ZhOV3neQY_FB8p0yYc-awpR1-RnrLTcPzZZ8",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Verschmelzung und Spaltung von GmbHs",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Teil 1 (13.04., 15-17:45 Uhr): Verschmelzung und Spaltung von GmbHs",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/160/154/7896/gHmWk3yd/RGvXiCWqta/0/EDBUprCWmllDcTI7n9eZatAaNdZp7hGv8hLmtR-USEQ",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Gestaltungssichere Umwandlung einer GmbH in eine Personengesellschaft",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Teil 2 (14.04., 15-17:45 Uhr): Gestaltungssichere Umwandlung einer GmbH in eine Personengesellschaft",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/162/156/7896/gHmWk3yd/RGvXiCWqta/0/-d5uKR08EFQYaUkT7neCREWjZ5xSFaqyOWWHr-0E4lU",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Umwandlung eines Einzelunternehmens in eine GmbH",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Teil 3 (21.04., 15-17:45 Uhr): Umwandlung eines Einzelunternehmens in eine GmbH",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/164/158/7896/gHmWk3yd/RGvXiCWqta/0/ADD_VzsMdGTbKuH9AxjPtup4ZiojBI5UrIFrr0JLvKY",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Realteilung und Spaltung von mittelständischen Personengesellschaften",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Teil 4 (27.04., 15-17:45 Uhr): Realteilung und Spaltung von mittelständischen Personengesellschaften",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/166/160/7896/gHmWk3yd/RGvXiCWqta/0/hA6U46H_UzgrKPaQMgTrnV9t4_-skd23EW_PszVO0ak",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f7f59947970d",
+      "email_typ_is_newsletter": true,
+      "sender": "fachinfo@otto-schmidt.de",
+      "summary_general": "Die E-Mail bietet einen Überblick über verschiedene Veranstaltungen und Webinare im Bereich Steuerrecht, die von Otto Schmidt Live angeboten werden, einschließlich der RÖDL Steuerkonferenz 2026 und einer 5-teiligen Webinar-Reihe zu Unternehmensumwandlungen.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Steuerneutrale Übertragungen auf Personengesellschaften",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Teil 5 (08.05., 10-12:45 Uhr): Steuerneutrale Übertragungen auf Personengesellschaften",
+        "topic_link": "https://aktionen.otto-schmidt.de/-link3/3298/23838/168/162/7896/gHmWk3yd/RGvXiCWqta/0/lCy2FtVf-lK4k4E2DgIBV8qGqKDVyq3yrJr1Hj_3s6E",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Mietpreisbremse",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Die Verlängerung der Mietpreisbremse im Jahr 2020 um weitere fünf Jahre verstieß nicht gegen das Grundgesetz. Das hat eine Kammer des Bundesverfassungsgerichts mit nun veröffentlichtem Beschluss bereits Anfang Januar entschieden.",
+        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-18-02-2026-mietpreisbremse-bverfg-toetung-liebeszelle-bayer-vergleich?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Tod in der Liebeszelle",
+        "topic_category": "Betrug",
+        "topic_summary": "Das Landgericht Stendal hat einen verurteilten Betrüger wegen Totschlags zu zehn Jahren Haft verurteilt. Der Angeklagte hatte seine Ehefrau im vergangenen Jahr in einem Langzeitbesuchsraum – der sogenannten Liebeszelle – der JVA Burg erwürgt.",
+        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-18-02-2026-mietpreisbremse-bverfg-toetung-liebeszelle-bayer-vergleich?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Bayer vor Vergleich in den USA",
+        "topic_category": "Umwelt",
+        "topic_summary": "Bayer steht vor einer Lösung seines Glyphosatproblems. Der Bayer-Konzern steht in den USA vor der Beendigung der gerichtlichen Auseinandersetzungen über Schadensersatzforderungen wegen des glyphosathaltigen Pflanzenschutzmittels RoundUp.",
+        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-18-02-2026-mietpreisbremse-bverfg-toetung-liebeszelle-bayer-vergleich?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Einschüchterungsklagen",
+        "topic_category": "Korruption",
+        "topic_summary": "Felix W. Zimmermann begrüßt, dass sich der im Dezember beschlossene Gesetzentwurf der Bundesregierung zur Umsetzung der EU-Anti-SLAPP-Richtlinie auf Fälle mit grenzüberschreitendem Bezug beschränkt, weil die Regeln ohnehin zum Schutz von Journalist:innen und Bürger:innen ungeeignet seien.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Durchsuchung von Kanzleiräumen",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Aus Anlass der Ende Januar von Deutschland unterzeichneten Konvention zum Schutz des Anwaltsberufs bereitet das Justizministerium eine Änderung der Strafprozessordnung vor, wonach Betroffene bei der Durchsuchung von Kanzleiräumen das Recht haben sollen, anwaltliche Durchsuchungszeugen zuziehen zu können.",
+        "topic_link": "https://www.lto.de/recht/justiz/j/durchsuchung-rechtsanwalts-kanzleien-rechtswidrig-trotz-klarer-rechtslage-bverfg?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Catcalling",
+        "topic_category": "Sexuelle Belästigung",
+        "topic_summary": "Der ARD-RadioReportRecht befasst sich mit der Forderung, verbale sexuelle Belästigungen (das sogenannte Catcalling) unter Strafe zu stellen.",
+        "topic_link": "https://www.swr.de/swraktuell-radio/rrr-sollte-catcalling-strafbar-sein-100.pdf?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Sexuelle Belästigung"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Jugendschutz in sozialen Netzwerken",
+        "topic_category": "Diversity",
+        "topic_summary": "In einem Kommentar begrüßt Susanne Kusicke die Idee, Kinder und jüngere Jugendliche von der Teilnahme an sozialen Netzwerken auszuschließen.",
+        "topic_link": "",
+        "matched_courses": [
+          "Diversity"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Compliance in Unternehmen",
+        "topic_category": "Digital Operational Resilience Act (DORA)",
+        "topic_summary": "Mit dem jüngst in Kraft getretenen Digital Operational Resilience Act der EU sind die Unternehmen auferlegten Compliance-Regeln abermals schärfer gestellt worden.",
+        "topic_link": "https://www.lto.de/recht/kanzleien-unternehmen/k/compliance-dora-resilienz-als-neue-fuehrungsaufgabe?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Digital Operational Resilience Act (DORA)"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "LG Stendal zu Tod in Liebeszelle",
+        "topic_category": "Betrug",
+        "topic_summary": "Das Landgericht Stendal hat einen verurteilten Betrüger wegen Totschlags zu zehn Jahren Haft verurteilt.",
+        "topic_link": "",
+        "matched_courses": [
+          "Betrug"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "BVerfG - BSW-Wahlprüfung",
+        "topic_category": "Umwelt",
+        "topic_summary": "Das Bündnis Sahra Wagenknecht hat wie angekündigt Wahlprüfungsbeschwerde gegen die Bundestagswahl eingelegt.",
+        "topic_link": "https://www.zeit.de/politik/deutschland/2026-02/bsw-wahlpruefungsbeschwerde-bundesverfassungsgericht-eingereicht?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "BGH zu Eigenbedarfskündigung",
+        "topic_category": "Umwelt",
+        "topic_summary": "Der Bundesgerichtshof hat eine Auseinandersetzung über eine der Ex-Schwiegermutter erklärte Eigenbedarfskündigung an das zuständige Oberlandesgericht zurückverwiesen.",
+        "topic_link": "https://rsw.beck.de/aktuell/daily/meldung/detail/bgh-xiizb14225-eigenbedarfskuendigung-schwiegermutter-trennung-olg-entscheidung?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "OLG Dresden – Sächsische Separatisten",
+        "topic_category": "Umwelt",
+        "topic_summary": "Die am Oberlandesgericht Dresden u.a. wegen Vorbereitung eines hochverräterischen Unternehmens angeklagten Sächsischen Separatisten weisen enge persönliche Verbindungen nach Österreich auf.",
+        "topic_link": "",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "LG Frankfurt/O. zu Hitlergruß auf Wahlplakat",
+        "topic_category": "Umwelt",
+        "topic_summary": "Das Landgericht Frankfurt/O. hat den brandenburgischen Landtagsabgeordneten Wilko Möller (AfD) wegen des Verwendens von Kennzeichen verfassungsfeindlicher Organisationen zu einer Geldstrafe verurteilt.",
+        "topic_link": "https://rsw.beck.de/aktuell/daily/meldung/detail/lg-frankfurt-oder-hitlergruss-wahlplakat-afd-politiker-strafe-prozess-brandenburg-wilko-moeller?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "LG München I zu Mordversuch an Ehefrau",
+        "topic_category": "Umwelt",
+        "topic_summary": "Ein 34-Jähriger wurde vom Landgericht München I wegen versuchten Mordes zu einer lebenslangen Haftstrafe verurteilt.",
+        "topic_link": "https://www.faz.net/aktuell/gesellschaft/kriminalitaet/muenchen-lebenslange-haft-fuer-brutalen-mordversuch-an-ehefrau-110838911.html?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "LG Karlsruhe – dm-med",
+        "topic_category": "Umwelt",
+        "topic_summary": "Am Landgericht Karlsruhe nimmt die Wettbewerbszentrale die Onlineapotheke dm-med wegen Verstößen gegen Vorgaben des Arzneimittel- sowie des Apothekenrechts in Anspruch.",
+        "topic_link": "",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "ArbG Frankfurt/O. – Tesla",
+        "topic_category": "Umwelt",
+        "topic_summary": "Am Arbeitsgericht Frankfurt/O. beantragte die IG Metall eine einstweilige Verfügung gegen den Tesla-Standortleiter in Grünheide, um dem Manager unzutreffende Aussagen untersagen zu lassen.",
+        "topic_link": "https://www.sueddeutsche.de/wirtschaft/strafanzeige-tesla-chef-gruenheide-ig-metall-tesla-li.3389321?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "KG Berlin zu fehlendem Verhandlungsprotokoll",
+        "topic_category": "Umwelt",
+        "topic_summary": "Das Berliner Kammergericht hat eine Kammer des Landgerichts Berlin I bereits im vergangenen Sommer mit deutlichen Worten rügte, weil ein Protokoll nicht rechtzeitig fertiggestellt worden war.",
+        "topic_link": "https://rsw.beck.de/aktuell/daily/meldung/detail/kg-1ws18-25-berlin-justiz-skandal-unterbringung-urteil-protokoll?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "USA – Bayer",
+        "topic_category": "Umwelt",
+        "topic_summary": "Der Bayer-Konzern steht in den USA vor der Beendigung der gerichtlichen Auseinandersetzungen über Schadensersatzforderungen wegen des glyphosathaltigen Pflanzenschutzmittels RoundUp.",
+        "topic_link": "",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "USA – Sklaverei-Ausstellung",
+        "topic_category": "Umwelt",
+        "topic_summary": "Reymar Klüver begrüßt die in den USA ergangene Eilentscheidung, nach der zuvor entfernte Schau- und Infotafeln zum Thema Sklaverei am Ort des Hauses des ersten Präsidenten George Washington wieder anzubringen sind.",
+        "topic_link": "",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "USA – Jugendschutz in sozialen Netzwerken",
+        "topic_category": "Umwelt",
+        "topic_summary": "In Los Angeles sucht eine 19-Jährige Social-Media-Netzwerke für ihre schweren psychischen Schäden verantwortlich zu machen.",
+        "topic_link": "https://rsw.beck.de/aktuell/daily/meldung/detail/social-media-usa-sucht-tiktok-instagram-prozess-haftung-klage?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Italien – Justizreform",
+        "topic_category": "Umwelt",
+        "topic_summary": "In Italien wird am 22. und 23. März über die von Ministerpräsidentin Giorgia Meloni betriebene Justizreform plebiszitär abgestimmt.",
+        "topic_link": "https://www.faz.net/aktuell/politik/ausland/italien-volksentscheid-zur-umstrittenen-justizreform-im-maerz-110839011.html?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Uganda – Homophobie",
+        "topic_category": "Umwelt",
+        "topic_summary": "In Uganda wurde zu Beginn des Monats das erste auf Grundlage des Anti-Homosexuellen-Gesetzes in Gang gesetzte Strafverfahren eingestellt.",
+        "topic_link": "https://taz.de/!6155429/?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Völkerrecht",
+        "topic_category": "Umwelt",
+        "topic_summary": "Die Geschichte des humanitären Völkerrechts und dessen ungewisse Zukunft.",
+        "topic_link": "https://www.zdfheute.de/politik/voelkerrecht-ukraine-gaza-vereinte-nationen-100.html?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "KI in der Justiz",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "In einer Seite Drei-Reportage beschreibt die FAZ Einsatzmöglichkeiten von KI-Tools in der justiziellen Arbeit.",
+        "topic_link": "",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Einstufung der AfD Nds",
+        "topic_category": "Umwelt",
+        "topic_summary": "Die niedersächsische AfD ist vom Verfassungsschutz des Landes als gesicherte rechtsextremistische Bestrebung eingestuft worden und kann daher mit nachrichtendienstlichen Mitteln beobachtet werden.",
+        "topic_link": "https://www.faz.net/aktuell/politik/inland/afd-niedersachsen-wegen-remigration-nun-gesichert-rechtsextrem-110839126.html?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Shein",
+        "topic_category": "Umwelt",
+        "topic_summary": "Auf Grundlage des EU-Gesetzes über digitale Dienste geht die EU-Kommission gegen den chinesischen Online-Händler Shein vor.",
+        "topic_link": "https://www.lto.de/recht/nachrichten/n/kindliches-aussehen-sexpuppen-shein-untersuchung-eu-kommission-dsa?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Parken",
+        "topic_category": "Umwelt",
+        "topic_summary": "Rechtsfragen zum Thema Parken stellt und beantwortet zdf.de.",
+        "topic_link": "https://www.zdfheute.de/ratgeber/wo-ist-das-parken-verboten-halten-regelungen-100.html?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
+      }
+    },
+    {
+      "id": "19c6f72ba0009e2e",
+      "email_typ_is_newsletter": true,
+      "sender": "lto@info.wolterskluwer.com",
+      "summary_general": "Die E-Mail enthält eine Zusammenfassung der juristischen Presseschau vom 18. Februar 2026, die sich mit verschiedenen juristischen Themen und Entscheidungen in Deutschland und international beschäftigt.",
+      "email_date": "2026-02-18",
+      "topics": {
+        "topic_name": "Cheer up!",
+        "topic_category": "Umwelt",
+        "topic_summary": "Die Mutter eines texanischen Mädchens vor Gericht zog, nachdem Letztere nur Co-Kapitänin des Cheerleading-Teams ihrer Schule wurde.",
+        "topic_link": "https://rsw.beck.de/aktuell/daily/meldung/detail/cheer-constitution-vertrag-klage-schulbezirk-texas-us-gericht?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=",
+        "matched_courses": [
+          "Umwelt"
+        ]
       }
     }
   ]

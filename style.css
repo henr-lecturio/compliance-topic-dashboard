@@ -27,37 +27,46 @@ header {
   color: #f0f0f0;
 }
 
-/* Category Grid */
-#category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+/* Category Table */
+#category-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.category-card {
-  background: #1c1f2b;
-  border: 1px solid #2d3148;
-  border-radius: 10px;
-  padding: 1.5rem;
-  cursor: pointer;
-  transition: border-color 0.2s, transform 0.2s;
+#category-table-container {
+  width: 100%;
+  max-width: 600px;
 }
 
-.category-card:hover {
-  border-color: #6366f1;
-  transform: translateY(-2px);
+#category-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.category-card h2 {
-  font-size: 1.1rem;
+#category-table th {
+  text-align: left;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7080;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #2d3148;
 }
 
-.category-card .tag-count {
-  font-size: 0.85rem;
+#category-table td {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #1e2235;
+}
+
+#category-table .cat-count {
   color: #8b8fa3;
+}
+
+#category-table .cat-name {
+  color: #e1e4e8;
 }
 
 /* Chart View */
@@ -207,6 +216,18 @@ header {
 
 #email-table .email-link:hover {
   text-decoration: underline;
+}
+
+/* Clickable table rows */
+#category-table tbody tr,
+#legend-table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#category-table tbody tr:hover,
+#legend-table tbody tr:hover {
+  background: #1c1f2b;
 }
 
 /* Utility */
