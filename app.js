@@ -222,10 +222,15 @@ function showEmails(catSlug, topicName) {
   emails.forEach((email) => {
     const date = email.email_date ? email.email_date.split("T")[0] : "";
     const row = document.createElement("tr");
+    const topicLink = email.topics?.topic_link;
+    const articleCell = topicLink
+      ? `<a class="email-link" href="${topicLink}" target="_blank">Zum Artikel &rarr;</a>`
+      : `<span class="email-na">n/a</span>`;
     row.innerHTML = `
       <td class="email-sender">${email.sender || ""}</td>
       <td class="email-date">${date}</td>
       <td><a class="email-link" href="${GMAIL_BASE}${email.id}" target="_blank">Zur Mail &rarr;</a></td>
+      <td>${articleCell}</td>
     `;
     tbody.appendChild(row);
   });

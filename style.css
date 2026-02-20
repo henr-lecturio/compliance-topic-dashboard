@@ -218,6 +218,10 @@ header {
   text-decoration: underline;
 }
 
+#email-table .email-na {
+  color: #6b7080;
+}
+
 /* Clickable table rows */
 #category-table tbody tr,
 #legend-table tbody tr {
