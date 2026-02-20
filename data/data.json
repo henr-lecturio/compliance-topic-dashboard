@@ -1,213 +1,51 @@
-{
+ {
   "items": [
     {
-      "id": "demo-001",
+      "id": "19c7a4721174c6f4",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 1",
-      "email_date": "2026-02-19",
+      "sender": "newsletter@newsletter.meinrecht.de",
+      "summary_general": "Der Newsletter enthält Informationen über das Recht auf Teilzeit, die Aktivrente und Änderungen im März.",
+      "email_date": "2026-02-20T09:00:06.000Z",
       "topics": {
-        "topic_name": "Aktuelle kartellrechtliche Fragen",
-        "topic_category": "Kartellrecht",
-        "topic_summary": "Ein Vortrag zu kartellrechtlichen Fragen.",
+        "topic_name": "Recht auf Teilzeit",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Der Artikel erklärt, wann Arbeitnehmer ein Recht auf Teilzeit haben und welche Gründe für Teilzeit möglich sind. Es wird auch darauf eingegangen, wann Arbeitgeber den Antrag ablehnen dürfen.",
         "topic_link": "",
-        "matched_courses": ["Kartellrecht"]
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
       }
     },
     {
-      "id": "demo-002",
+      "id": "19c7a4721174c6f4",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 1",
-      "email_date": "2026-02-19",
+      "sender": "newsletter@newsletter.meinrecht.de",
+      "summary_general": "Der Newsletter enthält Informationen über das Recht auf Teilzeit, die Aktivrente und Änderungen im März.",
+      "email_date": "2026-02-20T09:00:06.000Z",
       "topics": {
-        "topic_name": "Werbung mit Selbstverstaendlichkeiten",
-        "topic_category": "Unlauterer Wettbewerb",
-        "topic_summary": "Diskussion ueber Werbung.",
+        "topic_name": "Aktivrente",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Der Artikel erklärt, wie Rentnerinnen und Rentner mit der Aktivrente bis zu 2.000 Euro Arbeitslohn monatlich steuerfrei dazuverdienen können. Es werden auch die Voraussetzungen dafür genannt.",
         "topic_link": "",
-        "matched_courses": ["Unlauterer Wettbewerb"]
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
       }
     },
     {
-      "id": "demo-003",
+      "id": "19c7a4721174c6f4",
       "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 2",
-      "email_date": "2026-02-19",
+      "sender": "newsletter@newsletter.meinrecht.de",
+      "summary_general": "Der Newsletter enthält Informationen über das Recht auf Teilzeit, die Aktivrente und Änderungen im März.",
+      "email_date": "2026-02-20T09:00:06.000Z",
       "topics": {
-        "topic_name": "KI in der Personalentwicklung",
-        "topic_category": "Technologie",
-        "topic_summary": "Podcast ueber KI.",
+        "topic_name": "Änderungen im März",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Der Artikel fasst die wichtigsten Neuerungen im März 2026 zusammen, darunter Änderungen bei Mofas, E-Scootern und Roller, Landtagswahlen in zwei Bundesländern und ein neues Lagersystem bei Amazon.",
         "topic_link": "",
-        "matched_courses": ["KI Anwendungen im Unternehmen"]
-      }
-    },
-    {
-      "id": "demo-004",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Videoueberwachung von Mitarbeitern",
-        "topic_category": "Recht",
-        "topic_summary": "Schadensersatz bei Videoueberwachung.",
-        "topic_link": "",
-        "matched_courses": ["Arbeitsschutz", "Datenschutz"]
-      }
-    },
-    {
-      "id": "demo-005",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Urheberrecht an KI-Logos",
-        "topic_category": "Urheberrecht",
-        "topic_summary": "KI-Logos ohne Urheberrechtsschutz.",
-        "topic_link": "",
-        "matched_courses": ["Urheberrecht"]
-      }
-    },
-    {
-      "id": "demo-006",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Bayer und Glyphosat-Klagen",
-        "topic_category": "Unternehmensrecht",
-        "topic_summary": "Milliardenvergleich.",
-        "topic_link": "",
-        "matched_courses": ["Produkthaftung"]
-      }
-    },
-    {
-      "id": "demo-007",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 3",
-      "email_date": "2026-02-19",
-      "topics": {
-        "topic_name": "Rassismus in Behoerden",
-        "topic_category": "Recht",
-        "topic_summary": "Studie zu Rassismus.",
-        "topic_link": "",
-        "matched_courses": ["Diversity"]
-      }
-    },
-    {
-      "id": "demo-008",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Datenschutz bei Verschlusssachen",
-        "topic_category": "Internationales Recht",
-        "topic_summary": "Deutsch-indisches Abkommen.",
-        "topic_link": "",
-        "matched_courses": ["Datenschutz", "Informationssicherheit"]
-      }
-    },
-    {
-      "id": "demo-009",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Zuckerberg sagt in Prozess aus",
-        "topic_category": "Technologie",
-        "topic_summary": "Social-Media-Sucht Klage.",
-        "topic_link": "",
-        "matched_courses": ["KI Anwendungen im Unternehmen"]
-      }
-    },
-    {
-      "id": "demo-010",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Gemeinsames Beten als Versammlung",
-        "topic_category": "Religion",
-        "topic_summary": "Versammlungsfreiheit.",
-        "topic_link": "",
-        "matched_courses": ["Diversity", "Unconscious Bias"]
-      }
-    },
-    {
-      "id": "demo-011",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 4",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Glyphosat ESG-Auswirkungen",
-        "topic_category": "Wirtschaft",
-        "topic_summary": "ESG und Produkthaftung.",
-        "topic_link": "",
-        "matched_courses": ["Environmental Social Governance (ESG)", "Produkthaftung"]
-      }
-    },
-    {
-      "id": "demo-012",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Exportkontrolle Haager Uebereinkommen",
-        "topic_category": "Internationales Recht",
-        "topic_summary": "Legalisation.",
-        "topic_link": "",
-        "matched_courses": ["Exportkontrolle"]
-      }
-    },
-    {
-      "id": "demo-013",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "TIR-Uebereinkommen",
-        "topic_category": "Internationales Recht",
-        "topic_summary": "TIR 1975.",
-        "topic_link": "",
-        "matched_courses": ["Exportkontrolle"]
-      }
-    },
-    {
-      "id": "demo-014",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Tesla Kaufvertrag Bestellbutton",
-        "topic_category": "Recht",
-        "topic_summary": "Widerrufsrecht bei Online-Kauf.",
-        "topic_link": "",
-        "matched_courses": ["Widerrufsrecht"]
-      }
-    },
-    {
-      "id": "demo-015",
-      "email_typ_is_newsletter": true,
-      "sender": "demo@example.com",
-      "summary_general": "Demo Newsletter 5",
-      "email_date": "2026-02-18",
-      "topics": {
-        "topic_name": "Logistik von Lebensmitteln",
-        "topic_category": "Lebensmittelrecht",
-        "topic_summary": "Transportrecht und Lebensmittelrecht.",
-        "topic_link": "",
-        "matched_courses": ["Hygiene und Sicherheit im Lebensmittelbereich"]
+        "matched_courses": [
+          "Allgemeine Gleichbehandlungsgesetz"
+        ]
       }
     }
   ]
