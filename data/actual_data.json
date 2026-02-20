@@ -1,87 +1,1074 @@
  {
   "items": [
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c7a32635c06cdf",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "ayhan.simsek@mc.ruw.de",
+      "summary_general": "Der Expert-Talk am 15. April befasst sich mit Investitionen von Investmentfonds in Energienetze, PV-Anlagen, Elektromobilität und Speicher, wobei das StoFoG steuerliche Hemmnisse beseitigt.",
+      "email_date": "2026-02-20",
       "topics": {
-        "topic_name": "Festnahme von Andrew Mountbatten-Windsor",
+        "topic_name": "Investitionen von Investmentfonds in Energienetze, PV-Anlagen, Elektromobilität und Speicher",
+        "topic_category": "Energiewende",
+        "topic_summary": "Das StoFoG beseitigt steuerliche Hemmnisse, sodass Investmentfonds in Energienetze, PV-Anlagen, Elektromobilität und Speicher investieren können. Dadurch erhalten Stadtwerke und Projektentwickler besseren Zugang zum Kapitalmarkt und können Investitionen in Energieinfrastruktur, Erneuerbare Energien und Elektromobilität mobilisieren.",
+        "topic_link": "https://www.ruw-fachkonferenzen.de/veranstaltung/finanzierung-der-energiewende/",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7a2ccec4b9486",
+      "email_typ_is_newsletter": true,
+      "sender": "sozialwesen@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Sozialwesen, darunter Betriebsprüfungen in Privathaushalten, Bürgergeld für Studierende, die elektronische Patientenakte, die steuerfreie Aktivrente ab 2026 und die Produktivität im Homeoffice.",
+      "email_date": "2026-02-20",
+      "topics": {
+        "topic_name": "Betriebsprüfungen in Privathaushalten",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Betriebsprüfungen in Privathaushalten sind nach wie vor umstritten. Gerichte bestätigen ein Verbot solcher Prüfungen, da Privathaushalte einen besonderen Schutz genießen. Dennoch sorgen unklare Zuständigkeiten weiterhin für Unsicherheit.",
+        "topic_link": "https://www.haufe.de/sozialwesen/versicherungen-beitraege/betriebspruefungen-in-privathaushalten_240_675302.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c7a2ccec4b9486",
+      "email_typ_is_newsletter": true,
+      "sender": "sozialwesen@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Sozialwesen, darunter Betriebsprüfungen in Privathaushalten, Bürgergeld für Studierende, die elektronische Patientenakte, die steuerfreie Aktivrente ab 2026 und die Produktivität im Homeoffice.",
+      "email_date": "2026-02-20",
+      "topics": {
+        "topic_name": "Kein Bürgergeld für Studierende",
+        "topic_category": "Sozialversicherung",
+        "topic_summary": "Studierende haben laut einer Entscheidung des LSG Niedersachsen-Bremen keinen Anspruch auf Bürgergeld, selbst wenn sie ihr Studium nicht aktiv betreiben. Im konkreten Fall musste ein Mann aus Münster die Leistungen jedoch nicht zurückzahlen, da die Behörde ihn nicht ausreichend über seine Mitteilungspflichten informiert hatte.",
+        "topic_link": "https://www.haufe.de/sozialwesen/sgb-recht-kommunal/haben-studierende-anspruch-auf-buergergeld_238_675904.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7a2ccec4b9486",
+      "email_typ_is_newsletter": true,
+      "sender": "sozialwesen@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Sozialwesen, darunter Betriebsprüfungen in Privathaushalten, Bürgergeld für Studierende, die elektronische Patientenakte, die steuerfreie Aktivrente ab 2026 und die Produktivität im Homeoffice.",
+      "email_date": "2026-02-20",
+      "topics": {
+        "topic_name": "Elektronische Patientenakte bleibt hinter Erwartungen zurück",
+        "topic_category": "Gesundheitsversorgung",
+        "topic_summary": "Trotz Einführung der elektronischen Patientenakte für Millionen Versicherte fehlt es an aktiver Nutzung. Kritik gibt es an fehlenden Funktionen und mangelnder Alltagstauglichkeit. Verbraucherschützer und Ärzte fordern Verbesserungen, während die Politik Weiterentwicklungen plant, um die Akzeptanz zu steigern.",
+        "topic_link": "https://www.haufe.de/sozialwesen/leistungen-sozialversicherung/elektronische-patientenakte_242_474764.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7a2ccec4b9486",
+      "email_typ_is_newsletter": true,
+      "sender": "sozialwesen@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Sozialwesen, darunter Betriebsprüfungen in Privathaushalten, Bürgergeld für Studierende, die elektronische Patientenakte, die steuerfreie Aktivrente ab 2026 und die Produktivität im Homeoffice.",
+      "email_date": "2026-02-20",
+      "topics": {
+        "topic_name": "FAQ zur steuerfreien Aktivrente ab 2026",
+        "topic_category": "Versicherungen und Beiträge",
+        "topic_summary": "Mit der steuerfreien Aktivrente werden ab 2026 finanzielle Anreize für mehr Erwerbstätigkeit im Alter gewährt. Wer die Regelaltersgrenze erreicht hat und sozialversicherungspflichtig beschäftigt ist, erhält den Arbeitslohn bis zu 2.000 Euro im Monat steuerfrei.",
+        "topic_link": "https://www.haufe.de/sozialwesen/versicherungen-beitraege/aenderungen-fuer-beschaeftigte-rentner-geplant_240_676652.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7a2ccec4b9486",
+      "email_typ_is_newsletter": true,
+      "sender": "sozialwesen@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt verschiedene Themen im Bereich Sozialwesen, darunter Betriebsprüfungen in Privathaushalten, Bürgergeld für Studierende, die elektronische Patientenakte, die steuerfreie Aktivrente ab 2026 und die Produktivität im Homeoffice.",
+      "email_date": "2026-02-20",
+      "topics": {
+        "topic_name": "Homeoffice steigert Produktivität – aber nur bis zu einem Kipppunkt",
+        "topic_category": "Arbeitsumfeld",
+        "topic_summary": "Eine Studie zur Produktivität im Homeoffice zeigt: Die Arbeit zuhause ist tatsächlich produktiver als im Büro. Ermittelt wurde allerdings auch ein bestimmter Kipppunkt, ab dem die Produktivität wieder sinkt, wenn zu viel Zeit im Homeoffice und ohne Austausch in Präsenz verbracht wird.",
+        "topic_link": "https://www.haufe.de/sozialwesen/sgb-recht-kommunal/homeoffice-steigert-produktivitaet-nur-bis-zum-kipppunkt_238_675364.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7a2c6c5f33360",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Das Webinar \"3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen\" zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint.",
+      "email_date": "2026-02-20T08:30:56.000Z",
+      "topics": {
+        "topic_name": "3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Das kostenlose Webinar am 26. März von 10-11 Uhr zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint. Es wird erklärt, wie man Lösch- und Aufbewahrfristen sicher einhält, Daten minimiert und auditfähig bleibt, sowie wie man die IT-Sicherheit und Effizienz im Unternehmen deutlich erhöht.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImY5MDBlNzFjLThlZDgtNDQzNC04ZmJmLTcwZjM1OGU5ZGE2OCIsImRla1ZlcnNpb24iOjEsIml2IjoiMlFROW9DZ21qeWJZa20wVFYzUkNEQT09IiwiY2lwaGVyVGV4dCI6Ii8yK1ZwdHRxVytSMnJuSEVKQXIrRklhYWhHZzJkbXBxOGhWZXVMakN5QlZUUUVUSEczL3pSRktCYXRxSVJDak8yME94bGRkbllpcDd0RXhZMFE5QU02TThDMVptU3NuWkJEMmdLQ2FQSnRpU2JSTlhkRUlNIiwiYXV0aFRhZyI6IktudTBURmpSRDBBem96d0xWbVpLeVE9PSJ9",
+        "matched_courses": [
+          "Datenschutz",
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7a2c6c5f33360",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Das Webinar \"3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen\" zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint.",
+      "email_date": "2026-02-20T08:30:56.000Z",
+      "topics": {
+        "topic_name": "Fachtagung „Cyber-Angriff“",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Die Fachtagung \"Cyber-Angriff\" am 26. Februar 2026 in Leipzig behandelt technische Maßnahmen, Datensicherheit, Lösegeldverhandlungen und interne/externe Kommunikation nach einem Cyber-Angriff.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjVmODQ1ZjNjLWRhOTEtNDJmZC05NTVhLTViYThiZGMyNTQyZiIsImRla1ZlcnNpb24iOjEsIml2IjoidG8yZ25LYUt5dEowSlhhTFJQSk0zdz09IiwiY2lwaGVyVGV4dCI6InpSWlpnSytkVzZvcENWaGpvYTdScW1TR3BFYzVBQWo4WTRWMWY3Ums1elFkMitLNEJnS28xWEdiUnc4YzN6TDZZQTcyWFNDZ0wzYTMxaDJtMndnb2x5aHpBaDdadnh5MmphQ2Nwb3JLMG5RbGRvdEU4a3pmIiwiYXV0aFRhZyI6ImRyZldIYWJiQ0NpWEtITUNIdG0vSEE9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7a2c6c5f33360",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Das Webinar \"3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen\" zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint.",
+      "email_date": "2026-02-20T08:30:56.000Z",
+      "topics": {
+        "topic_name": "Deutscher Cloud- & KI-Datenschutztag – am Beispiel von M365 & Copilot",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Der 1. Deutsche Cloud- & KI-Datenschutztag am 16. April 2026 in Frankfurt bietet praxisnahe Impulse und aktuelle Einblicke rund um den Datenschutz im Microsoft-Umfeld.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImQ1ODE5NzJkLTUyMTktNGJjNS05NjlkLWIyYWVhNGZlNzgyMSIsImRla1ZlcnNpb24iOjEsIml2IjoiQVBVTExCOUtpY2VrTW04VzRYSHAzZz09IiwiY2lwaGVyVGV4dCI6InA2QnlaN2M2dHVabzdnSnl4Q0lxeEl3TGorbjhJZDViaHIvcVpVWUprNGZrM3B3cjllcm5EMjdrZkZsVHAzMFp1L3BmbEJ4VTFLR1VQTnQwUzJ0TGh6bklnc0Z5QXdvQTlRc3NIMHFKeDZReWJ4YmhjZW5lIiwiYXV0aFRhZyI6Im9aUTgyM1JMYTB1SE9jaUN3WElEQ2c9PSJ9",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c7a2c6c5f33360",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Das Webinar \"3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen\" zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint.",
+      "email_date": "2026-02-20T08:30:56.000Z",
+      "topics": {
+        "topic_name": "CYBER//RESILIENT – Cyber-Security Anforderungen in der Produkt Compliance",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Die Konferenz am 16. Juni 2026 in Frankfurt beleuchtet die neuen Cyber-Security Vorgaben und wie Hersteller und Handler diese umsetzen können, um ein sicheres digitales Zeitalter zu schaffen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImFkYjE3MTBlLWIyMTYtNDI2NC1iOWQ4LTM2N2NmMWU1ZDc3ZiIsImRla1ZlcnNpb24iOjEsIml2IjoiWm8wTDRSVDkxRzFVV2c2R3kyOXN3dz09IiwiY2lwaGVyVGV4dCI6ImJSZmpVcFN2L2pIb1lRQURUSkF3NUc2RFJvVE1NMW4rSTFuVjJhTlVNY0hYaG5QOHFhK0ZJR0h6ZkYzMFlObCtyT0RtWUhxN2VuTW9Mbm55SENiSU5XdGNTazAxbVNCbWpRdmhGUDNVYlZSYURvYkxiMnpEIiwiYXV0aFRhZyI6ImN5Z3VlZkljSnNnMWExeEtUVFdaSUE9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c7a2c6c5f33360",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Das Webinar \"3 Fliegen mit einer Klappe: KRITIS, NIS2 & DSGVO erfüllen und Daten automatisiert bereinigen\" zeigt, wie man Datenschutz, IT-Sicherheit und Compliance effizient in automatisierten Workflows vereint.",
+      "email_date": "2026-02-20T08:30:56.000Z",
+      "topics": {
+        "topic_name": "Datenschutzkonferenz 2026",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Die Datenschutzkonferenz vom 23. bis 25. September 2026 in Düsseldorf ist eine der führenden Jahrestagungen im Bereich Datenschutz und Datensicherheit.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImZjM2NkZThkLWUzMWUtNDIxNS1hMjFlLTcyZTRlNmY2NGZiZSIsImRla1ZlcnNpb24iOjEsIml2IjoiZWQ1TWxMQ2VqcHU5N09IeHhRVzFNZz09IiwiY2lwaGVyVGV4dCI6IkdqbjEvZ1Q2K3dqTExhU3YzbWszUjJGSGhTaGRoNFBsRlZWSjQ3d2JaLzRkWkVMRkpTaVZIdWMrWUlZMENCSGJMbmcvUVdHNGNCT0dWZ0FtbHRhb0V0ZVZXSStFM0R4NTNreVVzSjZPbTczczRmSEZCYlV5IiwiYXV0aFRhZyI6IkU0WldBQ2FXMXFnUzE1VllqNFRjUEE9PSJ9",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Böhmermann-Anwalt im Clinch mit X",
+        "topic_category": "Recht",
+        "topic_summary": "Der Anwalt Chan-jo Jun hat für Jan Böhmermann eine einstweilige Verfügung gegen X wegen eines Fake-Profils des Satirikers erwirkt. Dabei spielte auch die Kanzlei des ehemaligen Bundesjustizministers eine Rolle.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Frankfurter Resolution",
         "topic_category": "Justiz",
-        "topic_summary": "Andrew Mountbatten-Windsor, der Bruder von König Charles III., wurde in Sandringham festgenommen. Die Polizei ermittelt gegen ihn wegen Fehlverhaltens in Ausübung eines öffentlichen Amtes. Laut den Epstein-Akten hatte Andrew dem Sexualstraftäter Jeffrey Epstein geheime Wirtschaftsberichte übermittelt, die er als britischer Handelsgesandter erlangt hatte.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_summary": "Eine Gruppe junger Richterinnen und Staatsanwälte ruft mit ihrer Frankfurter Resolution zu mehr Einsatz für die Demokratie auf. Was genau meinen sie damit – und wie politisch dürfen Justizbedienstete eigentlich sein?",
+        "topic_link": "",
         "matched_courses": []
       }
     },
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c77026850f7634",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
       "topics": {
-        "topic_name": "Verurteilung von Yoon Suk-yeol",
-        "topic_category": "Justiz",
-        "topic_summary": "Yoon Suk-yeol, der ehemalige Präsident Südkoreas, wurde wegen Anführung eines Aufstands zu lebenslanger Haft verurteilt. Er verhängte im Dezember 2024 das Kriegsrecht und ordnete die Besetzung des Parlaments an.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_name": "Dobrindts Grenzkontrollen",
+        "topic_category": "Recht",
+        "topic_summary": "Alexander Dobrindt verlängert seine umstrittenen Grenzkontrollen, das BMJV will das Anwaltsnotariat attraktiver machen und Björn Höcke wehrt sich erfolgreich gegen ein Redeverbot. Währenddessen fordert eine junge Richtervereinigung mehr Haltung und in Berlin entfaltet sich ein Justizskandal.",
+        "topic_link": "",
         "matched_courses": []
       }
     },
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c77026850f7634",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
       "topics": {
-        "topic_name": "Tod einer Frau am Großglockner",
-        "topic_category": "Justiz",
-        "topic_summary": "Das Landgericht Innsbruck verurteilte den 37-jährigen Thomas P. wegen fahrlässiger Tötung, weil er im Januar 2025 seine Freundin nachts am Großglockner zurückließ, wo sie erfror.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_name": "Streit nach Betriebsratssitzung bei Tesla",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Ein Vertreter der IG Metall ist bei einer Betriebsratssitzung des E-Autobauers Tesla zu Gast. Ihm wird vorgeworfen, unbefugt mitzuschneiden. Das hat juristische Folgen, zunächst für den Gewerkschafter, jetzt auch für den Werksleiter bei Tesla.",
+        "topic_link": "",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Südkoreas Ex-Präsident Yoon zu lebenslanger Haft verurteilt",
+        "topic_category": "Recht",
+        "topic_summary": "Per Kriegsrechtsdekret löste Yoon Suk Yeol 2024 die schwerste politische Krise in Südkorea seit Jahrzehnten aus. Nun wurde er schuldig gesprochen. Der Tatbestand: Anführung eines Aufstands.",
+        "topic_link": "",
         "matched_courses": []
       }
     },
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c77026850f7634",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
       "topics": {
-        "topic_name": "Rechtspolitik",
-        "topic_category": "Rechtspolitik",
-        "topic_summary": "Die Presseschau behandelt verschiedene Themen der Rechtspolitik, wie die Strafmündigkeit, Verwaltungsgerichte, Resilienz des VerfGH Berlin, Klarnamenpflicht, Unternehmen, Versorgungsausgleich und Rechtsberatung durch Rechtsschutzversicherungen.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_name": "Sicherheitsrisiko: Oberstleutnant drohte mit Leak",
+        "topic_category": "Sicherheit",
+        "topic_summary": "Ein Oberstleutnant wollte einen Abteilungsleiter im Ministerium dazu bringen, ihm zu einem Posten zu verhelfen, und drohte, erstaunliche Dinge über einen Brigadegeneral und einen Generalmajor publik zu machen. Das BVerwG bestätigte nun: Er ist damit ein Sicherheitsrisiko.",
+        "topic_link": "",
         "matched_courses": []
       }
     },
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c77026850f7634",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
       "topics": {
-        "topic_name": "Justiz",
-        "topic_category": "Justiz",
-        "topic_summary": "Die Presseschau behandelt verschiedene Themen der Justiz, wie Abschiebung trotz Schutzstatus in Griechenland, Bezeichnung als 'Miethai', Lidl-Werbung, Fördergeld für Immobilie, Böhmermann-Fake-Account, Mord im Hauptbahnhof, Missbrauch von Schülerin, AfD-Veranstaltung, Vizepräsident:in am BAG, Apotheker mit Darknet-Handel, Teilzeit, Tempo 30 und Rechtsstaat.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_name": "Epstein-Skandal: Britischer Ex-Prinz Andrew festgenommen",
+        "topic_category": "Recht",
+        "topic_summary": "Der frühere britische Prinz soll vertrauliche Dokumente an Sexualstraftäter Jeffrey Epstein weitergeleitet haben. Jetzt reagiert die Polizei – an Andrews Geburtstag.",
+        "topic_link": "",
         "matched_courses": []
       }
     },
     {
-      "id": "19c79bebe7cfd3b4",
+      "id": "19c77026850f7634",
       "email_typ_is_newsletter": true,
-      "sender": "lto@info.wolterskluwer.com",
-      "summary_general": "Die juristische Presseschau vom 20. Februar 2026 behandelt die Festnahme von Andrew Mountbatten-Windsor, die Verurteilung von Yoon Suk-yeol und den Tod einer Frau am Großglockner. Es werden auch Themen wie Rechtspolitik, Justiz und internationale Rechtssituationen behandelt.",
-      "email_date": "2026-02-20T06:31:05.000Z",
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
       "topics": {
-        "topic_name": "Recht in der Welt",
-        "topic_category": "Internationales Recht",
-        "topic_summary": "Die Presseschau behandelt internationale Rechtssituationen, wie Südkorea – Kriegsrecht, Italien – Sea Watch, Türkei – Justizminister Gürlek, USA – Jugendschutz in sozialen Netzwerken, Polen - Justizreform und IStGH – Chefankläger Khan.",
-        "topic_link": "https://www.lto.de/recht/presseschau/p/presseschau-2026-02-20-andrew-verhaftung-epstein-yoon-lebenslange-haft-grossglockner-bergsteiger-tod?utm_source=Eloqua&utm_content=WKDE_LEG_LTO_Presseschau&utm_campaign=WKDE_LTO_Presseschau_2025&utm_econtactid=CWOLT000041400195&utm_medium=email_newsletter&utm_crmid=&r=rss?elqTrack=true",
+        "topic_name": "Trotz Schutzstatus im EU-Ausland: BAMF darf Abschiebung in den Irak androhen",
+        "topic_category": "Recht",
+        "topic_summary": "Ausländern darf laut BVerwG trotz internationalen Schutzes in einem anderen EU-Staat die Abschiebung in ihr Herkunftsland angedroht werden. Und das selbst dann, wenn ihnen in dem anderen Mitgliedstaat die ernsthafte Gefahr einer unmenschlichen oder erniedrigenden Behandlung droht.",
+        "topic_link": "",
         "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Erzwungene Kokain-Line: Warum das kein Verabreichen ist",
+        "topic_category": "Recht",
+        "topic_summary": "Wer jemanden unter Gewalt zum Ziehen einer Line zwingt, begeht eine Straftat – aber nicht zwingend das Verabreichen von Betäubungsmitteln. Der BGH wertete den eigenständigen Konsum als Überlassen zum unmittelbaren Verbrauch. Das hatte Folgen für den Schuldspruch, die Strafe blieb unverändert.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Arbeitnehmerfinanzierte Pensionszusage: BFH erleichtert steuerliche Anerkennung",
+        "topic_category": "Recht",
+        "topic_summary": "Der BFH hat die steuerliche Anerkennung von arbeitnehmerfinanzierten Pensionszusagen für angestellte Gesellschafter-Geschäftsführer einer GmbH in einigen Punkten erleichtert. Zugleich zeigt er aber auch die Grenzen auf.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "AfD-Wahlkampf im Ettlinger Kasino",
+        "topic_category": "Recht",
+        "topic_summary": "Ein AfD-Gemeinderat aus Ettlingen hatte für eine Wahlveranstaltung seiner Partei zum Thema Remigration das Kasino angemietet. Doch dann trat die Stadt vom Mietvertrag zurück. Zu Unrecht, so das VG Karlsruhe. Auch ein Auftritt von Lena Kotré sei zu dulden, einer von Martin Sellner dagegen nicht.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Nach Milliardenverlust: Berliner Zahnärzte-Versorgungswerk darf in Hauptstadt klagen",
+        "topic_category": "Recht",
+        "topic_summary": "Wegen riskanter Anlagestrategien hat das Versorgungswerk der Berliner Zahnärztekammer einen Milliardenverlust erlitten. Jetzt will es die Verantwortlichen verklagen. Als zuständiges Gericht dafür hat das KG nun das LG Berlin II bestimmt.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Nach Darknet-Handel mit seinen Waren: Apotheker verliert Betriebserlaubnis",
+        "topic_category": "Recht",
+        "topic_summary": "Das VG Neustadt hat den Eilantrag eines Apothekers abgelehnt, der trotz Widerrufs seiner Betriebserlaubnis weiterarbeiten wollte. Die hatte er verloren, weil massive Verdachtsmomente darauf hindeuteten, dass er den Verkauf verschreibungspflichtiger Medikamente ins Darknet nicht unterband.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Größte Preissenkung aller Zeiten: Lidl-Werbung irreführend",
+        "topic_category": "Recht",
+        "topic_summary": "Lidl verliert vor Gericht: Eine Werbekampagne mit angeblich 500 Preissenkungen sorgte für Streit. Was Verbraucherschützer an der Aktion kritisieren.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Merz erwägt schärfere Gesetze gegen Vetternwirtschaft in der Politik",
+        "topic_category": "Recht",
+        "topic_summary": "Im Abgeordnetengesetz gibt es keine Vorgaben zur Anstellung von Verwandten anderer Parlamentarier. Merz schließt neue Regeln nicht aus und kritisiert die AfD scharf.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Trump möchte Glyphosat-Produktion für US-Landwirte absichern",
+        "topic_category": "Recht",
+        "topic_summary": "Glyphosat ist ein Reizwort, Tausende US-Klagen machen dem Hersteller Bayer seit Jahren zu schaffen. Das Weiße Haus bewertet den Unkrautvernichter nun als unentbehrlich für die nationale Sicherheit.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Stadt München wehrt sich gegen Tempo-30-Beschluss am Mittleren Ring",
+        "topic_category": "Recht",
+        "topic_summary": "Zwei Anwohner der Landshuter Allee erstreiten mit einem Eilantrag vorerst wieder Tempo 30 am Mittleren Ring. Die Stadt München will das Tempolimit vorerst nicht ändern, sie setzt auf die nächste Instanz und spielt auf Zeit. Doch nun droht ein Zwangsgeld.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Widerstand gegen Bürgergeld-Reform: Nicht zulasten von Familien!",
+        "topic_category": "Recht",
+        "topic_summary": "Gegen geplante Verschärfungen bei der Grundsicherung formiert sich Widerstand – auch, weil in vielen Fällen Familien mit minderjährigen Kindern betroffen wären. Ein breites Bündnis aus 38 Organisationen und Verbänden wendet sich nun an die Bundesregierung.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Meloni sprachlos: Italien muss deutsche Seenotretter entschädigen",
+        "topic_category": "Recht",
+        "topic_summary": "Carola Rackete war das Gesicht der deutschen Hilfsorganisation Sea Watch. Ihr Schiff setzte 2019 Dutzende Migranten in Lampedusa ab und wurde festgesetzt. Dafür muss Italien nun Strafe zahlen, die Ministerpräsidentin zeigt sich verärgert.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "US-Umweltschützer klagen gegen Kehrtwende beim Klimaschutz",
+        "topic_category": "Recht",
+        "topic_summary": "Klimaschutzorganisationen in den USA klagen gegen Pläne der Regierung von Präsident Donald Trump, Treibhausgase kurzerhand für unproblematisch zu erklären und damit eine zentrale Rechtsgrundlage der amerikanischen Klimaschutzpolitik zu kippen.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c77026850f7634",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter@mailing.beck.de",
+      "summary_general": "Der Newsletter enthält verschiedene Themen wie Justiz, Politik, Recht und Sicherheit, mit Fokus auf aktuelle Ereignisse und rechtliche Entwicklungen.",
+      "email_date": "2026-02-19T17:46:12.000Z",
+      "topics": {
+        "topic_name": "Suchtpotenzial sozialer Medien: Zuckerberg verteidigt Meta im Zeugenstand",
+        "topic_category": "Recht",
+        "topic_summary": "Den Online-Plattformen YouTube und Instagram wird in einer US-Klage vorgeworfen, dass ihre Dienste süchtig machten. Die Firmen wehren sich auf unterschiedliche Weise. Für Meta sagte nun Chef Mark Zuckerberg in dem Prozess aus.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c76386b885e166",
+      "email_typ_is_newsletter": true,
+      "sender": "newsletter-bundesgesetzblatt@newsletter.gsb.bund.de",
+      "summary_general": "Der Newsletter enthält Informationen über das dritte Gesetz zur Änderung des Gesetzes gegen den unlauteren Wettbewerb.",
+      "email_date": "2026-02-19T14:00:39.000Z",
+      "topics": {
+        "topic_name": "Drittes Gesetz zur Änderung des Gesetzes gegen den unlauteren Wettbewerb",
+        "topic_category": "Gesetzgebung",
+        "topic_summary": "Das dritte Gesetz zur Änderung des Gesetzes gegen den unlauteren Wettbewerb wurde am 19.02.2026 veröffentlicht. Es enthält Änderungen und Ergänzungen zum bestehenden Gesetz.",
+        "topic_link": "https://www.recht.bund.de/bgbl/1/2026/43/VO.html",
+        "matched_courses": [
+          "Unlauterer Wettbewerb"
+        ]
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Machiavelli wollte das Richtige und predigte das Falsche",
+        "topic_category": "HR-Management",
+        "topic_summary": "Der Artikel beleuchtet die Frage, ob Niccolò Machiavellis Führungsphilosophie heute noch Gültigkeit hat. Es wird diskutiert, was Führungskräfte in der heutigen Zeit von Machiavelli lernen können.",
+        "topic_link": "https://www.haufe.de/personal/hr-management/machiavelli-wollte-das-richtige-und-predigte-das-falsche_80_675000.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Ältere Arbeitnehmer in Deutschland führen die EU-Zahlen an",
+        "topic_category": "HR-Management",
+        "topic_summary": "In Deutschland ist knapp jeder vierte Beschäftigte zwischen 55 und 64 Jahre alt. Der Artikel diskutiert die Bedeutung älterer Arbeitnehmer und die Rolle von HR bei der Sicherstellung der Arbeitsfähigkeit und Motivation dieser Gruppe.",
+        "topic_link": "https://www.haufe.de/personal/hr-management/aeltere-arbeitnehmer-deutschland-fuehrt-eu-zahlen-an_80_675334.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "HR-Strategie: Wie ältere Beschäftigte leistungsfähig bleiben",
+        "topic_category": "HR-Management",
+        "topic_summary": "Der Artikel behandelt, wie HR-Strategien ältere Beschäftigte arbeitsfähig und motiviert halten können, um das Potenzial dieser Gruppe über die gesamte Erwerbslebensspanne zu nutzen.",
+        "topic_link": "https://www.haufe.de/personal/hr-management/hr-strategie-wie-aeltere-beschaeftigte-leistungsfaehig-bleiben_80_674170.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Scheinarbeitsverhältnisse schließen Kurzarbeitergeld aus",
+        "topic_category": "Entgelt",
+        "topic_summary": "Der Artikel behandelt die Entscheidung des Hessischen Landessozialgerichts, wonach bei einem Scheinarbeitsverhältnis kein Anspruch auf Kurzarbeitergeld besteht.",
+        "topic_link": "https://www.haufe.de/personal/entgelt/scheinarbeitsverhaeltnisse-schliessen-kurzarbeitergeld-aus_78_675324.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Führungskräften und KI: Führen Hand in Hand",
+        "topic_category": "Neues Lernen",
+        "topic_summary": "Der Artikel diskutiert die Zukunft von Führungskräften und künstlicher Intelligenz, insbesondere die Nutzung der Analysefähigkeiten von KI, während das Warum in den Interaktionen stets im Auge behalten werden muss.",
+        "topic_link": "https://www.haufe.de/personal/neues-lernen/fuehrungskraeften-und-ki-fuehren-hand-in-hand_589614_673900.html",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Integration ukrainischer Geflüchteter",
+        "topic_category": "Personalmagazin",
+        "topic_summary": "Der Artikel beleuchtet die Integration ukrainischer Geflüchteter in den deutschen Arbeitsmarkt, vier Jahre nach Beginn des Krieges.",
+        "topic_link": "https://www.haufe.de/personal/personalszene/straubs-seitenblick-zur-integration-ukrainischer-gefluechteter_74_676766.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Klinik hat Weisungsrecht für Abtreibungsverbot",
+        "topic_category": "Arbeitsrecht",
+        "topic_summary": "Der Artikel behandelt die Entscheidung des Landesarbeitsgerichts Hamm, wonach eine Klinik in kirchlicher Trägerschaft einem Chefarzt die Durchführung von legalen Schwangerschaftsabbrüchen während der genehmigten Nebentätigkeit nicht untersagen durfte.",
+        "topic_link": "https://www.haufe.de/personal/arbeitsrecht/urteil-klinik-hat-weisungsrecht-fuer-abtreibungsverbot_76_676214.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c7630cde3908df",
+      "email_typ_is_newsletter": true,
+      "sender": "personal@redaktion.haufe.de",
+      "summary_general": "Dieser Newsletter behandelt Themen wie die Führungsphilosophie von Niccolò Machiavelli, die Bedeutung älterer Arbeitnehmer in Deutschland und die Integration ukrainischer Geflüchteter im Arbeitsmarkt.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Gleichbehandlungsgrundsatz einhalten",
+        "topic_category": "Arbeitsrecht",
+        "topic_summary": "Der Artikel behandelt den allgemeinen Gleichbehandlungsgrundsatz und wie Arbeitgeber diesen einhalten können, um Diskriminierung zu vermeiden.",
+        "topic_link": "https://www.haufe.de/personal/arbeitsrecht/gegen-diskriminierung-den-gleichbehandlungsgrundsatz-einhalten_76_319494.html",
+        "matched_courses": [
+          "Allgemeine Gleichbehandlungsgesetz"
+        ]
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "KI-generierte Werke sind grundsätzlich nicht urheberrechtlich geschützt",
+        "topic_category": "Urheberrecht",
+        "topic_summary": "Das Amtsgericht München entschied, dass KI-generierte Logos keine urheberrechtlich geschützten Werke darstellen, wenn der menschliche Einfluss nicht erkennbar prägend ist.",
+        "topic_link": "",
+        "matched_courses": [
+          "Urheberrecht"
+        ]
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Influencer-Marketing und Steuern: IHK-Tax-Talk informiert kostenlos",
+        "topic_category": "Steuern",
+        "topic_summary": "Der IHK-Tax-Talk informiert über steuerliche Pflichten von Influencerinnen und Influencern und beauftragenden Unternehmen. Die Teilnahme ist kostenfrei.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Niedersächsischer Außenwirtschaftstag zum Thema Hidden Markets",
+        "topic_category": "International",
+        "topic_summary": "Der Niedersächsische Außenwirtschaftstag diskutiert aktuelle Herausforderungen und Möglichkeiten zu Hidden Markets und der Exportwirtschaft.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Sprechtag Skandinavien: Potenziale der nordischen Märkte nutzen",
+        "topic_category": "Außenwirtschafts- und Zollrecht",
+        "topic_summary": "Unternehmen können sich zum Markteinstieg oder zur Optimierung von Geschäften in Skandinavien beraten lassen. Die Beratungen sind inhouse, online oder in der IHK Hannover möglich.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Innovationspreis 2026 der Region Göttingen-Northeim gestartet",
+        "topic_category": "Innovation, Forschung, Transfer",
+        "topic_summary": "Innovative Produkte, Verfahren, Dienstleistungen, Prozesse oder Geschäftsideen können sich für den Innovationspreis der Region Göttingen bewerben. Die Bewerbungsfrist endet am 30. April.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Termine für schriftliche Abschlussprüfungen in kfm. Berufen",
+        "topic_category": "Ausbildung",
+        "topic_summary": "Die Prüfungstermine für schriftliche Abschlussprüfungen in kaufmännischen Berufen stehen bis zur Sommerprüfung 2027 fest. Die Termine sind auf der IHK-Website verfügbar.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Digi-Breakfast: Aufzeichnung „Digitalisierung der Verwaltung in Niedersachsen“",
+        "topic_category": "Digitalisierung",
+        "topic_summary": "Der Stand der Verwaltungsdigitalisierung in Niedersachsen und die Schwerpunkte der neuen Digitalisierungsstaatssekretärin Anke Pörksen wurden beim zehnten Digi-Breakfast diskutiert. Die Aufzeichnung ist verfügbar.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "Göttingen: Sprechtag „Internationale Arbeitskräfte“",
+        "topic_category": "Fachkräfte",
+        "topic_summary": "Das Welcome & Business Center IHK bietet Beratung zu internationalen Fachkräfterekrutierung an. Unternehmen können sich für kostenlose Gespräche am 23. Februar anmelden.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c762f37bd44c1b",
+      "email_typ_is_newsletter": true,
+      "sender": "info@news.hannover.ihk.de",
+      "summary_general": "Newsletter der IHK Hannover mit Themen zu KI, Steuern, Internationalem, Außenwirtschaftsrecht, Innovation, Forschung, Transfer, Ausbildung, Digitalisierung, Fachkräften und Pressemeldungen.",
+      "email_date": "2026-02-19T13:55:31.000Z",
+      "topics": {
+        "topic_name": "IHK Nord: Olympische Spiele in Hamburg – Eine Jahrhundertchance für Norddeutschland",
+        "topic_category": "Pressemeldung",
+        "topic_summary": "Statement des IHK Nord Vorsitzenden André Grobien, Präses der Handelskammer Bremen – IHK für Bremen und Bremerhaven.",
+        "topic_link": "",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Gesetzentwurf Mietrecht II",
+        "topic_category": "Mietrecht",
+        "topic_summary": "Der Referentenentwurf 'Mietrecht II' verschärft die Regeln für Vermieter und enthält neue Regelungen für Möblierungszuschläge, Indexmieten und Modernisierungsumlagen.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/miet-immobilienrecht/wohnungspolitik-im-wahlkampf-kommt-der-bundes-mietendeckel_214_675624.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Mietpreisbremse",
+        "topic_category": "Mietrecht",
+        "topic_summary": "Das Bundesverfassungsgericht hat entschieden, dass die Verlängerung der Mietpreisbremse bis 2025 verfassungsgemäß war.",
+        "topic_link": "https://www.haufe.de/recht/weitere-rechtsgebiete/miet-immobilienrecht/mietpreisbremse-durfte-verlaengert-werden_214_676720.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Abtreibungsverbot",
+        "topic_category": "Arbeitsrecht",
+        "topic_summary": "Eine Klinik in kirchlicher Trägerschaft durfte einem Chefarzt die Durchführung von legalen Schwangerschaftsabbrüchen nicht untersagen.",
+        "topic_link": "https://www.haufe.de/recht/arbeits-sozialrecht/urteil-klinik-hat-weisungsrecht-fuer-abtreibungsverbot_218_676774.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "13. Monatsgehalt nach Unfall",
+        "topic_category": "Arbeitsrecht",
+        "topic_summary": "Ein Arbeitnehmer hat Anspruch auf ein tarifliches 13. Monatsgehalt, da der Unfall ein Arbeitsunfall war.",
+        "topic_link": "https://www.haufe.de/recht/arbeits-sozialrecht/bag-zum-anspruch-auf-13-monatsgehalt-nach-unfall_218_675910.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "AGG-Entschädigung für abgelehnte Bewerberin mit Kopftuch",
+        "topic_category": "Arbeitsrecht",
+        "topic_summary": "Eine Tätigkeit an der Passagier- und Gepäckkontrolle darf grundsätzlich mit einem religiösen Kopftuch ausgeübt werden.",
+        "topic_link": "https://www.haufe.de/recht/arbeits-sozialrecht/bag-bewerberin-mit-kopftuch-diskriminiert_218_675916.html",
+        "matched_courses": [
+          "Allgemeine Gleichbehandlungsgesetz",
+          "Diversity",
+          "Unconscious Bias"
+        ]
+      }
+    },
+    {
+      "id": "19c75ac8dc831524",
+      "email_typ_is_newsletter": true,
+      "sender": "recht@redaktion.haufe.de",
+      "summary_general": "Der Newsletter behandelt Gesetzentwürfe und Rechtsthemen wie Mietrecht II, Mietpreisbremse und 13. Monatsgehalt, sowie verschiedene Urteile und Entscheidungen.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Kindergeld für volljähriges Enkelkind",
+        "topic_category": "Familienrecht",
+        "topic_summary": "Das Hessische FG entschied, dass Kindergeld für ein volljähriges Enkelkind zusteht, das in eine eigene Wohnung zieht.",
+        "topic_link": "https://www.haufe.de/recht/familien-erbrecht/kindergeld-fuer-volljaehriges-enkelkind-in-gesonderter-wohnung_220_674180.html",
+        "matched_courses": []
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "2. Fachtagung „Cyber-Angriff“",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Die Fachtagung „Cyber-Angriff“ am 26. Februar 2026 im Zoo Leipzig bietet einen umfassenden Austausch zu Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken. Der Zoo-Eintritt ist inklusive.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6ImNiNmUwNzVmLWUzODEtNGU0Yy1iMjA1LTZkMzZmNTYxN2NkNiIsImRla1ZlcnNpb24iOjEsIml2IjoidlA1KzE4TTE0VzFpR21iMTJrT0FOQT09IiwiY2lwaGVyVGV4dCI6IlpBRFJEZlVmZUtJOWM0cDFVd096TEFYR3JIZzZOZE0wQndaYnR0Nmp0VzYwNnd5UldpbXhhVlQ2MDdsSCtsR0VxRW9SZC95YytjVmpBYmFqbW5VMVRCbGNFSU5qUnJ6K2Z0ZkROZUZ0WWhwbTlkcERnRFE9IiwiYXV0aFRhZyI6IitjVmpBYmFqbW5VMVRCbGNFSU5qUmc9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Deutscher Cloud- & KI-Datenschutztag",
+        "topic_category": "Datenschutz",
+        "topic_summary": "Der 1. Deutsche Cloud- & KI-Datenschutztag bietet praxisnahe Impulse und aktuelle Einblicke rund um den Datenschutz im Microsoft-Umfeld. Er findet am 16. April 2026 in Frankfurt am Main statt.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6Ijk3NmFhMDUyLTg3MzQtNGY5Mi05OGUzLTJmZTBhZWQxMjUxYyIsImRla1ZlcnNpb24iOjEsIml2IjoiTUE5ODQwZ25VRmRqc1JsdU5DU1JXdz09IiwiY2lwaGVyVGV4dCI6IjY4ZDV4LzVqNzB4R1F6TzlDMm5zcUxaZHRvWVk3RkpPd0ZvWm95S2NlSUJuZ3FUc1JxYXpydm5vYXVEQkIwNXl5M1pFSjl4ajBuOGdHeWJZTkk3NS9CL000Y1hTdlRBUGZPTklKMUJYWTdFWmJqUWtrVnM9IiwiYXV0aFRhZyI6IjBuOGdHeWJZTkk3NS9CL000Y1hTdlE9PSJ9",
+        "matched_courses": [
+          "Datenschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "RAW Summit – Future of Automotive Law",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "Der RAW Summit wird den Fokus auf Strategiethemen der Branche legen und dabei technische Herausforderungen beleuchten. Er findet am 16. April 2026 in Frankfurt am Main statt.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjQwNjhkZmNhLTZlZGUtNDJlNi1hNTAyLTE3Y2Y0ODEyM2E4ZSIsImRla1ZlcnNpb24iOjEsIml2IjoiV2dHVmVJSVpjaDlEa2V0K1h4dDVnUT09IiwiY2lwaGVyVGV4dCI6IlVOMGVlY3hPQmc4Z20rYzlQTVpIcXFuSExCbXBZbmphakd5M3JlU3M1YVhMaFBvakVoOE1ZZFYwM3ViZjF2UjF5SmlrdldIQ1BqcmJUdHdxZTFORWZMbnNrYldxL2xvQmxYaUNHWElmUTVIcmZsOGJlWUU9IiwiYXV0aFRhZyI6IlBqcmJUdHdxZTFORWZMbnNrYldxL2c9PSJ9",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "i:sec & Law – Informationssicherheit in der Praxis",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Die Tagung bietet praxisnahe Einblicke und fordert den Austausch zwischen Recht, Technik und Organisation. Sie findet am 30. April 2026 in Frankfurt am Main statt.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjE1ZTU2OWY2LTlhYzEtNDc4MC1iODhlLWNjMWVlM2QzMDg1YSIsImRla1ZlcnNpb24iOjEsIml2IjoiSlNhT2w1Y3ZrN0lOQ0xFaXpkOUFJQT09IiwiY2lwaGVyVGV4dCI6IkNaVk54RklNOFlWVTRFeU03QlpjVVBLNlpWMys5TEdsNnRrM09TSFcxY1A3SEZjRHkxZlFlU0ZiblJqUzBmekR1RlVITWdSRTRFcVFpYlFidDlTanZlUG1VYzVWTlNVbWpwZVhMNU95RFFpeElzM2ZRQ0E9IiwiYXV0aFRhZyI6IjRFcVFpYlFidDlTanZlUG1VYzVWTlE9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "CYBER//RESILIENT – Cyber-Security Anforderungen in der Produkt Compliance",
+        "topic_category": "Informationssicherheit",
+        "topic_summary": "Die Konferenz beleuchtet die neuen Cyber-Security Vorgaben und findet am 16. Juni 2026 in Frankfurt am Main statt.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjI2MmY2MjkxLTQxNmEtNDQwOC1iYmY2LTg0MjZiYmNjMzI3OCIsImRla1ZlcnNpb24iOjEsIml2IjoickpNd1pOWEVDV2ZNYVFSWlNOaCtoUT09IiwiY2lwaGVyVGV4dCI6IkZUaE9Ta1NzVWFuenAybzhhdFRaN0pWcUZHSC9STjA1bHI0WFM4ZkZmQ1pxRGlBczZyeHZET0owQWxldXdjeDU5b1J6TnZIS1ptTWUzWUduQTBVanVOR0N0ckdqd0t5VE1HVFZ4QWxuekdrRVdVallmb1U9IiwiYXV0aFRhZyI6IlptTWUzWUduQTBVanVOR0N0ckdqd0E9PSJ9",
+        "matched_courses": [
+          "Informationssicherheit"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "Barrierefreiheit & Recht – Fachtag zur Umsetzung des BFSG",
+        "topic_category": "Produkthaftung",
+        "topic_summary": "Der Fachtag bietet einen kompakten Überblick über die neuen gesetzlichen Vorgaben und findet am 18. Juni 2026 in Frankfurt am Main statt.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjZkNzMzZjA2LWQyZDctNDIyZS05MDE4LWNjM2RiMmE1NmQyMSIsImRla1ZlcnNpb24iOjEsIml2IjoiQTBvV2RvazNtaG50RE8ySFNqcDVxdz09IiwiY2lwaGVyVGV4dCI6IkR5WXhMbXRRWFlPODV3S0JSYXp4NGwvZHlFa2JTcS9vNDlLM2NYZ1hLZTJXVEZNcDVEL3E2cUtWVUhUa0U4Y25lVElTSmRUQnhTRnlmTDNGdkxaUDBBSzB5R1VPdkFOS0ZuYUpONW9aN1F6dGgwbzZlYXM9IiwiYXV0aFRhZyI6InhTRnlmTDNGdkxaUDBBSzB5R1VPdkE9PSJ9",
+        "matched_courses": [
+          "Produkthaftung"
+        ]
+      }
+    },
+    {
+      "id": "19c75aa458751836",
+      "email_typ_is_newsletter": true,
+      "sender": "noreply@mc.ruw.de",
+      "summary_general": "Die E-Mail lädt zur 2. Fachtagung „Cyber-Angriff“ im Zoo Leipzig ein, die am 26. Februar 2026 stattfindet. Die Tagung deckt Themen wie Datensicherheit, Threat Hunting und Angriffstaktiken ab und bietet einen Zoo-Eintritt inklusive.",
+      "email_date": "2026-02-19",
+      "topics": {
+        "topic_name": "KI-VO - Verordnung über kunstliche Intelligenz",
+        "topic_category": "KI Anwendungen im Unternehmen",
+        "topic_summary": "Das Buch beleuchtet praxisnah die neuen gesetzlichen Anforderungen an die Entwicklung, das Inverkehrbringen und den Einsatz von KI-Systemen.",
+        "topic_link": "https://click.mc.ruw.de/?qs=eyJkZWtJZCI6IjFiZDQwOWQ0LTFhNjAtNGM5Ny05NDZmLTdiZDI3ZDBlNzYyMCIsImRla1ZlcnNpb24iOjEsIml2IjoiaHVQcm9SNHI5Y0t6dm9hY0xsc09jUT09IiwiY2lwaGVyVGV4dCI6IjlmaE5iOVByNGdBVTlwWVNtWjQrYitrQWtBd2RQQ0FNcW9OWlhhU0w1WThlc0VkcitHRUtSTlE1a2VzbDR3b05USWlLK2RNbmR2dkkybzhJYUFsKzNSNENsSjl4S29iajY2RWVLL1hDczc2R25DNWJEbkU9IiwiYXV0aFRhZyI6ImR2dkkybzhJYUFsKzNSNENsSjl4S2c9PSJ9",
+        "matched_courses": [
+          "KI Anwendungen im Unternehmen"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Tarifverhandlungen im öffentlichen Dienst",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Arbeitgeber und Gewerkschaften haben sich in der dritten Verhandlungsrunde der Tarifverhandlungen im öffentlichen Dienst geeinigt. Die Beschäftigten der Länder erhalten u. a. 5,8 Prozent mehr Entgelt in drei Stufen.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/tv-l-tarifrunde-2026-aktueller-stand_144_665510.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Wahl im Tarifvertrag: Mehr Zeit oder mehr Geld?",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Tarifliche Wahloptionen geben Beschäftigten die Möglichkeit, sich zwischen höherem Verdienst und zeitlicher Entlastung zu entscheiden. Die Mehrheit wählt mehr Zeit, zeigt eine neue Studie des Wirtschafts- und Sozialwissenschaftlichen Instituts (WSI) der Hans-Böckler-Stiftung.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/wahl-im-tarifvertrag-mehr-zeit-oder-mehr-geld_144_675314.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Keine höhere Eingruppierung eines freigestellten Personalratsmitglieds",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Bei freigestellten Personalratsmitgliedern stellt sich regelmäßig die Frage nach der fiktiven Karriereentwicklung. Das LAG Hamm hat klargestellt, dass bei der Eingruppierung von vollständig freigestellten Personalratsmitgliedern entscheidend ist, ob diese in einem hypothetischen Auswahlverfahren zwingend hätten ausgewählt werden müssen.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/eingruppierung-eines-freigestellten-personalratsmitglieds_144_675358.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Dienstanweisungen zu Schwangerschaftsabbrüchen",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Ein Chefarzt hat gegen das Abtreibungsverbot eines katholischen Klinikträgers einen Teilerfolg erzielt. Die Weisung zu Schwangerschaftsabbrüchen ist für seine angestellte Tätigkeit als Chefarzt wirksam, in Bezug auf seine Nebentätigkeit jedoch nicht.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/weisungen-zu-schwangerschaftsabbruechen-teilerfolg-fuer-chefarzt_144_676712.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Rechtswidrige Abberufung einer Gleichstellungsbeauftragten",
+        "topic_category": "Allgemeine Gleichbehandlungsgesetz",
+        "topic_summary": "Das Landesarbeitsgericht Düsseldorf hat die Abberufung einer Gleichstellungsbeauftragten und ihre Umsetzung auf eine geringerwertige Stelle für unwirksam erklärt. Die Stadt muss die Klägerin wieder als Leiterin der Stabsstelle Gleichstellung und Gleichstellungsbeauftragte einsetzen.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/rechtswidrige-abberufung-einer-gleichstellungsbeauftragten_144_676710.html",
+        "matched_courses": [
+          "Allgemeine Gleichbehandlungsgesetz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Freistellung nach Kündigung: Was Arbeitgeber beachten müssen",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Nach einer Kündigung folgt für Beschäftigte oftmals die sofortige Freistellung. Damit verzichtet der Arbeitgeber auf die Arbeitsleistung, während er den Lohn weiterzahlen muss. Was es bei einer Freistellung nach Kündigung rechtlich zu beachten gibt.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/den-mitarbeiter-nach-der-kuendigung-von-der-arbeit-freistellen_144_675310.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Bürgernahe Verwaltungssprache",
+        "topic_category": "Digital Operational Resilience Act (DORA)",
+        "topic_summary": "Der Dienstleistungsgedanke und Bürgernähe sollen in immer mehr Bereichen der öffentlichen Verwaltung Einzug halten. Nun auch in Bezug auf die Sprache. In deutschen Behörden sind zunehmend KI-gestützte Lösungen im Einsatz, um das Behörden- oder Amtsdeutsch in bürgernahe, verständliche Sprache oder sogar „Leichte Sprache“ zu übersetzen.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/digitalisierung-transformation/buergernahe-verwaltungssprache_524786_675330.html",
+        "matched_courses": [
+          "Digital Operational Resilience Act (DORA)"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "FAQ zur steuerfreien Aktivrente ab 2026",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Mit der steuerfreien Aktivrente werden ab 2026 finanzielle Anreize für mehr Erwerbstätigkeit im Alter gewährt. Wer die Regelaltersgrenze erreicht hat und sozialversicherungspflichtig beschäftigt ist, erhält den Arbeitslohn bis zu 2.000 Euro im Monat steuerfrei. In einem FAQ-Katalog zur neuen Aktivrente hat die Verwaltung zahlreiche Anwendungshinweise bekanntgegeben.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/entgelt/aenderungen-fuer-beschaeftigte-rentner-geplant_150_675936.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
+      }
+    },
+    {
+      "id": "19c758155590c570",
+      "email_typ_is_newsletter": true,
+      "sender": "oeffentlicher-dienst@redaktion.haufe.de",
+      "summary_general": "Der Newsletter enthält Informationen über Tarifverhandlungen, Wahloptionen im Tarifvertrag, Eingruppierung von Personalratsmitgliedern, Dienstanweisungen zu Schwangerschaftsabbrüchen, Abberufung einer Gleichstellungsbeauftragten, Freistellung nach Kündigung, Bürgernahe Verwaltungssprache, steuerfreie Aktivrente ab 2026, Arbeitsrecht während Karneval, sowie Stellenangebote im öffentlichen Dienst.",
+      "email_date": "2026-02-19T10:45:35.000Z",
+      "topics": {
+        "topic_name": "Karneval, Fasching, Fastnacht und das Arbeitsrecht: das gilt es zu beachten",
+        "topic_category": "Arbeitsschutz",
+        "topic_summary": "Auch wenn sich seit Donnerstag wieder viele Narren und Jecken im Ausnahmezustand befinden: Das Arbeitsrecht gilt auch in der sogenannten „fünften Jahreszeit“ zwischen Weiberfastnacht und Aschermittwoch. Daher sollten arbeitsrechtlich die folgenden Punkte beachtet werden.",
+        "topic_link": "https://www.haufe.de/oeffentlicher-dienst/personal-tarifrecht/arbeitsrecht-fuenf-punkte-plan-fuer-die-karnevalszeit_144_675154.html",
+        "matched_courses": [
+          "Arbeitsschutz"
+        ]
       }
     }
   ]
