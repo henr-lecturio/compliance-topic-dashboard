@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag Visualisierung</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1 id="page-title">Kategorien</h1>
+    </header>
+
+    <main>
+      <!-- Category Overview -->
+      <div id="category-view">
+        <div id="category-grid"></div>
+      </div>
+
+      <!-- Pie Chart View -->
+      <div id="chart-view" class="hidden">
+        <button id="back-btn">&larr;</button>
+        <div id="chart-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <div id="legend-table-container">
+          <table id="legend-table">
+            <thead>
+              <tr>
+                <th>Farbe</th>
+                <th>Tag</th>
+                <th>Anzahl</th>
+                <th>Anteil</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
