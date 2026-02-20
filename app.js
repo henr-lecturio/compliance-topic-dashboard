@@ -13,6 +13,7 @@ let currentCategoryIndex = null;
 let categoryToggles = {};
 let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 let filterFromDate = "";
+let filterRegulatory = false;
 
 function slugify(text) {
   return text
@@ -27,11 +28,17 @@ function findCategoryBySlug(slug) {
 }
 
 function getFilteredItems() {
-  if (!filterFromDate) return rawItems;
-  return rawItems.filter(item => {
-    const d = item.email_date ? item.email_date.split("T")[0] : "";
-    return d >= filterFromDate;
-  });
+  let items = rawItems;
+  if (filterFromDate) {
+    items = items.filter(item => {
+      const d = item.email_date ? item.email_date.split("T")[0] : "";
+      return d >= filterFromDate;
+    });
+  }
+  if (filterRegulatory) {
+    items = items.filter(item => item.topics?.is_regulatory_update === true);
+  }
+  return items;
 }
 
 async function init() {
@@ -61,6 +68,12 @@ function initFilter() {
   resetBtn.addEventListener("click", () => {
     filterFromDate = "";
     input.value = "";
+    applyFilter();
+  });
+
+  const regulatoryToggle = document.getElementById("filter-regulatory");
+  regulatoryToggle.addEventListener("change", (e) => {
+    filterRegulatory = e.target.checked;
     applyFilter();
   });
 }
