@@ -26,6 +26,14 @@
       </div>
     </header>
 
+    <div id="filter-bar">
+      <label class="filter-label" for="filter-from">ab</label>
+      <input type="date" id="filter-from">
+      <button id="filter-reset" aria-label="Filter zurücksetzen">
+        <img src="reset-icon.svg" alt="Reset" id="reset-icon">
+      </button>
+    </div>
+
     <main>
       <!-- Category Overview -->
       <div id="category-view">
@@ -35,7 +43,6 @@
               <table id="category-table">
                 <thead>
                   <tr>
-                    <th>Tags</th>
                     <th>Gesamt</th>
                     <th><label class="toggle toggle-all"><input type="checkbox" id="toggle-all" checked><span class="toggle-slider"></span></label></th>
                     <th>Kategorie</th>
@@ -82,8 +89,9 @@
           <table id="email-table">
             <thead>
               <tr>
-                <th>Absender</th>
                 <th>Datum</th>
+                <th>Absender</th>
+                <th>Thema</th>
                 <th>Link Mail</th>
                 <th>Link Artikel</th>
               </tr>

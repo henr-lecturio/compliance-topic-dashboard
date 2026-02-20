@@ -95,6 +95,65 @@ header {
   opacity: 1;
 }
 
+/* Filter Bar */
+#filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+#filter-from {
+  padding: 0.4rem 0.5rem;
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: var(--font-family);
+  color-scheme: dark;
+}
+
+#filter-from:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+#filter-reset {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.35rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+
+#filter-reset:hover {
+  border-color: var(--accent);
+}
+
+#reset-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+#filter-reset:hover #reset-icon {
+  opacity: 1;
+}
+
 #settings-dropdown {
   position: absolute;
   top: calc(100% + 0.5rem);
@@ -374,7 +433,7 @@ header {
 
 #email-table-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 #email-table {
@@ -405,6 +464,10 @@ header {
 
 #email-table .email-date {
   color: var(--text-secondary);
+}
+
+#email-table .email-topic {
+  color: var(--text-primary);
 }
 
 #email-table .email-link {

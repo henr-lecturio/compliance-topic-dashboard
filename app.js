@@ -12,6 +12,7 @@ let categoryChartInstance = null;
 let currentCategoryIndex = null;
 let categoryToggles = {};
 let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
+let filterFromDate = "";
 
 function slugify(text) {
   return text
@@ -25,6 +26,14 @@ function findCategoryBySlug(slug) {
   return categories.find(cat => slugify(cat.name) === slug);
 }
 
+function getFilteredItems() {
+  if (!filterFromDate) return rawItems;
+  return rawItems.filter(item => {
+    const d = item.email_date ? item.email_date.split("T")[0] : "";
+    return d >= filterFromDate;
+  });
+}
+
 async function init() {
   const res = await fetch(
     `https://raw.githubusercontent.com/henr-lecturio/newsletter-topic-dashboard/data/data.json?t=${Date.now()}`
@@ -32,11 +41,34 @@ async function init() {
   const raw = await res.json();
   rawItems = raw.items || [];
 
-  categories = aggregateCategories(rawItems);
+  categories = aggregateCategories(getFilteredItems());
 
+  initFilter();
   initSettings();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
+}
+
+function initFilter() {
+  const input = document.getElementById("filter-from");
+  const resetBtn = document.getElementById("filter-reset");
+
+  input.addEventListener("change", (e) => {
+    filterFromDate = e.target.value;
+    applyFilter();
+  });
+
+  resetBtn.addEventListener("click", () => {
+    filterFromDate = "";
+    input.value = "";
+    applyFilter();
+  });
+}
+
+function applyFilter() {
+  categories = aggregateCategories(getFilteredItems());
+  categoryToggles = {};
+  handleRoute();
 }
 
 function initSettings() {
@@ -98,7 +130,7 @@ function aggregateCategories(items) {
 }
 
 function getEmailsForTag(categoryName, tagName) {
-  return rawItems.filter(
+  return getFilteredItems().filter(
     (item) =>
       item.topics?.matched_tags?.includes(tagName) &&
       item.topics?.matched_categories?.includes(categoryName)
@@ -144,7 +176,6 @@ function renderCategories() {
   }
 
   sorted.forEach(({ cat, origIndex }) => {
-    const tagCount = Object.keys(cat.tags).length;
     const total = Object.values(cat.tags).reduce((a, b) => a + b, 0);
     const checked = categoryToggles[cat.name] ? "checked" : "";
     const color = COLORS[origIndex % COLORS.length];
@@ -152,7 +183,6 @@ function renderCategories() {
     const row = document.createElement("tr");
     if (cat.name === highlightedCategory) row.classList.add("highlighted");
     row.innerHTML = `
-      <td class="cat-count">${tagCount}</td>
       <td class="cat-count">${total}</td>
       <td class="cat-toggle"><label class="toggle"><input type="checkbox" ${checked}><span class="toggle-slider"></span></label></td>
       <td class="cat-name" style="cursor:pointer"><span class="color-dot" style="background:${color}"></span> ${cat.name}</td>
@@ -374,8 +404,9 @@ function showEmails(catSlug, topicName) {
       ? `<a class="email-link" href="${topicLink}" target="_blank">Zum Artikel &rarr;</a>`
       : `<span class="email-na">n/a</span>`;
     row.innerHTML = `
-      <td class="email-sender">${email.sender || ""}</td>
       <td class="email-date">${date}</td>
+      <td class="email-sender">${email.sender || ""}</td>
+      <td class="email-topic">${email.topics?.topic_name || ""}</td>
       <td><a class="email-link" href="${GMAIL_BASE}${email.id}" target="_blank">Zur Mail &rarr;</a></td>
       <td>${articleCell}</td>
     `;

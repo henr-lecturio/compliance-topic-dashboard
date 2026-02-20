@@ -1,0 +1,58 @@
+{
+  "type": "object",
+    "properties": {
+      "email_typ_is_newsletter": {
+        "type": "boolean",
+        "description": "true wenn newsletter, false wenn nicht"
+      },
+      "sender": {
+        "type": "string",
+        "description": "Sender email address"
+      },
+      "summary_general": {
+        "type": "string",
+        "description": "Zusammenfassung der ganzen Mail in einem Satz"
+      },
+      "email_date": {
+        "type": "string",
+        "description": "Datum der E-Mail-Zustellung"
+      },
+      "topics": {
+        "type": "array",
+        "description": "Liste aller im Newsletter behandelten Themen",
+        "items": {
+          "type": "object",
+          "properties": {
+            "topic_name": {
+              "type": "string",
+              "description": "Genaue Bezeichnung des Themas"
+            },
+            "topic_summary": {
+              "type": "string",
+              "description": "Zusammenfassung in maximal 3 Sätzen"
+            },
+            "topic_link": {
+              "type": "string",
+              "description": "Link zur Quelle/zum Artikel. Leere Zeichenkette, falls nicht vorhanden"
+            },
+            "matched_categories": {
+              "type": "array",
+              "description": "Liste matchender Kategorien aus der Kategorieliste mit dem Inhalt der Mail. Leeres Array, falls keine passende Kategorie gefunden wird. Mehrere Matches möglich",
+              "items": {
+                "type": "string"
+              }
+            },
+            "matched_tags": {
+              "type": "array",
+              "description": "Liste matchender Tags aus der Tagliste mit dem Inhalt der Mail. Leeres Array, falls kein passender Tag gefunden wird. Mehrere Matches möglich",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": ["topic_name", "topic_summary", "topic_link", "matched_categories", "matched_tags"]
+        }
+      }
+    },
+    "required": ["email_typ_is_newsletter", "sender", "summary_general", "email_date", "topics"]
+  }
