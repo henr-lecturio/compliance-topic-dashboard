@@ -8,7 +8,10 @@ const GMAIL_BASE = "https://mail.google.com/mail/u/1/#all/";
 let rawItems = [];
 let categories = [];
 let chartInstance = null;
+let categoryChartInstance = null;
 let currentCategoryIndex = null;
+let categoryToggles = {};
+let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 
 function slugify(text) {
   return text
@@ -31,22 +34,61 @@ async function init() {
 
   categories = aggregateCategories(rawItems);
 
+  initSettings();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
+}
+
+function initSettings() {
+  const btn = document.getElementById("settings-btn");
+  const dropdown = document.getElementById("settings-dropdown");
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("hidden");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target) && e.target !== btn) {
+      dropdown.classList.add("hidden");
+    }
+  });
+
+  const select = document.getElementById("highlight-select");
+  select.innerHTML = '<option value="">Keine</option>';
+  categories.forEach(cat => {
+    const opt = document.createElement("option");
+    opt.value = cat.name;
+    opt.textContent = cat.name;
+    select.appendChild(opt);
+  });
+
+  select.value = highlightedCategory;
+
+  select.addEventListener("change", (e) => {
+    highlightedCategory = e.target.value;
+    localStorage.setItem("highlightedCategory", highlightedCategory);
+    if (window.location.hash === "" || window.location.hash === "#") {
+      renderCategories();
+    }
+  });
 }
 
 function aggregateCategories(items) {
   const map = {};
 
   for (const item of items) {
-    const topicName = item.topics?.topic_name;
-    const courses = item.topics?.matched_courses;
+    const categories = item.topics?.matched_categories;
+    const tags = item.topics?.matched_tags;
 
-    if (!topicName || !courses || courses.length === 0) continue;
+    if (!categories || categories.length === 0) continue;
+    if (!tags || tags.length === 0) continue;
 
-    for (const course of courses) {
-      if (!map[course]) map[course] = {};
-      map[course][topicName] = (map[course][topicName] || 0) + 1;
+    for (const category of categories) {
+      if (!map[category]) map[category] = {};
+      for (const tag of tags) {
+        map[category][tag] = (map[category][tag] || 0) + 1;
+      }
     }
   }
 
@@ -55,11 +97,11 @@ function aggregateCategories(items) {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-function getEmailsForTag(courseName, topicName) {
+function getEmailsForTag(categoryName, tagName) {
   return rawItems.filter(
     (item) =>
-      item.topics?.topic_name === topicName &&
-      item.topics?.matched_courses?.includes(courseName)
+      item.topics?.matched_tags?.includes(tagName) &&
+      item.topics?.matched_categories?.includes(categoryName)
   );
 }
 
@@ -85,24 +127,124 @@ function hideAllViews() {
 }
 
 function renderCategories() {
+  if (Object.keys(categoryToggles).length === 0) {
+    categories.forEach(cat => { categoryToggles[cat.name] = true; });
+  }
+
   const tbody = document.querySelector("#category-table tbody");
   tbody.innerHTML = "";
 
-  categories.forEach((cat) => {
+  const sorted = categories.map((cat, i) => ({ cat, origIndex: i }));
+  if (highlightedCategory) {
+    sorted.sort((a, b) => {
+      if (a.cat.name === highlightedCategory) return -1;
+      if (b.cat.name === highlightedCategory) return 1;
+      return 0;
+    });
+  }
+
+  sorted.forEach(({ cat, origIndex }) => {
     const tagCount = Object.keys(cat.tags).length;
     const total = Object.values(cat.tags).reduce((a, b) => a + b, 0);
+    const checked = categoryToggles[cat.name] ? "checked" : "";
+    const color = COLORS[origIndex % COLORS.length];
 
     const row = document.createElement("tr");
-    row.style.cursor = "pointer";
+    if (cat.name === highlightedCategory) row.classList.add("highlighted");
     row.innerHTML = `
       <td class="cat-count">${tagCount}</td>
       <td class="cat-count">${total}</td>
-      <td class="cat-name">${cat.name}</td>
+      <td class="cat-toggle"><label class="toggle"><input type="checkbox" ${checked}><span class="toggle-slider"></span></label></td>
+      <td class="cat-name" style="cursor:pointer"><span class="color-dot" style="background:${color}"></span> ${cat.name}</td>
     `;
-    row.addEventListener("click", () => {
+    row.querySelector("input").addEventListener("change", (e) => {
+      e.stopPropagation();
+      categoryToggles[cat.name] = e.target.checked;
+      syncToggleAll();
+      renderCategoryChart();
+    });
+    row.querySelector(".cat-name").addEventListener("click", () => {
       window.location.hash = `category/${slugify(cat.name)}`;
     });
     tbody.appendChild(row);
+  });
+
+  const toggleAll = document.getElementById("toggle-all");
+  toggleAll.addEventListener("change", (e) => {
+    const state = e.target.checked;
+    categories.forEach(cat => { categoryToggles[cat.name] = state; });
+    tbody.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = state; });
+    renderCategoryChart();
+  });
+  syncToggleAll();
+
+  renderCategoryChart();
+}
+
+function syncToggleAll() {
+  const allOn = categories.every(cat => categoryToggles[cat.name]);
+  document.getElementById("toggle-all").checked = allOn;
+}
+
+function renderCategoryChart() {
+  const active = categories
+    .map((cat, i) => ({ cat, color: COLORS[i % COLORS.length] }))
+    .filter(({ cat }) => categoryToggles[cat.name]);
+
+  const labels = active.map(({ cat }) => cat.name);
+  const values = active.map(({ cat }) => Object.values(cat.tags).reduce((a, b) => a + b, 0));
+  const colors = active.map(({ color }) => color);
+  const total = values.reduce((a, b) => a + b, 0);
+
+  const hasHighlight = highlightedCategory && labels.includes(highlightedCategory);
+  const bgColors = hasHighlight
+    ? colors.map((c, i) => labels[i] === highlightedCategory ? c : c + "99")
+    : colors;
+  const offsets = hasHighlight
+    ? labels.map(l => l === highlightedCategory ? 15 : 0)
+    : labels.map(() => 0);
+  const borderWidths = hasHighlight
+    ? labels.map(l => l === highlightedCategory ? 3 : 1)
+    : labels.map(() => 2);
+
+  if (categoryChartInstance) {
+    categoryChartInstance.destroy();
+  }
+
+  const ctx = document.getElementById("category-pie-chart").getContext("2d");
+  categoryChartInstance = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: bgColors,
+        borderColor: "#0f1117",
+        borderWidth: borderWidths,
+        offset: offsets
+      }]
+    },
+    options: {
+      responsive: true,
+      onClick: (event, elements) => {
+        if (elements.length > 0) {
+          const idx = elements[0].index;
+          const catName = labels[idx];
+          window.location.hash = `category/${slugify(catName)}`;
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const pct = ((ctx.raw / total) * 100).toFixed(1);
+              return ` ${ctx.label}: ${ctx.raw} (${pct}%)`;
+            }
+          }
+        }
+      }
+    }
   });
 }
 
@@ -114,6 +256,10 @@ function showCategories() {
   if (chartInstance) {
     chartInstance.destroy();
     chartInstance = null;
+  }
+  if (categoryChartInstance) {
+    categoryChartInstance.destroy();
+    categoryChartInstance = null;
   }
   renderCategories();
 }
@@ -220,7 +366,8 @@ function showEmails(catSlug, topicName) {
   tbody.innerHTML = "";
 
   emails.forEach((email) => {
-    const date = email.email_date ? email.email_date.split("T")[0] : "";
+    const rawDate = email.email_date ? email.email_date.split("T")[0] : "";
+    const date = rawDate ? rawDate.split("-").reverse().join(".") : "";
     const row = document.createElement("tr");
     const topicLink = email.topics?.topic_link;
     const articleCell = topicLink

@@ -11,22 +11,45 @@
   <div id="app">
     <header>
       <h1 id="page-title">Kategorien</h1>
+      <div id="settings-wrapper">
+        <button id="settings-btn" aria-label="Einstellungen">
+          <img src="settings-icon.svg" alt="Settings" id="settings-icon">
+        </button>
+        <div id="settings-dropdown" class="hidden">
+          <div class="settings-section">
+            <label class="settings-label">Kategorie hervorheben</label>
+            <select id="highlight-select">
+              <option value="">Keine</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Category Overview -->
       <div id="category-view">
-        <div id="category-table-container">
-          <table id="category-table">
-            <thead>
-              <tr>
-                <th>Tags</th>
-                <th>Gesamt</th>
-                <th>Kategorie</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+        <div id="category-layout">
+          <div id="category-left">
+            <div id="category-table-container">
+              <table id="category-table">
+                <thead>
+                  <tr>
+                    <th>Tags</th>
+                    <th>Gesamt</th>
+                    <th><label class="toggle toggle-all"><input type="checkbox" id="toggle-all" checked><span class="toggle-slider"></span></label></th>
+                    <th>Kategorie</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <div id="category-right">
+            <div id="category-chart-container">
+              <canvas id="category-pie-chart"></canvas>
+            </div>
+          </div>
         </div>
       </div>
 
