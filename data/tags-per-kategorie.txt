@@ -1,0 +1,57 @@
+Allgemeines Gleichbehandlungsgesetz (AGG): Diskriminierung am Arbeitsplatz, AGG-Entschädigung, Benachteiligung bei Bewerbung, Gleichbehandlung im Arbeitsverhältnis, AGG-Rechtsprechung
+
+Arbeitsschutz: Gefährdungsbeurteilung, Arbeitsunfälle, Arbeitszeitregelung, Gesundheitsschutz am Arbeitsplatz, Betriebliche Sicherheitsvorschriften
+
+Absatzhelfer: Handelsvertreterrecht, Vertriebsverträge, Kommissionsgeschäft, Maklerpflichten, Vertriebspartner-Compliance
+
+Betrug: Wirtschaftsbetrug, Abrechnungsbetrug, Identitätsbetrug, Betrugsprävention, Subventionsbetrug
+
+Datenschutz: DSGVO-Verstöße, Datenpannen, Betroffenenrechte, Datenverarbeitung durch Dritte, Datenschutz-Bußgelder, Beschäftigtendatenschutz
+
+Digital Operational Resilience Act (DORA): IKT-Risikomanagement, Meldepflichten bei IKT-Vorfällen, Drittanbieter-Risiko, Resilienz-Tests, DORA-Umsetzung
+
+Diversity: Vielfalt am Arbeitsplatz, Inklusion, Barrierefreiheit, Diversitätsquoten, Interkulturelle Kompetenz
+
+Environmental Social Governance (ESG): Nachhaltigkeitsberichterstattung, CO2-Bilanzierung, ESG-Regulierung, Greenwashing, Taxonomie-Verordnung
+
+Exportkontrolle: Sanktionen, Dual-Use-Güter, Embargos, Exportgenehmigungen, Außenwirtschaftsrecht
+
+Fahrten im Beruf: Dienstfahrten, Unfallverhütung im Straßenverkehr, Fahrzeugnutzung, Führerscheinkontrolle, Dienstwagen-Regelungen
+
+Franchisenehmer: Franchisevertrag, Franchisegeber-Pflichten, Markennutzung im Franchise, Franchise-Compliance, Vorvertragliche Aufklärung
+
+Geldwäsche: Geldwäscheprävention, Verdachtsmeldungen, Know-Your-Customer (KYC), Sorgfaltspflichten, Geldwäsche-Regulierung
+
+Hygiene und Sicherheit im Lebensmittelbereich: Lebensmittelsicherheit, HACCP-Vorgaben, Hygienevorschriften, Lebensmittelkontrolle, Rückverfolgbarkeit
+
+Informationssicherheit: Cyberangriffe, Phishing, IT-Sicherheitsrichtlinien, Datenverlust, Sicherheitsvorfälle, Passwort-Sicherheit
+
+Insiderhandel: Insiderinformationen, Ad-hoc-Publizität, Handelsverbote, Marktmanipulation, Insiderrecht-Verstöße
+
+Kartellrecht: Preisabsprachen, Marktmissbrauch, Fusionskontrolle, Kartellbußgelder, Wettbewerbsbeschränkungen
+
+KI Anwendungen im Unternehmen: KI-Regulierung, KI-Ethik, KI-Haftung, KI im Arbeitsrecht, KI-Urheberrecht, EU AI Act
+
+Korruption: Bestechung, Vorteilsgewährung, Antikorruptionsrichtlinien, Amtsträgerkorruption, Korruption im Geschäftsverkehr
+
+Lieferkettengesetz: Lieferketten-Sorgfaltspflichten, Menschenrechte in Lieferketten, Umweltpflichten in Lieferketten, Beschwerdeverfahren, Lieferketten-Berichterstattung
+
+Mobbing: Mobbing am Arbeitsplatz, Bossing, Cybermobbing im Beruf, Mobbing-Prävention, Arbeitsrechtliche Folgen von Mobbing
+
+Produkthaftung: Produktmängel, Rückrufaktionen, Herstellerhaftung, Produktsicherheit, Schadensersatz bei Produktfehlern
+
+Richtlinien für Wertpapierdienstleister: MiFID-II-Compliance, Anlageberatung, Kundeninformation, Interessenkonflikte, Wertpapierhandel-Pflichten
+
+Sexuelle Belästigung: Sexuelle Belästigung am Arbeitsplatz, Prävention sexueller Belästigung, Meldepflichten, Opferschutz, Arbeitsrechtliche Konsequenzen
+
+Umgang mit Ermittlungsbehörden: Durchsuchungen, Beschlagnahme, Aussageverweigerungsrecht, Kooperation mit Behörden, Interne Ermittlungen
+
+Unconscious Bias: Unbewusste Vorurteile, Bias in Personalentscheidungen, Bias-Training, Stereotypen am Arbeitsplatz, Objektive Entscheidungsprozesse
+
+Unlauterer Wettbewerb: Irreführende Werbung, Nachahmung, Abmahnungen, Unlautere Geschäftspraktiken, Vergleichende Werbung
+
+Urheberrecht: Urheberrechtsverletzungen, Lizenzrecht, Urheberrecht digital, Nutzungsrechte, Urheberrecht und KI
+
+Widerrufsrecht: Verbraucherwiderruf, Online-Handel Widerruf, Widerrufsbelehrung, Fernabsatz, Widerrufsfristen
+
+Gesetzesänderung: Allgemeines Gleichbehandlungsgesetz (AGG), Arbeitsschutz, Datenschutz, DORA, Diversity, ESG, Exportkontrolle, Geldwäsche, Informationssicherheit, Insiderhandel, Kartellrecht, KI Anwendungen, Korruption, Lieferkettengesetz, Produkthaftung, Urheberrecht, Wettbewerbsrecht, Widerrufsrecht
