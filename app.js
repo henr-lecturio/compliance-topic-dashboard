@@ -20,6 +20,7 @@ let categoryToggles = {};
 let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 let filterFromDate = "";
 let filterRegulatory = false;
+let selectedItems = new Map(); // key: email.id, value: email object with metadata
 
 // === Utilities ===
 
@@ -49,6 +50,22 @@ function getFilteredItems() {
   return items;
 }
 
+function getSelectedCountForCategory(catName) {
+  let count = 0;
+  for (const item of selectedItems.values()) {
+    if (item.topics?.matched_categories_tags?.some(ct => ct.category === catName)) count++;
+  }
+  return count;
+}
+
+function getSelectedCountForTag(catName, tagName) {
+  let count = 0;
+  for (const item of selectedItems.values()) {
+    if (item.topics?.matched_categories_tags?.some(ct => ct.category === catName && ct.tag === tagName)) count++;
+  }
+  return count;
+}
+
 // === Init & Filter ===
 
 async function init() {
@@ -58,10 +75,19 @@ async function init() {
   const raw = await res.json();
   rawItems = raw.items || [];
 
+  // Deduplicate by email id (same email can appear multiple times in source data)
+  const seenIds = new Set();
+  rawItems = rawItems.filter(item => {
+    if (seenIds.has(item.id)) return false;
+    seenIds.add(item.id);
+    return true;
+  });
+
   categories = aggregateCategories(getFilteredItems());
 
   initFilter();
   initSettings();
+  initExport();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
 }
@@ -139,7 +165,12 @@ function aggregateCategories(items) {
 
     if (!categoryTags || categoryTags.length === 0) continue;
 
+    // Deduplicate category+tag pairs within a single email
+    const seenPairs = new Set();
     for (const ct of categoryTags) {
+      const key = `${ct.category}\0${ct.tag}`;
+      if (seenPairs.has(key)) continue;
+      seenPairs.add(key);
       if (!map[ct.category]) map[ct.category] = {};
       map[ct.category][ct.tag] = (map[ct.category][ct.tag] || 0) + 1;
     }
@@ -210,7 +241,7 @@ function renderCategories() {
     row.innerHTML = `
       <td class="cat-count">${total}</td>
       <td class="cat-toggle"><label class="toggle"><input type="checkbox" ${checked}><span class="toggle-slider"></span></label></td>
-      <td class="cat-name" style="cursor:pointer"><span class="color-dot" style="background:${color}"></span> ${cat.name}</td>
+      <td class="cat-name" style="cursor:pointer"><span class="color-dot" style="background:${color}"></span> ${cat.name} <span class="sel-badge" data-category="${cat.name}"></span></td>
     `;
     row.querySelector("input").addEventListener("change", (e) => {
       e.stopPropagation();
@@ -234,6 +265,7 @@ function renderCategories() {
   syncToggleAll();
 
   renderCategoryChart();
+  updateSelectionBadges();
 }
 
 function syncToggleAll() {
@@ -382,6 +414,8 @@ function showChart(slug) {
 }
 
 function renderLegendTable(labels, values, total, colors, catSlug) {
+  const cat = findCategoryBySlug(catSlug);
+  const catName = cat ? cat.name : "";
   const tbody = document.querySelector("#legend-table tbody");
   tbody.innerHTML = "";
 
@@ -391,19 +425,64 @@ function renderLegendTable(labels, values, total, colors, catSlug) {
 
   sorted.forEach((item) => {
     const pct = ((item.value / total) * 100).toFixed(1);
+    const tagEmails = getEmailsForTag(catName, item.label);
+    const allSelected = tagEmails.length > 0 && tagEmails.every(e => selectedItems.has(e.id));
     const row = document.createElement("tr");
     row.style.cursor = "pointer";
     row.innerHTML = `
+      <td class="cb-col"><input type="checkbox" ${allSelected ? "checked" : ""}></td>
       <td><span class="color-dot" style="background:${item.color}"></span></td>
-      <td class="tag-name">${item.label}</td>
+      <td class="tag-name">${item.label} <span class="sel-badge" data-category="${catName}" data-tag="${item.label}"></span></td>
       <td class="tag-count">${item.value}</td>
       <td class="tag-percent">${pct}%</td>
     `;
+    const cb = row.querySelector("input[type=checkbox]");
+    cb.addEventListener("click", (e) => e.stopPropagation());
+    cb.addEventListener("change", (e) => {
+      tagEmails.forEach(email => {
+        if (e.target.checked) {
+          selectedItems.set(email.id, { ...email, _category: catName, _tag: item.label });
+        } else {
+          selectedItems.delete(email.id);
+        }
+      });
+      syncTagSelectAll(catSlug);
+      updateExportButton();
+      updateSelectionBadges();
+    });
     row.addEventListener("click", () => {
       window.location.hash = `emails/${catSlug}/${encodeURIComponent(item.label)}`;
     });
     tbody.appendChild(row);
   });
+
+  syncTagSelectAll(catSlug);
+
+  const selectAll = document.getElementById("tag-select-all");
+  selectAll.onchange = (e) => {
+    sorted.forEach((item) => {
+      const tagEmails = getEmailsForTag(catName, item.label);
+      tagEmails.forEach(email => {
+        if (e.target.checked) {
+          selectedItems.set(email.id, { ...email, _category: catName, _tag: item.label });
+        } else {
+          selectedItems.delete(email.id);
+        }
+      });
+    });
+    tbody.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = e.target.checked; });
+    updateExportButton();
+    updateSelectionBadges();
+  };
+}
+
+function syncTagSelectAll(catSlug) {
+  const cat = findCategoryBySlug(catSlug);
+  if (!cat) return;
+  const allTags = Object.keys(cat.tags);
+  const allEmails = allTags.flatMap(tag => getEmailsForTag(cat.name, tag));
+  const allSelected = allEmails.length > 0 && allEmails.every(e => selectedItems.has(e.id));
+  document.getElementById("tag-select-all").checked = allSelected;
 }
 
 // === View: Email Detail ===
@@ -432,15 +511,112 @@ function showEmails(catSlug, topicName) {
     const articleCell = topicLink
       ? `<a class="email-link" href="${topicLink}" target="_blank">Zum Artikel &rarr;</a>`
       : `<span class="email-na">n/a</span>`;
+    const isSelected = selectedItems.has(email.id);
     row.innerHTML = `
+      <td class="cb-col"><input type="checkbox" ${isSelected ? "checked" : ""}></td>
       <td class="email-date">${date}</td>
       <td class="email-sender">${email.sender || ""}</td>
       <td class="email-topic">${email.topics?.topic_name || ""}</td>
       <td><a class="email-link" href="${GMAIL_BASE}${email.id}" target="_blank">Zur Mail &rarr;</a></td>
       <td>${articleCell}</td>
     `;
+    const cb = row.querySelector("input[type=checkbox]");
+    cb.addEventListener("change", (e) => {
+      if (e.target.checked) {
+        selectedItems.set(email.id, { ...email, _category: cat.name, _tag: topicName });
+      } else {
+        selectedItems.delete(email.id);
+      }
+      syncEmailSelectAll(emails);
+      updateExportButton();
+    });
     tbody.appendChild(row);
   });
+
+  syncEmailSelectAll(emails);
+
+  const selectAll = document.getElementById("email-select-all");
+  selectAll.onchange = (e) => {
+    emails.forEach(email => {
+      if (e.target.checked) {
+        selectedItems.set(email.id, { ...email, _category: cat.name, _tag: topicName });
+      } else {
+        selectedItems.delete(email.id);
+      }
+    });
+    tbody.querySelectorAll("input[type=checkbox]").forEach(cb => { cb.checked = e.target.checked; });
+    updateExportButton();
+  };
+}
+
+function syncEmailSelectAll(emails) {
+  const allSelected = emails.length > 0 && emails.every(e => selectedItems.has(e.id));
+  document.getElementById("email-select-all").checked = allSelected;
+}
+
+// === Export ===
+
+function initExport() {
+  document.getElementById("export-btn").addEventListener("click", exportSelectedJSON);
+  document.getElementById("deselect-btn").addEventListener("click", deselectAll);
+  updateExportButton();
+}
+
+function deselectAll() {
+  selectedItems.clear();
+  updateExportButton();
+  handleRoute();
+}
+
+function updateExportButton() {
+  const btn = document.getElementById("export-btn");
+  const deselectBtn = document.getElementById("deselect-btn");
+  const count = selectedItems.size;
+  const countEl = document.getElementById("export-count");
+  if (count > 0) {
+    btn.disabled = false;
+    countEl.textContent = `(${count})`;
+    deselectBtn.classList.remove("hidden");
+  } else {
+    btn.disabled = true;
+    countEl.textContent = "";
+    deselectBtn.classList.add("hidden");
+  }
+  updateSelectionBadges();
+}
+
+function updateSelectionBadges() {
+  document.querySelectorAll(".sel-badge").forEach(badge => {
+    const cat = badge.dataset.category;
+    const tag = badge.dataset.tag;
+    const count = tag
+      ? getSelectedCountForTag(cat, tag)
+      : getSelectedCountForCategory(cat);
+    badge.textContent = count > 0 ? `\u2713${count}` : "";
+  });
+}
+
+function exportSelectedJSON() {
+  const items = Array.from(selectedItems.values());
+  const exportData = {
+    exported_at: new Date().toISOString(),
+    item_count: items.length,
+    items: items.map(item => ({
+      topic_name: item.topics?.topic_name || "",
+      topic_summary: item.topics?.topic_summary || "",
+      topic_link: item.topics?.topic_link || "",
+      category: item._category || "",
+      tag: item._tag || "",
+      email_date: item.email_date || ""
+    }))
+  };
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `notebooklm-export-${new Date().toISOString().split("T")[0]}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 init();

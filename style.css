@@ -539,6 +539,84 @@ header {
   }
 }
 
+/* Checkbox column */
+.cb-col {
+  width: 30px;
+  text-align: center;
+}
+
+.cb-col input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Selection Badge */
+.sel-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-left: 0.3rem;
+}
+
+/* Export Group */
+#export-group {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Deselect Button */
+#deselect-btn {
+  padding: 0.45rem 0.75rem;
+  background: none;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+#deselect-btn:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+/* Export Button */
+#export-btn {
+  padding: 0.45rem 1rem;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+#export-btn:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+#export-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+#export-count {
+  font-weight: 700;
+}
+
 /* Utility */
 .hidden {
   display: none !important;

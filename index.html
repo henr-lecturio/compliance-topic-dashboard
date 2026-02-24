@@ -37,6 +37,10 @@
         <input type="checkbox" id="filter-regulatory">
         <span class="toggle-slider"></span>
       </label>
+      <div id="export-group">
+        <button id="deselect-btn" class="hidden">Auswahl aufheben</button>
+        <button id="export-btn" disabled>JSON exportieren <span id="export-count"></span></button>
+      </div>
     </div>
 
     <main>
@@ -75,6 +79,7 @@
           <table id="legend-table">
             <thead>
               <tr>
+                <th class="cb-col"><input type="checkbox" id="tag-select-all"></th>
                 <th>Farbe</th>
                 <th>Tag</th>
                 <th>Anzahl</th>
@@ -94,6 +99,7 @@
           <table id="email-table">
             <thead>
               <tr>
+                <th class="cb-col"><input type="checkbox" id="email-select-all"></th>
                 <th>Datum</th>
                 <th>Absender</th>
                 <th>Thema</th>
