@@ -123,17 +123,13 @@ function aggregateCategories(items) {
   const map = {};
 
   for (const item of items) {
-    const categories = item.topics?.matched_categories;
-    const tags = item.topics?.matched_tags;
+    const categoryTags = item.topics?.matched_categories_tags;
 
-    if (!categories || categories.length === 0) continue;
-    if (!tags || tags.length === 0) continue;
+    if (!categoryTags || categoryTags.length === 0) continue;
 
-    for (const category of categories) {
-      if (!map[category]) map[category] = {};
-      for (const tag of tags) {
-        map[category][tag] = (map[category][tag] || 0) + 1;
-      }
+    for (const ct of categoryTags) {
+      if (!map[ct.category]) map[ct.category] = {};
+      map[ct.category][ct.tag] = (map[ct.category][ct.tag] || 0) + 1;
     }
   }
 
@@ -144,9 +140,9 @@ function aggregateCategories(items) {
 
 function getEmailsForTag(categoryName, tagName) {
   return getFilteredItems().filter(
-    (item) =>
-      item.topics?.matched_tags?.includes(tagName) &&
-      item.topics?.matched_categories?.includes(categoryName)
+    (item) => item.topics?.matched_categories_tags?.some(
+      ct => ct.category === categoryName && ct.tag === tagName
+    )
   );
 }
 
