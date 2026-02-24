@@ -35,22 +35,30 @@
               "type": "string",
               "description": "Link zur Quelle/zum Artikel. Leere Zeichenkette, falls nicht vorhanden"
             },
-            "matched_categories": {
+            "matched_categories_tags": {
               "type": "array",
-              "description": "Liste matchender Kategorien aus der Kategorieliste mit dem Inhalt der Mail. Leeres Array, falls keine passende Kategorie gefunden wird. Mehrere Matches möglich",
+              "description": "Liste der Kategorie-Tag-Zuordnungen. Jeder Eintrag ordnet einer matchenden Kategorie genau einen Tag zu. Leeres Array, falls keine passende Kategorie gefunden wird.",
               "items": {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "category": {
+                    "type": "string",
+                    "description": "Kategoriename exakt wie in der Kategorieliste"
+                  },
+                  "tag": {
+                    "type": "string",
+                    "description": "Genau ein Tag aus der Tagliste der jeweiligen Kategorie"
+                  }
+                },
+                "required": ["category", "tag"]
               }
             },
-            "matched_tags": {
-              "type": "array",
-              "description": "Liste matchender Tags aus der Tagliste mit dem Inhalt der Mail. Leeres Array, falls kein passender Tag gefunden wird. Mehrere Matches möglich",
-              "items": {
-                "type": "string"
-              }
+            "is_regulatory_update": {
+              "type": "boolean",
+              "description": "true wenn regularisches update, false wenn nicht"
             }
           },
-          "required": ["topic_name", "topic_summary", "topic_link", "matched_categories", "matched_tags"]
+          "required": ["topic_name", "topic_summary", "topic_link", "matched_categories_tags", "is_regulatory_update"]
         }
       }
     },

@@ -21,11 +21,15 @@ Für jedes Thema benötigen wir:
 - Themenname ("topic_name")
 - Themenzusammenfassung ("topic_summary")
 - Themenlink ("topic_link")
-- Matching Kategorien ("matched_categories")
-- Matching Tags ("matched_tags")
+- Kategorie-Tag-Zuordnungen ("matched_categories_tags")
+- Regulatorische Updates ("is_regulatory_update")
 
-3. Vergleiche den Inhalt der Mail mit der mitgelieferten "Kategorieliste". Ordne Kategorien nur zu, wenn du dir sicher bist, dass der Newsletter-Inhalt direkt und konkret mit dem jeweiligen Kategoriethema zusammenhängt. Im Zweifel: lieber kein Match (leeres Array) als eine falsche Zuordnung. Eine thematische Nähe allein reicht nicht aus — der Artikel muss den Kerninhalt der Kategorie betreffen. Gib die Kategorienamen exakt so zurück, wie sie in der "Kategorieliste" stehen und schreibe alle matchenden Kategorien in das Array "matched_categories".
+2a. Vergleiche den Inhalt der E-Mail mit der mitgelieferten "Kategorieliste". Ordne Kategorien nur zu, wenn du dir sicher bist, dass der Newsletter-Inhalt direkt und konkret mit dem jeweiligen Kategoriethema zusammenhängt. Im Zweifel: lieber kein Match (leeres Array) als eine falsche Zuordnung. Eine thematische Nähe allein reicht nicht aus — der Artikel muss den Kerninhalt der Kategorie betreffen. Gib die Kategorienamen exakt so zurück, wie sie in der "Kategorieliste" stehen.
 
-4. Vergib für jedes Thema pro zugeordneter Kategorie in "matched_categories" genau einen Tag aus der mitgelieferten "Tagliste". Der Tag muss aus den Tags der jeweiligen Kategorie stammen. Die Kategorie "Gesetzesänderung" ist eine Zusatz-Kategorie und hat keine eigenen Tags — ihre Tags werden durch die anderen zugeordneten Kategorien abgedeckt. Verwende niemals einen Kategorienamen als Tag. Wenn kein passender Tag existiert, verwende den Tag "Sonstiges". Wenn "matched_categories" leer ist, setze "matched_tags" auf ein leeres Array. Gib jeden Tag exakt so zurück, wie er in der "Tagliste" steht.
+2b. Vergib für jede zugeordnete Kategorie genau einen Tag aus der mitgelieferten "Tagliste". Der Tag muss aus den Tags der jeweiligen Kategorie stammen. Verwende niemals einen Kategorienamen als Tag. Wenn kein passender Tag existiert, verwende den Tag "Sonstiges". Gib jeden Tag exakt so zurück, wie er in der "Tagliste" steht. Schreibe jede Zuordnung als Objekt mit "category" und "tag" in das Array "matched_categories_tags". Wenn keine Kategorie passt, setze "matched_categories_tags" auf ein leeres Array.
 
-5. Antworte ausschließlich im geforderten JSON-Format.
+2c. Entscheide, ob das Thema über ein regulatorisches Updates berichtet ("is_regulatory_update"): 
+- true: Der Artikel beschreibt eine konkrete gesetzliche oder regulatorische Entwicklung — z.B. ein neues Gesetz, eine Gesetzesänderung, einen Gesetzentwurf oder eine geplante Regulierung.
+- false: Der Artikel behandelt ein Thema, ohne auf eine bestimmte gesetzliche Neuerung oder Änderung einzugehen.
+
+3. Antworte ausschließlich im geforderten JSON-Format.
