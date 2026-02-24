@@ -1,6 +1,12 @@
+// === State & Config ===
+
 const COLORS = [
-  "#6366f1", "#f59e0b", "#10b981", "#ef4444", "#8b5cf6",
-  "#ec4899", "#14b8a6", "#f97316", "#06b6d4", "#84cc16"
+  "#FF0000", "#DC143C", "#FF6347", 
+  "#FFA500", "#FF8C00", "#FF7F50",
+  "#FFFF00", "#FFD700", "#F0E68C",
+  "#008000", "#32CD32", "#228B22",
+  "#0000FF", "#4169E1", "#1E90FF",
+  "#800080", "#9400D3", "#9370DB" 
 ];
 
 const GMAIL_BASE = "https://mail.google.com/mail/u/1/#all/";
@@ -14,6 +20,8 @@ let categoryToggles = {};
 let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 let filterFromDate = "";
 let filterRegulatory = false;
+
+// === Utilities ===
 
 function slugify(text) {
   return text
@@ -40,6 +48,8 @@ function getFilteredItems() {
   }
   return items;
 }
+
+// === Init & Filter ===
 
 async function init() {
   const res = await fetch(
@@ -119,6 +129,8 @@ function initSettings() {
   });
 }
 
+// === Data Processing ===
+
 function aggregateCategories(items) {
   const map = {};
 
@@ -146,6 +158,8 @@ function getEmailsForTag(categoryName, tagName) {
   );
 }
 
+// === Routing ===
+
 function handleRoute() {
   const hash = window.location.hash;
   if (hash.startsWith("#emails/")) {
@@ -166,6 +180,8 @@ function hideAllViews() {
   document.getElementById("chart-view").classList.add("hidden");
   document.getElementById("email-view").classList.add("hidden");
 }
+
+// === View: Category Overview ===
 
 function renderCategories() {
   if (Object.keys(categoryToggles).length === 0) {
@@ -303,6 +319,8 @@ function showCategories() {
   renderCategories();
 }
 
+// === View: Tag Chart ===
+
 function showChart(slug) {
   const cat = findCategoryBySlug(slug);
   if (!cat) return;
@@ -387,6 +405,8 @@ function renderLegendTable(labels, values, total, colors, catSlug) {
     tbody.appendChild(row);
   });
 }
+
+// === View: Email Detail ===
 
 function showEmails(catSlug, topicName) {
   const cat = findCategoryBySlug(catSlug);
