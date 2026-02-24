@@ -557,7 +557,7 @@ function syncEmailSelectAll(emails) {
 // === Export ===
 
 function initExport() {
-  document.getElementById("export-btn").addEventListener("click", exportSelectedJSON);
+  document.getElementById("export-btn").addEventListener("click", exportSelectedMarkdown);
   document.getElementById("deselect-btn").addEventListener("click", deselectAll);
   updateExportButton();
 }
@@ -596,25 +596,38 @@ function updateSelectionBadges() {
   });
 }
 
-function exportSelectedJSON() {
+function exportSelectedMarkdown() {
   const items = Array.from(selectedItems.values());
-  const exportData = {
-    exported_at: new Date().toISOString(),
-    item_count: items.length,
-    items: items.map(item => ({
-      topic_name: item.topics?.topic_name || "",
-      topic_summary: item.topics?.topic_summary || "",
-      topic_link: item.topics?.topic_link || "",
-      category: item._category || "",
-      tag: item._tag || "",
-      email_date: item.email_date || ""
-    }))
-  };
-  const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+  const date = new Date().toISOString().split("T")[0];
+
+  let md = `# Newsletter Topics Export\n\n`;
+  md += `**Exportiert:** ${date}  \n`;
+  md += `**Anzahl:** ${items.length}\n\n---\n\n`;
+
+  items.forEach((item, i) => {
+    const name = item.topics?.topic_name || "Ohne Titel";
+    const summary = item.topics?.topic_summary || "";
+    const link = item.topics?.topic_link || "";
+    const category = item._category || "";
+    const tag = item._tag || "";
+    const emailDate = item.email_date ? item.email_date.split("T")[0] : "";
+
+    md += `## ${i + 1}. ${name}\n\n`;
+    md += `| Feld | Wert |\n|---|---|\n`;
+    md += `| Kategorie | ${category} |\n`;
+    md += `| Tag | ${tag} |\n`;
+    if (emailDate) md += `| Datum | ${emailDate} |\n`;
+    if (link) md += `| Artikel | [Link](${link}) |\n`;
+    md += `\n`;
+    if (summary) md += `### Zusammenfassung\n\n${summary}\n\n`;
+    md += `---\n\n`;
+  });
+
+  const blob = new Blob([md], { type: "text/markdown" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `notebooklm-export-${new Date().toISOString().split("T")[0]}.json`;
+  a.download = `notebooklm-export-${date}.md`;
   a.click();
   URL.revokeObjectURL(url);
 }
