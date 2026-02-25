@@ -26,6 +26,8 @@ let filterRegulatory = false;
 let selectedItems = new Map(); // key: item.id (supabase row id), value: item object with metadata
 let trendReports = [];
 let trendBarChartInstance = null;
+let courseUpdates = [];
+let currentSeverityFilter = "all";
 
 // === Utilities ===
 
@@ -86,6 +88,7 @@ async function init() {
   initSettings();
   initExport();
   initTrend();
+  initUpdates();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
 }
@@ -193,15 +196,15 @@ function handleRoute() {
   const hash = window.location.hash;
   const filterBar = document.getElementById("filter-bar");
   const isTrend = hash === "#trends";
+  const isUpdates = hash === "#updates";
 
   // Update active tab
   document.querySelectorAll(".nav-tab").forEach(tab => {
     const tabTarget = tab.dataset.tab;
-    if ((isTrend && tabTarget === "trends") || (!isTrend && tabTarget === "overview")) {
-      tab.classList.add("active");
-    } else {
-      tab.classList.remove("active");
-    }
+    const isActive = (isTrend && tabTarget === "trends")
+      || (isUpdates && tabTarget === "updates")
+      || (!isTrend && !isUpdates && tabTarget === "overview");
+    tab.classList.toggle("active", isActive);
   });
 
   const settingsWrapper = document.getElementById("settings-wrapper");
@@ -210,6 +213,10 @@ function handleRoute() {
     filterBar.classList.add("hidden");
     settingsWrapper.classList.add("hidden");
     showTrends();
+  } else if (isUpdates) {
+    filterBar.classList.add("hidden");
+    settingsWrapper.classList.add("hidden");
+    showUpdates();
   } else {
     filterBar.classList.remove("hidden");
     settingsWrapper.classList.remove("hidden");
@@ -232,6 +239,8 @@ function hideAllViews() {
   document.getElementById("chart-view").classList.add("hidden");
   document.getElementById("email-view").classList.add("hidden");
   document.getElementById("trend-view").classList.add("hidden");
+  document.getElementById("updates-view").classList.add("hidden");
+  document.getElementById("update-detail-view").classList.add("hidden");
 }
 
 // === View: Category Overview ===
@@ -869,6 +878,167 @@ function renderTrendBarChart(stats) {
       }
     }
   });
+}
+
+// === View: Course Updates ===
+
+let parsedUpdatesForPeriod = [];
+
+function initUpdates() {
+  document.getElementById("updates-period-select").addEventListener("change", (e) => {
+    const periodEnd = e.target.value;
+    const filtered = courseUpdates.filter(u => u.period_end === periodEnd);
+    renderCourseUpdatesList(filtered, currentSeverityFilter);
+  });
+
+  document.querySelectorAll(".severity-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".severity-pill").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentSeverityFilter = btn.dataset.severity;
+
+      const select = document.getElementById("updates-period-select");
+      const periodEnd = select.value;
+      const filtered = courseUpdates.filter(u => u.period_end === periodEnd);
+      renderCourseUpdatesList(filtered, currentSeverityFilter);
+    });
+  });
+
+  document.getElementById("update-back-btn").addEventListener("click", () => {
+    window.location.hash = "updates";
+  });
+}
+
+async function showUpdates() {
+  hideAllViews();
+  document.getElementById("updates-view").classList.remove("hidden");
+  document.getElementById("page-title").textContent = "Kurs-Updates";
+
+  if (courseUpdates.length === 0) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/course_updates?select=*&order=period_end.desc`,
+      { headers: { "apikey": SUPABASE_KEY } }
+    );
+    courseUpdates = await res.json();
+  }
+
+  const tbody = document.querySelector("#updates-table tbody");
+  if (courseUpdates.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="3" class="updates-empty">Noch keine Kurs-Updates vorhanden.</td></tr>';
+    return;
+  }
+
+  // Populate period dropdown with unique period_end values
+  const periods = [...new Set(courseUpdates.map(u => u.period_end))];
+  const select = document.getElementById("updates-period-select");
+  select.innerHTML = "";
+  periods.forEach(p => {
+    const opt = document.createElement("option");
+    opt.value = p;
+    opt.textContent = formatDate(p);
+    select.appendChild(opt);
+  });
+
+  const filtered = courseUpdates.filter(u => u.period_end === periods[0]);
+  renderCourseUpdatesList(filtered, currentSeverityFilter);
+}
+
+function severityLabel(severity) {
+  if (severity === "zur_kenntnis") return "Zur Kenntnis";
+  if (!severity) return "Zur Kenntnis";
+  return severity.charAt(0).toUpperCase() + severity.slice(1);
+}
+
+function renderCourseUpdatesList(updates, severityFilter) {
+  const tbody = document.querySelector("#updates-table tbody");
+
+  // Parse ai_analysis for each update
+  const parsed = updates.map(u => {
+    const rawAi = typeof u.ai_analysis === "string" ? JSON.parse(u.ai_analysis) : u.ai_analysis;
+    const ai = rawAi.output || rawAi;
+    return { ...u, _ai: ai };
+  });
+
+  // Filter by severity
+  const filtered = severityFilter === "all"
+    ? parsed
+    : parsed.filter(u => u._ai.severity === severityFilter);
+
+  parsedUpdatesForPeriod = filtered;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="3" class="updates-empty">Keine Updates für diesen Filter.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = filtered.map((u, i) => {
+    const severity = u._ai.severity || "zur_kenntnis";
+    const label = severityLabel(severity);
+    const courseName = u.course_name || "Unbekannter Kurs";
+    const updateCount = (u._ai.consolidated_updates || []).length;
+    return `
+      <tr data-update-idx="${i}">
+        <td class="update-col-course">${courseName}</td>
+        <td><span class="severity-badge severity-${severity}">${label}</span></td>
+        <td class="update-col-count">${updateCount}</td>
+      </tr>
+    `;
+  }).join("");
+
+  tbody.querySelectorAll("tr[data-update-idx]").forEach(row => {
+    row.addEventListener("click", () => {
+      const idx = parseInt(row.dataset.updateIdx, 10);
+      showUpdateDetail(idx);
+    });
+  });
+}
+
+function showUpdateDetail(idx) {
+  const update = parsedUpdatesForPeriod[idx];
+  if (!update) return;
+
+  hideAllViews();
+  document.getElementById("update-detail-view").classList.remove("hidden");
+  document.getElementById("page-title").textContent = update.course_name || "Unbekannter Kurs";
+
+  const ai = update._ai;
+  const severity = ai.severity || "zur_kenntnis";
+
+  const updatesHtml = (ai.consolidated_updates || []).map(cu => {
+    const sourcesHtml = (cu.sources || []).map((src, i) => {
+      const label = `Quelle ${i + 1}`;
+      return `<a href="${src}" class="update-source-link" target="_blank">${label} &rarr;</a>`;
+    }).join("");
+
+    const itemSeverity = cu.severity || severity;
+
+    return `
+      <div class="update-item">
+        <div class="update-item-title">${cu.title || ""}</div>
+        <span class="update-item-severity severity-badge severity-${itemSeverity}">${severityLabel(itemSeverity)}</span>
+        <div class="update-item-summary">${cu.summary || ""}</div>
+        ${sourcesHtml ? `<div class="update-item-sources">${sourcesHtml}</div>` : ""}
+      </div>
+    `;
+  }).join("");
+
+  const recoHtml = ai.recommendation ? `
+    <div class="update-recommendation">
+      <div class="update-recommendation-label">Handlungsempfehlung</div>
+      <div class="update-recommendation-text">${ai.recommendation}</div>
+    </div>
+  ` : "";
+
+  document.getElementById("update-detail-content").innerHTML = `
+    <div class="update-card">
+      <div class="update-card-header">
+        <span class="update-card-course">${update.course_name || "Unbekannter Kurs"}</span>
+        <span class="severity-badge severity-${severity}">${severityLabel(severity)}</span>
+      </div>
+      ${updatesHtml}
+      ${recoHtml}
+    </div>
+  `;
 }
 
 init();

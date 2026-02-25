@@ -13,6 +13,7 @@
     <nav id="top-nav">
       <a href="#" class="nav-tab active" data-tab="overview">Überblick</a>
       <a href="#trends" class="nav-tab" data-tab="trends">Trends</a>
+      <a href="#updates" class="nav-tab" data-tab="updates">Kurs-Updates</a>
     </nav>
 
     <header>
@@ -160,6 +161,37 @@
             <canvas id="trend-bar-chart"></canvas>
           </div>
         </div>
+      </div>
+
+      <!-- Course Updates View -->
+      <div id="updates-view" class="hidden">
+        <div id="updates-header">
+          <select id="updates-period-select"></select>
+          <div id="updates-severity-filter">
+            <button class="severity-pill active" data-severity="all">Alle</button>
+            <button class="severity-pill" data-severity="kritisch">Kritisch</button>
+            <button class="severity-pill" data-severity="prüfen">Prüfen</button>
+            <button class="severity-pill" data-severity="zur_kenntnis">Zur Kenntnis</button>
+          </div>
+        </div>
+        <div id="updates-table-container">
+          <table id="updates-table">
+            <thead>
+              <tr>
+                <th>Kurs</th>
+                <th>Severity</th>
+                <th>Updates</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Course Update Detail View -->
+      <div id="update-detail-view" class="hidden">
+        <button id="update-back-btn">&larr;</button>
+        <div id="update-detail-content"></div>
       </div>
     </main>
   </div>
