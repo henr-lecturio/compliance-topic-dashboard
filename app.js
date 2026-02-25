@@ -75,7 +75,7 @@ function getSelectedCountForTag(catName, tagName) {
 
 async function init() {
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/items?select=*`,
+    `${SUPABASE_URL}/rest/v1/newsletter_topics?select=*`,
     { headers: { "apikey": SUPABASE_KEY } }
   );
   rawItems = await res.json();

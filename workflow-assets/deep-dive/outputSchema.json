@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "severity": {
+      "type": "string",
+      "enum": ["kritisch", "prüfen", "zur_kenntnis"],
+      "description": "Höchste Kritikalitätsstufe aller konsolidierten Updates dieses Kurses."
+    },
+    "consolidated_updates": {
+      "type": "array",
+      "description": "Liste der konsolidierten regulatorischen Updates.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Kurzer Titel des Sachverhalts, z.B. 'AI Act tritt in Kraft'."
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["kritisch", "prüfen", "zur_kenntnis"],
+            "description": "Kritikalität dieses einzelnen Updates."
+          },
+          "summary": {
+            "type": "string",
+            "description": "Was ist passiert? 2-3 Sätze."
+          },
+          "source_count": {
+            "type": "number",
+            "description": "Wie viele der Eingabe-Beiträge diesen Sachverhalt betreffen."
+          },
+          "source_links": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Links zu den Originalartikeln (topic_link aus den Quell-Items)."
+          }
+        },
+        "required": ["title", "severity", "summary", "source_count"]
+      }
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Konkrete Handlungsempfehlung: Was sollte im Kurs geprüft oder geändert werden? 2-4 Sätze."
+    }
+  },
+  "required": ["severity", "consolidated_updates", "recommendation"]
+}
