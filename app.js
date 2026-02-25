@@ -191,16 +191,28 @@ function getEmailsForTag(categoryName, tagName) {
 
 function handleRoute() {
   const hash = window.location.hash;
-  const trendBtn = document.getElementById("trend-btn");
   const filterBar = document.getElementById("filter-bar");
+  const isTrend = hash === "#trends";
 
-  if (hash === "#trends") {
-    trendBtn.classList.add("active");
+  // Update active tab
+  document.querySelectorAll(".nav-tab").forEach(tab => {
+    const tabTarget = tab.dataset.tab;
+    if ((isTrend && tabTarget === "trends") || (!isTrend && tabTarget === "overview")) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+
+  const settingsWrapper = document.getElementById("settings-wrapper");
+
+  if (isTrend) {
     filterBar.classList.add("hidden");
+    settingsWrapper.classList.add("hidden");
     showTrends();
   } else {
-    trendBtn.classList.remove("active");
     filterBar.classList.remove("hidden");
+    settingsWrapper.classList.remove("hidden");
     if (hash.startsWith("#emails/")) {
       const parts = hash.split("/");
       const catSlug = parts[1];
@@ -645,12 +657,11 @@ function exportSelectedMarkdown() {
 // === View: Trend Report ===
 
 function initTrend() {
-  document.getElementById("trend-btn").addEventListener("click", () => {
-    window.location.hash = "trends";
-  });
-
-  document.getElementById("trend-back-btn").addEventListener("click", () => {
-    window.location.hash = "";
+  document.querySelectorAll(".nav-tab").forEach(tab => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.hash = tab.getAttribute("href").replace("#", "") || "";
+    });
   });
 
   document.getElementById("trend-report-select").addEventListener("change", (e) => {

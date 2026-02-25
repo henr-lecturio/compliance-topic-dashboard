@@ -10,9 +10,13 @@
 </head>
 <body>
   <div id="app">
+    <nav id="top-nav">
+      <a href="#" class="nav-tab active" data-tab="overview">Überblick</a>
+      <a href="#trends" class="nav-tab" data-tab="trends">Trends</a>
+    </nav>
+
     <header>
       <h1 id="page-title">Kategorien</h1>
-      <button id="trend-btn">Trend Report</button>
       <div id="settings-wrapper">
         <button id="settings-btn" aria-label="Einstellungen">
           <img src="settings-icon.svg" alt="Settings" id="settings-icon">
@@ -117,7 +121,6 @@
       <!-- Trend Report View -->
       <div id="trend-view" class="hidden">
         <div id="trend-header">
-          <button id="trend-back-btn">&larr;</button>
           <select id="trend-report-select"></select>
         </div>
 

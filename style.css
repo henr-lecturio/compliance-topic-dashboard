@@ -48,6 +48,33 @@ body {
   padding: 2rem 1.5rem;
 }
 
+/* Top Navigation */
+#top-nav {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-tab {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-tab:hover {
+  color: var(--text-primary);
+}
+
+.nav-tab.active {
+  color: var(--text-heading);
+  border-bottom-color: var(--accent);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -617,33 +644,6 @@ header {
   font-weight: 700;
 }
 
-/* Trend Button (Header) */
-#trend-btn {
-  padding: 0.4rem 0.9rem;
-  background: none;
-  color: var(--text-secondary);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  font-family: var(--font-family);
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
-  margin-left: auto;
-  margin-right: 0.75rem;
-}
-
-#trend-btn:hover {
-  border-color: var(--accent);
-  color: var(--text-primary);
-}
-
-#trend-btn.active {
-  background: var(--accent);
-  color: var(--white);
-  border-color: var(--accent);
-}
-
 /* Trend View */
 #trend-view {
   display: flex;
@@ -655,22 +655,6 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-#trend-back-btn {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-#trend-back-btn:hover {
-  border-color: var(--accent);
-  color: var(--text-primary);
 }
 
 #trend-report-select {
