@@ -5,24 +5,24 @@ Ein Dashboard zur Visualisierung und Kategorisierung von Newsletter-Inhalten. Dr
 ## Architektur
 
 ```
-E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)     → Supabase (items)          → Dashboard (Überblick)
-                  n8n Workflow 2 (Trend Scout)         → Supabase (trend_reports)  → Dashboard (Trends)
-                  n8n Workflow 3 (Deep Dive Analyst)   → Supabase (course_updates) → Dashboard (Kurs-Updates)
+E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)       → Supabase (newsletter_topics)   → Dashboard (Überblick)
+                  n8n Workflow 2 (Trend Scout)         → Supabase (trend_reports)       → Dashboard (Trends)
+                  n8n Workflow 3 (Deep Dive Analyst)   → Supabase (course_updates)      → Dashboard (Kurs-Updates)
 ```
 
 **Workflow 1 — Gmail Crawler:**
 - Liest Newsletter-E-Mails aus einem Mail-Postfach
 - Analysiert und kategorisiert die Inhalte (Kategorien, Tags, Gesetzesänderungen)
-- Schreibt die Ergebnisse per Supabase Node in die `items`-Tabelle
+- Schreibt die Ergebnisse per Supabase Node in die `newsletter_topics`-Tabelle
 
 **Workflow 2 — Trend Scout (wöchentlich, So 12:00):**
-- Lädt die letzten 90 Tage aus der `items`-Tabelle
+- Lädt die letzten 90 Tage aus der `newsletter_topics`-Tabelle
 - Deterministischer Code Node berechnet Statistiken über 3 Zeitfenster (7d, 30d, 90d)
 - AI Agent interpretiert die Statistiken und erstellt einen strukturierten Report
 - Speichert Rohdaten + AI-Report in die `trend_reports`-Tabelle
 
 **Workflow 3 — Deep Dive Analyst (wöchentlich):**
-- Lädt regulatorische Updates der letzten 7 Tage aus der `items`-Tabelle
+- Lädt regulatorische Updates der letzten 7 Tage aus der `newsletter_topics`-Tabelle
 - Gruppiert die Beiträge nach betroffenen Kursen (= Kategorien)
 - AI Agent konsolidiert die Updates pro Kurs, bewertet die Kritikalität und gibt Handlungsempfehlungen
 - Speichert die Analyse pro Kurs in die `course_updates`-Tabelle
@@ -66,7 +66,7 @@ E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)     → Supabase (items)     
 
 ## Datenbank (Supabase)
 
-Tabelle `items`:
+Tabelle `newsletter_topics`:
 
 | Spalte | Typ | Beschreibung |
 |--------|-----|-------------|
