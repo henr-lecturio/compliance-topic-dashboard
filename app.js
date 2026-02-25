@@ -24,6 +24,8 @@ let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 let filterFromDate = "";
 let filterRegulatory = false;
 let selectedItems = new Map(); // key: item.id (supabase row id), value: item object with metadata
+let trendReports = [];
+let trendBarChartInstance = null;
 
 // === Utilities ===
 
@@ -48,7 +50,7 @@ function getFilteredItems() {
     });
   }
   if (filterRegulatory) {
-    items = items.filter(item => item.topics?.is_regulatory_update === true);
+    items = items.filter(item => item.is_regulatory_update === true);
   }
   return items;
 }
@@ -56,7 +58,7 @@ function getFilteredItems() {
 function getSelectedCountForCategory(catName) {
   let count = 0;
   for (const item of selectedItems.values()) {
-    if (item.topics?.matched_categories_tags?.some(ct => ct.category === catName)) count++;
+    if (item.matched_categories_tags?.some(ct => ct.category === catName)) count++;
   }
   return count;
 }
@@ -64,7 +66,7 @@ function getSelectedCountForCategory(catName) {
 function getSelectedCountForTag(catName, tagName) {
   let count = 0;
   for (const item of selectedItems.values()) {
-    if (item.topics?.matched_categories_tags?.some(ct => ct.category === catName && ct.tag === tagName)) count++;
+    if (item.matched_categories_tags?.some(ct => ct.category === catName && ct.tag === tagName)) count++;
   }
   return count;
 }
@@ -83,6 +85,7 @@ async function init() {
   initFilter();
   initSettings();
   initExport();
+  initTrend();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
 }
@@ -156,7 +159,7 @@ function aggregateCategories(items) {
   const map = {};
 
   for (const item of items) {
-    const categoryTags = item.topics?.matched_categories_tags;
+    const categoryTags = item.matched_categories_tags;
 
     if (!categoryTags || categoryTags.length === 0) continue;
 
@@ -178,7 +181,7 @@ function aggregateCategories(items) {
 
 function getEmailsForTag(categoryName, tagName) {
   return getFilteredItems().filter(
-    (item) => item.topics?.matched_categories_tags?.some(
+    (item) => item.matched_categories_tags?.some(
       ct => ct.category === categoryName && ct.tag === tagName
     )
   );
@@ -188,16 +191,27 @@ function getEmailsForTag(categoryName, tagName) {
 
 function handleRoute() {
   const hash = window.location.hash;
-  if (hash.startsWith("#emails/")) {
-    const parts = hash.split("/");
-    const catSlug = parts[1];
-    const tagName = decodeURIComponent(parts.slice(2).join("/"));
-    showEmails(catSlug, tagName);
-  } else if (hash.startsWith("#category/")) {
-    const slug = hash.split("/").slice(1).join("/");
-    showChart(slug);
+  const trendBtn = document.getElementById("trend-btn");
+  const filterBar = document.getElementById("filter-bar");
+
+  if (hash === "#trends") {
+    trendBtn.classList.add("active");
+    filterBar.classList.add("hidden");
+    showTrends();
   } else {
-    showCategories();
+    trendBtn.classList.remove("active");
+    filterBar.classList.remove("hidden");
+    if (hash.startsWith("#emails/")) {
+      const parts = hash.split("/");
+      const catSlug = parts[1];
+      const tagName = decodeURIComponent(parts.slice(2).join("/"));
+      showEmails(catSlug, tagName);
+    } else if (hash.startsWith("#category/")) {
+      const slug = hash.split("/").slice(1).join("/");
+      showChart(slug);
+    } else {
+      showCategories();
+    }
   }
 }
 
@@ -205,6 +219,7 @@ function hideAllViews() {
   document.getElementById("category-view").classList.add("hidden");
   document.getElementById("chart-view").classList.add("hidden");
   document.getElementById("email-view").classList.add("hidden");
+  document.getElementById("trend-view").classList.add("hidden");
 }
 
 // === View: Category Overview ===
@@ -502,7 +517,7 @@ function showEmails(catSlug, topicName) {
     const rawDate = email.email_date ? email.email_date.split("T")[0] : "";
     const date = rawDate ? rawDate.split("-").reverse().join(".") : "";
     const row = document.createElement("tr");
-    const topicLink = email.topics?.topic_link;
+    const topicLink = email.topic_link;
     const articleCell = topicLink
       ? `<a class="email-link" href="${topicLink}" target="_blank">Zum Artikel &rarr;</a>`
       : `<span class="email-na">n/a</span>`;
@@ -511,7 +526,7 @@ function showEmails(catSlug, topicName) {
       <td class="cb-col"><input type="checkbox" ${isSelected ? "checked" : ""}></td>
       <td class="email-date">${date}</td>
       <td class="email-sender">${email.sender || ""}</td>
-      <td class="email-topic">${email.topics?.topic_name || ""}</td>
+      <td class="email-topic">${email.topic_name || ""}</td>
       <td><a class="email-link" href="${GMAIL_BASE}${email.email_id}" target="_blank">Zur Mail &rarr;</a></td>
       <td>${articleCell}</td>
     `;
@@ -600,9 +615,9 @@ function exportSelectedMarkdown() {
   md += `**Anzahl:** ${items.length}\n\n---\n\n`;
 
   items.forEach((item, i) => {
-    const name = item.topics?.topic_name || "Ohne Titel";
-    const summary = item.topics?.topic_summary || "";
-    const link = item.topics?.topic_link || "";
+    const name = item.topic_name || "Ohne Titel";
+    const summary = item.topic_summary || "";
+    const link = item.topic_link || "";
     const category = item._category || "";
     const tag = item._tag || "";
     const emailDate = item.email_date ? item.email_date.split("T")[0] : "";
@@ -625,6 +640,224 @@ function exportSelectedMarkdown() {
   a.download = `notebooklm-export-${date}.md`;
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// === View: Trend Report ===
+
+function initTrend() {
+  document.getElementById("trend-btn").addEventListener("click", () => {
+    window.location.hash = "trends";
+  });
+
+  document.getElementById("trend-back-btn").addEventListener("click", () => {
+    window.location.hash = "";
+  });
+
+  document.getElementById("trend-report-select").addEventListener("change", (e) => {
+    const report = trendReports.find(r => String(r.id) === e.target.value);
+    if (report) renderTrendReport(report);
+  });
+}
+
+async function showTrends() {
+  hideAllViews();
+  document.getElementById("trend-view").classList.remove("hidden");
+  document.getElementById("page-title").textContent = "Trend Report";
+
+  if (trendReports.length === 0) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/trend_reports?select=*&order=period_end.desc`,
+      { headers: { "apikey": SUPABASE_KEY } }
+    );
+    trendReports = await res.json();
+  }
+
+  if (trendReports.length === 0) {
+    document.getElementById("trend-summary").innerHTML = "<p>Noch keine Trend Reports vorhanden.</p>";
+    return;
+  }
+
+  const select = document.getElementById("trend-report-select");
+  select.innerHTML = "";
+  trendReports.forEach(r => {
+    const opt = document.createElement("option");
+    opt.value = r.id;
+    opt.textContent = `${formatDate(r.period_start)} – ${formatDate(r.period_end)}`;
+    select.appendChild(opt);
+  });
+
+  renderTrendReport(trendReports[0]);
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return "";
+  return dateStr.split("-").reverse().join(".");
+}
+
+function renderTrendReport(report) {
+  const aiRaw = typeof report.ai_report === "string" ? JSON.parse(report.ai_report) : report.ai_report;
+  const ai = aiRaw.output || aiRaw;
+  const stats = typeof report.stats_json === "string" ? JSON.parse(report.stats_json) : report.stats_json;
+
+  // Summary
+  document.getElementById("trend-summary").innerHTML = `
+    <div class="trend-period">${formatDate(report.period_start)} – ${formatDate(report.period_end)}</div>
+    <p>${ai.weekly_summary}</p>
+  `;
+
+  // Content Recommendations
+  renderRecommendations(ai.content_recommendations);
+
+  // Rising Topics
+  renderRisingTopics(ai.rising_topics);
+
+  // New Signals
+  renderNewSignals(ai.new_signals);
+
+  // Regulatory
+  renderRegulatory(ai.regulatory_developments);
+
+  // Clusters
+  renderClusters(ai.topic_clusters);
+
+  // Bar Chart
+  renderTrendBarChart(stats);
+}
+
+function renderRecommendations(reco) {
+  const grid = document.getElementById("trend-reco-grid");
+  grid.innerHTML = `
+    <div class="trend-reco-item reco-act">
+      <div class="reco-label">Sofort umsetzen</div>
+      <div class="reco-topic">${reco.act_now.topic}</div>
+      <div class="reco-reason">${reco.act_now.reason}</div>
+    </div>
+    <div class="trend-reco-item reco-monitor">
+      <div class="reco-label">Beobachten</div>
+      <div class="reco-topic">${reco.monitor.topic}</div>
+      <div class="reco-reason">${reco.monitor.reason}</div>
+    </div>
+    <div class="trend-reco-item reco-deprioritize">
+      <div class="reco-label">Nicht relevant</div>
+      <div class="reco-topic">${reco.deprioritize.topic}</div>
+      <div class="reco-reason">${reco.deprioritize.reason}</div>
+    </div>
+  `;
+}
+
+function renderRisingTopics(topics) {
+  const container = document.getElementById("trend-rising-list");
+  if (!topics || topics.length === 0) {
+    container.innerHTML = '<div class="trend-item"><span class="trend-item-detail">Keine aufsteigenden Themen</span></div>';
+    return;
+  }
+  container.innerHTML = topics.map(t => `
+    <div class="trend-item">
+      <div>
+        <div class="trend-item-name">${t.topic}</div>
+        <div class="trend-item-detail">${t.assessment}</div>
+      </div>
+      <span class="trend-badge trend-badge-up">${t.current} (${t.change_pct != null ? (t.change_pct > 0 ? "+" : "") + t.change_pct + "%" : "neu"})</span>
+    </div>
+  `).join("");
+}
+
+function renderNewSignals(signals) {
+  const container = document.getElementById("trend-signals-list");
+  if (!signals || signals.length === 0) {
+    container.innerHTML = '<div class="trend-item"><span class="trend-item-detail">Keine neuen Tags diese Woche</span></div>';
+    return;
+  }
+  container.innerHTML = signals.map(s => `
+    <div class="trend-item">
+      <div>
+        <div class="trend-item-name">${s.topic}</div>
+        <div class="trend-item-detail">${s.source_count} Quelle${s.source_count !== 1 ? "n" : ""} — ${s.assessment}</div>
+      </div>
+      <span class="trend-badge trend-badge-new">neu</span>
+    </div>
+  `).join("");
+}
+
+function renderRegulatory(reg) {
+  const container = document.getElementById("trend-regulatory-content");
+  const prevText = reg.count_previous != null ? `Vorzeitraum: ${reg.count_previous}` : "";
+  const urgentHtml = reg.urgent_topics && reg.urgent_topics.length > 0
+    ? `<ul class="trend-urgent-list">${reg.urgent_topics.map(t => `<li>${t}</li>`).join("")}</ul>`
+    : "";
+
+  container.innerHTML = `
+    <div class="trend-regulatory-stat">
+      <span class="stat-value">${reg.count_current}</span>
+      <span class="stat-prev">${prevText}</span>
+    </div>
+    ${urgentHtml}
+    <div class="trend-item-detail">${reg.assessment}</div>
+  `;
+}
+
+function renderClusters(clusters) {
+  const container = document.getElementById("trend-clusters-list");
+  if (!clusters || clusters.length === 0) {
+    container.innerHTML = '<div class="trend-item-detail">Keine Cluster erkannt</div>';
+    return;
+  }
+  container.innerHTML = clusters.map(c => `
+    <div class="trend-cluster-item">
+      <div class="trend-cluster-topics">${c.topics.join(" + ")}</div>
+      <div class="trend-cluster-impl">${c.implication}</div>
+    </div>
+  `).join("");
+}
+
+function renderTrendBarChart(stats) {
+  const window7d = stats.windows?.["7d"];
+  if (!window7d || !window7d.top_tags || window7d.top_tags.length === 0) return;
+
+  const topTags = window7d.top_tags.slice(0, 10);
+  const labels = topTags.map(t => t.name);
+  const values = topTags.map(t => t.count);
+  const colors = topTags.map((_, i) => COLORS[i % COLORS.length]);
+
+  if (trendBarChartInstance) {
+    trendBarChartInstance.destroy();
+  }
+
+  const ctx = document.getElementById("trend-bar-chart").getContext("2d");
+  trendBarChartInstance = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: colors,
+        borderColor: "transparent",
+        borderRadius: 4
+      }]
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => ` ${ctx.raw} Beiträge`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: "rgba(45, 49, 72, 0.5)" },
+          ticks: { color: "#8b8fa3" }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: "#e1e4e8", font: { size: 12 } }
+        }
+      }
+    }
+  });
 }
 
 init();

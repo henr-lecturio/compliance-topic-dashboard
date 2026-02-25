@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tag Visualisierung</title>
+  <title>Lecturio Compliance Scout</title>
+  <link rel="icon" type="image/x-icon" href="favi.ico">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 </head>
@@ -11,6 +12,7 @@
   <div id="app">
     <header>
       <h1 id="page-title">Kategorien</h1>
+      <button id="trend-btn">Trend Report</button>
       <div id="settings-wrapper">
         <button id="settings-btn" aria-label="Einstellungen">
           <img src="settings-icon.svg" alt="Settings" id="settings-icon">
@@ -109,6 +111,51 @@
             </thead>
             <tbody></tbody>
           </table>
+        </div>
+      </div>
+
+      <!-- Trend Report View -->
+      <div id="trend-view" class="hidden">
+        <div id="trend-header">
+          <button id="trend-back-btn">&larr;</button>
+          <select id="trend-report-select"></select>
+        </div>
+
+        <div id="trend-summary" class="trend-card trend-card-full"></div>
+
+        <div class="trend-card trend-card-full" id="trend-recommendations">
+          <h3 class="trend-card-title">Content-Empfehlungen</h3>
+          <div id="trend-reco-grid"></div>
+        </div>
+
+        <div class="trend-grid-2">
+          <div class="trend-card" id="trend-rising">
+            <h3 class="trend-card-title">Aufsteigende Themen</h3>
+            <div id="trend-rising-list"></div>
+          </div>
+          <div class="trend-card" id="trend-signals">
+            <h3 class="trend-card-title">Neue Tags</h3>
+            <p class="trend-card-subtitle">Tags die erstmalig in dieser Woche aufgetaucht sind</p>
+            <div id="trend-signals-list"></div>
+          </div>
+        </div>
+
+        <div class="trend-grid-2">
+          <div class="trend-card" id="trend-regulatory">
+            <h3 class="trend-card-title">Regulatorische Entwicklungen</h3>
+            <div id="trend-regulatory-content"></div>
+          </div>
+          <div class="trend-card" id="trend-clusters">
+            <h3 class="trend-card-title">Themen-Cluster</h3>
+            <div id="trend-clusters-list"></div>
+          </div>
+        </div>
+
+        <div class="trend-card trend-card-full">
+          <h3 class="trend-card-title">Top Tags (7 Tage)</h3>
+          <div id="trend-bar-container">
+            <canvas id="trend-bar-chart"></canvas>
+          </div>
         </div>
       </div>
     </main>

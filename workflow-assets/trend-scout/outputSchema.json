@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "properties": {
+        "weekly_summary": {
+          "type": "string",
+          "description": "2-3 Sätze: Die wichtigste Entwicklung der Woche als Headline."
+        },
+        "rising_topics": {
+          "type": "array",
+          "description": "Die 3-5 wichtigsten aufsteigenden Themen.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topic": { "type": "string", "description": "Name des Themas (Tag oder Kategorie)." },
+              "current": { "type": "number", "description": "Anzahl im aktuellen Zeitfenster." },
+              "previous": { "type": "number", "description": "Anzahl im Vorzeitraum." },
+              "change_pct": { "type": "number", "description": "Prozentuale Veränderung." },
+              "assessment": { "type": "string", "description": "Kurze Einordnung in 1-2 Sätzen." }
+            },
+            "required": ["topic", "current", "previous", "assessment"]
+          }
+        },
+        "new_signals": {
+          "type": "array",
+          "description": "Erstmalig aufgetauchte Tags mit Bewertung.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topic": { "type": "string", "description": "Name des neuen Tags." },
+              "source_count": { "type": "number", "description": "Anzahl verschiedener Newsletter-Quellen." },
+              "assessment": { "type": "string", "description": "Einschätzung: Rauschen oder relevant? 1-2 Sätze." }
+            },
+            "required": ["topic", "source_count", "assessment"]
+          }
+        },
+        "regulatory_developments": {
+          "type": "object",
+          "description": "Zusammenfassung regulatorischer Entwicklungen.",
+          "properties": {
+            "count_current": { "type": "number", "description": "Anzahl regulatorischer Beiträge im aktuellen Zeitfenster." },
+            "count_previous": { "type": "number", "description": "Anzahl im Vorzeitraum." },
+            "urgent_topics": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Regulatorische Themen die zeitkritisch sein könnten."
+            },
+            "assessment": { "type": "string", "description": "Gesamteinschätzung der regulatorischen Lage in 2-3 Sätzen." }
+          },
+          "required": ["count_current", "assessment"]
+        },
+        "topic_clusters": {
+          "type": "array",
+          "description": "Interpretierte Themen-Cluster aus Co-Occurrences.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "topics": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Die zusammenhängenden Themen."
+              },
+              "co_occurrence_count": { "type": "number", "description": "Wie oft treten sie gemeinsam auf." },
+              "implication": { "type": "string", "description": "Was bedeutet das für Content? 1-2 Sätze." }
+            },
+            "required": ["topics", "implication"]
+          }
+        },
+        "content_recommendations": {
+          "type": "object",
+          "description": "Genau 3 priorisierte Content-Empfehlungen.",
+          "properties": {
+            "act_now": {
+              "type": "object",
+              "properties": {
+                "topic": { "type": "string" },
+                "reason": { "type": "string", "description": "Warum jetzt? 1-2 Sätze." }
+              },
+              "required": ["topic", "reason"]
+            },
+            "monitor": {
+              "type": "object",
+              "properties": {
+                "topic": { "type": "string" },
+                "reason": { "type": "string", "description": "Warum beobachten? 1-2 Sätze." }
+              },
+              "required": ["topic", "reason"]
+            },
+            "deprioritize": {
+              "type": "object",
+              "properties": {
+                "topic": { "type": "string" },
+                "reason": { "type": "string", "description": "Warum nicht relevant? 1-2 Sätze." }
+              },
+              "required": ["topic", "reason"]
+            }
+          },
+          "required": ["act_now", "monitor", "deprioritize"]
+        }
+      },
+  "required": ["weekly_summary", "rising_topics", "new_signals", "regulatory_developments", "topic_clusters", "content_recommendations"]
+}

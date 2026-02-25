@@ -617,6 +617,299 @@ header {
   font-weight: 700;
 }
 
+/* Trend Button (Header) */
+#trend-btn {
+  padding: 0.4rem 0.9rem;
+  background: none;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+
+#trend-btn:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+#trend-btn.active {
+  background: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+}
+
+/* Trend View */
+#trend-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+#trend-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#trend-back-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+#trend-back-btn:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+#trend-report-select {
+  padding: 0.4rem 0.5rem;
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+#trend-report-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Trend Cards */
+.trend-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.trend-card-full {
+  width: 100%;
+}
+
+.trend-card-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.trend-card-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+}
+
+.trend-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* Summary Card */
+#trend-summary {
+  border-left: 3px solid var(--accent);
+}
+
+#trend-summary p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+#trend-summary .trend-period {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Recommendations Grid */
+#trend-reco-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.trend-reco-item {
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+}
+
+.trend-reco-item .reco-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.trend-reco-item .reco-topic {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 0.35rem;
+}
+
+.trend-reco-item .reco-reason {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.reco-act .reco-label { color: #22c55e; }
+.reco-monitor .reco-label { color: var(--accent-secondary); }
+.reco-deprioritize .reco-label { color: var(--text-muted); }
+
+/* Rising / Signal Items */
+.trend-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.trend-item:last-child {
+  border-bottom: none;
+}
+
+.trend-item-name {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.trend-item-detail {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+
+.trend-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.trend-badge-up {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.trend-badge-new {
+  color: var(--accent);
+  background: rgba(99, 102, 241, 0.12);
+}
+
+/* Regulatory */
+.trend-regulatory-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.trend-regulatory-stat .stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.trend-regulatory-stat .stat-prev {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.trend-urgent-list {
+  list-style: none;
+  padding: 0;
+}
+
+.trend-urgent-list li {
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.trend-urgent-list li::before {
+  content: "!";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-secondary);
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* Cluster Items */
+.trend-cluster-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.trend-cluster-item:last-child {
+  border-bottom: none;
+}
+
+.trend-cluster-topics {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.trend-cluster-impl {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Bar Chart */
+#trend-bar-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trend-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  #trend-reco-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Utility */
 .hidden {
   display: none !important;
