@@ -1,9 +1,9 @@
 const aiOutput = $input.first().json.output;
-const originalId = $('cleanEmail').first().json.id;
+const originalId = $('cleanEmail').first().json.email_id;
 
 return [{
   json: {
-    id: originalId,
+    email_id: originalId,
     email_typ_is_newsletter: aiOutput.email_typ_is_newsletter,
     sender: aiOutput.sender,
     summary_general: aiOutput.summary_general,

@@ -104,7 +104,7 @@ const fromAddress = item.from?.value?.[0]?.address
 
 return [{
   json: {
-    id: item.id,
+    email_id: item.id,
     from: fromAddress,
     subject: item.subject,
     date: item.date,

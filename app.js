@@ -11,6 +11,9 @@ const COLORS = [
 
 const GMAIL_BASE = "https://mail.google.com/mail/u/1/#all/";
 
+const SUPABASE_URL = "https://ipuhepfyamxjpqzbcixj.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwdWhlcGZ5YW14anBxemJjaXhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwMDg1MDksImV4cCI6MjA4NzU4NDUwOX0.D3TuhPsXWjmVI0K6gMvfuou5p35qPx34S06MIGuLHI4";
+
 let rawItems = [];
 let categories = [];
 let chartInstance = null;
@@ -20,7 +23,7 @@ let categoryToggles = {};
 let highlightedCategory = localStorage.getItem("highlightedCategory") || "";
 let filterFromDate = "";
 let filterRegulatory = false;
-let selectedItems = new Map(); // key: email.id, value: email object with metadata
+let selectedItems = new Map(); // key: item.id (supabase row id), value: item object with metadata
 
 // === Utilities ===
 
@@ -70,18 +73,10 @@ function getSelectedCountForTag(catName, tagName) {
 
 async function init() {
   const res = await fetch(
-    `https://raw.githubusercontent.com/henr-lecturio/newsletter-topic-dashboard/data/data.json?t=${Date.now()}`
+    `${SUPABASE_URL}/rest/v1/items?select=*`,
+    { headers: { "apikey": SUPABASE_KEY } }
   );
-  const raw = await res.json();
-  rawItems = raw.items || [];
-
-  // Deduplicate by email id (same email can appear multiple times in source data)
-  const seenIds = new Set();
-  rawItems = rawItems.filter(item => {
-    if (seenIds.has(item.id)) return false;
-    seenIds.add(item.id);
-    return true;
-  });
+  rawItems = await res.json();
 
   categories = aggregateCategories(getFilteredItems());
 
@@ -517,7 +512,7 @@ function showEmails(catSlug, topicName) {
       <td class="email-date">${date}</td>
       <td class="email-sender">${email.sender || ""}</td>
       <td class="email-topic">${email.topics?.topic_name || ""}</td>
-      <td><a class="email-link" href="${GMAIL_BASE}${email.id}" target="_blank">Zur Mail &rarr;</a></td>
+      <td><a class="email-link" href="${GMAIL_BASE}${email.email_id}" target="_blank">Zur Mail &rarr;</a></td>
       <td>${articleCell}</td>
     `;
     const cb = row.querySelector("input[type=checkbox]");
