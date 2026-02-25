@@ -1,12 +1,13 @@
 # Compliance Topic Dashboard
 
-Ein Dashboard zur Visualisierung und Kategorisierung von Newsletter-Inhalten. Zwei n8n-Workflows analysieren automatisiert E-Mails aus einem Postfach: Der erste extrahiert Themen und kategorisiert sie, der zweite erstellt wöchentliche Trend-Reports. Die Web-App stellt beide Ergebnisse interaktiv dar.
+Ein Dashboard zur Visualisierung und Kategorisierung von Newsletter-Inhalten. Drei n8n-Workflows analysieren automatisiert E-Mails aus einem Postfach: Der erste extrahiert Themen und kategorisiert sie, der zweite erstellt wöchentliche Trend-Reports, der dritte bewertet regulatorische Updates pro Kurs und gibt Handlungsempfehlungen. Die Web-App stellt alle Ergebnisse interaktiv dar.
 
 ## Architektur
 
 ```
-E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler) → Supabase (items) → Dashboard (Überblick)
-                  n8n Workflow 2 (Trend Scout)    → Supabase (trend_reports) → Dashboard (Trends)
+E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)     → Supabase (items)          → Dashboard (Überblick)
+                  n8n Workflow 2 (Trend Scout)         → Supabase (trend_reports)  → Dashboard (Trends)
+                  n8n Workflow 3 (Deep Dive Analyst)   → Supabase (course_updates) → Dashboard (Kurs-Updates)
 ```
 
 **Workflow 1 — Gmail Crawler:**
@@ -20,10 +21,17 @@ E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler) → Supabase (items) → Dash
 - AI Agent interpretiert die Statistiken und erstellt einen strukturierten Report
 - Speichert Rohdaten + AI-Report in die `trend_reports`-Tabelle
 
+**Workflow 3 — Deep Dive Analyst (wöchentlich):**
+- Lädt regulatorische Updates der letzten 7 Tage aus der `items`-Tabelle
+- Gruppiert die Beiträge nach betroffenen Kursen (= Kategorien)
+- AI Agent konsolidiert die Updates pro Kurs, bewertet die Kritikalität und gibt Handlungsempfehlungen
+- Speichert die Analyse pro Kurs in die `course_updates`-Tabelle
+
 **Web-App:**
 - Lädt Daten via Supabase REST API
 - **Überblick**: Kategorien als interaktive Doughnut-Charts, Drill-Down zu Tags und E-Mails
 - **Trends**: Wöchentliche Trend-Reports mit Content-Empfehlungen
+- **Kurs-Updates**: Regulatorische Updates pro Kurs mit Severity-Bewertung und Handlungsempfehlungen
 
 ## Features
 
@@ -45,8 +53,15 @@ E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler) → Supabase (items) → Dash
 - Top Tags Bar Chart aus den Rohdaten
 - Report-Auswahl über Dropdown (historische Reports)
 
+### Kurs-Updates
+- Listenansicht aller betroffenen Kurse pro Periode mit Severity-Badge und Update-Anzahl
+- Detail-Ansicht pro Kurs mit konsolidierten Updates, Quelllinks und Handlungsempfehlung
+- Severity-Filter (Alle / Kritisch / Prüfen / Zur Kenntnis)
+- Perioden-Auswahl über Dropdown (historische Berichte)
+- URL-basiertes Routing (`#updates`, `#updates/<id>`) mit Browser-Navigation
+
 ### Allgemein
-- Tab-Navigation (Überblick / Trends)
+- Tab-Navigation (Überblick / Trends / Kurs-Updates)
 - Dark Theme, responsive Design
 
 ## Datenbank (Supabase)
@@ -78,6 +93,36 @@ Tabelle `trend_reports`:
 | `ai_report` | jsonb | Strukturierter AI-Report (6 Sektionen) |
 | `created_at` | timestamptz | Erstellungszeitpunkt |
 
+Tabelle `course_updates`:
+
+| Spalte | Typ | Beschreibung |
+|--------|-----|-------------|
+| `id` | bigint (auto) | Primary Key |
+| `course_name` | text | Name des betroffenen Kurses |
+| `period_start` | date | Beginn des Analysezeitraums |
+| `period_end` | date | Ende des Analysezeitraums |
+| `item_ids` | jsonb | IDs der zugrunde liegenden Newsletter-Beiträge |
+| `ai_analysis` | jsonb | AI-Bewertung (Severity, konsolidierte Updates, Empfehlung) |
+| `created_at` | timestamptz | Erstellungszeitpunkt |
+
+### `ai_analysis` Schema (Deep Dive)
+
+```json
+{
+  "severity": "kritisch | prüfen | zur_kenntnis",
+  "consolidated_updates": [
+    {
+      "title": "Kurzer Titel des Sachverhalts",
+      "severity": "kritisch | prüfen | zur_kenntnis",
+      "summary": "Was ist passiert? 2-3 Sätze.",
+      "source_count": 3,
+      "source_links": ["https://..."]
+    }
+  ],
+  "recommendation": "Konkrete Handlungsempfehlung für das Kurs-Update-Team."
+}
+```
+
 ## n8n Code Nodes
 
 ### Gmail Crawler (`workflow-assets/gmail-crawler/`)
@@ -95,6 +140,14 @@ Tabelle `trend_reports`:
 | `analyse.js` | Deterministischer Analyst: berechnet Tag-Frequenzen, Trends, Co-Occurrences, HHI, Sender-Diversity |
 | `trendExpertPrompt.txt` | System-Prompt für den AI Agent mit n8n Expressions für Dateninjektion |
 | `outputSchema.json` | JSON Schema für den Structured Output Parser (6 Report-Sektionen) |
+
+### Deep Dive Analyst (`workflow-assets/deep-dive/`)
+
+| Datei | Beschreibung |
+|-------|-------------|
+| `groupByCourse.js` | Gruppiert regulatorische Items nach Kurs, berechnet Tag-Frequenzen und Sender-Diversity |
+| `courseAnalystPrompt.txt` | System-Prompt für den AI Agent: Konsolidierung, Kritikalitätsbewertung, Handlungsempfehlung |
+| `outputSchema.json` | JSON Schema für den Structured Output (Severity, konsolidierte Updates, Empfehlung) |
 
 ## Tech Stack
 

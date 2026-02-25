@@ -196,7 +196,7 @@ function handleRoute() {
   const hash = window.location.hash;
   const filterBar = document.getElementById("filter-bar");
   const isTrend = hash === "#trends";
-  const isUpdates = hash === "#updates";
+  const isUpdates = hash === "#updates" || hash.startsWith("#updates/");
 
   // Update active tab
   document.querySelectorAll(".nav-tab").forEach(tab => {
@@ -213,7 +213,12 @@ function handleRoute() {
     filterBar.classList.add("hidden");
     settingsWrapper.classList.add("hidden");
     showTrends();
-  } else if (isUpdates) {
+  } else if (hash.startsWith("#updates/")) {
+    filterBar.classList.add("hidden");
+    settingsWrapper.classList.add("hidden");
+    const updateId = hash.split("/")[1];
+    showUpdateDetail(updateId);
+  } else if (hash === "#updates") {
     filterBar.classList.add("hidden");
     settingsWrapper.classList.add("hidden");
     showUpdates();
@@ -904,9 +909,9 @@ function initUpdates() {
     });
   });
 
-  document.getElementById("update-back-btn").addEventListener("click", () => {
+  document.getElementById("update-back-btn").onclick = () => {
     window.location.hash = "updates";
-  });
+  };
 }
 
 async function showUpdates() {
@@ -988,24 +993,36 @@ function renderCourseUpdatesList(updates, severityFilter) {
   tbody.querySelectorAll("tr[data-update-idx]").forEach(row => {
     row.addEventListener("click", () => {
       const idx = parseInt(row.dataset.updateIdx, 10);
-      showUpdateDetail(idx);
+      const update = parsedUpdatesForPeriod[idx];
+      if (update) window.location.hash = `updates/${update.id}`;
     });
   });
 }
 
-function showUpdateDetail(idx) {
-  const update = parsedUpdatesForPeriod[idx];
-  if (!update) return;
+async function showUpdateDetail(updateId) {
+  // Ensure data is loaded
+  if (courseUpdates.length === 0) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/course_updates?select=*&order=period_end.desc`,
+      { headers: { "apikey": SUPABASE_KEY } }
+    );
+    courseUpdates = await res.json();
+  }
+
+  const raw = courseUpdates.find(u => String(u.id) === String(updateId));
+  if (!raw) return;
+
+  const rawAi = typeof raw.ai_analysis === "string" ? JSON.parse(raw.ai_analysis) : raw.ai_analysis;
+  const ai = rawAi.output || rawAi;
 
   hideAllViews();
   document.getElementById("update-detail-view").classList.remove("hidden");
-  document.getElementById("page-title").textContent = update.course_name || "Unbekannter Kurs";
+  document.getElementById("page-title").textContent = raw.course_name || "Unbekannter Kurs";
 
-  const ai = update._ai;
   const severity = ai.severity || "zur_kenntnis";
 
   const updatesHtml = (ai.consolidated_updates || []).map(cu => {
-    const sourcesHtml = (cu.sources || []).map((src, i) => {
+    const sourcesHtml = (cu.source_links || cu.sources || []).map((src, i) => {
       const label = `Quelle ${i + 1}`;
       return `<a href="${src}" class="update-source-link" target="_blank">${label} &rarr;</a>`;
     }).join("");
@@ -1032,7 +1049,7 @@ function showUpdateDetail(idx) {
   document.getElementById("update-detail-content").innerHTML = `
     <div class="update-card">
       <div class="update-card-header">
-        <span class="update-card-course">${update.course_name || "Unbekannter Kurs"}</span>
+        <span class="update-card-course">${raw.course_name || "Unbekannter Kurs"}</span>
         <span class="severity-badge severity-${severity}">${severityLabel(severity)}</span>
       </div>
       ${updatesHtml}
