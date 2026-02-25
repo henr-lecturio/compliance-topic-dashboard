@@ -5,9 +5,9 @@ Ein Dashboard zur Visualisierung und Kategorisierung von Newsletter-Inhalten. Dr
 ## Architektur
 
 ```
-E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)     → Supabase (items)          → Dashboard (Überblick)
-                  n8n Workflow 2 (Trend Scout)         → Supabase (trend_reports)  → Dashboard (Trends)
-                  n8n Workflow 3 (Deep Dive Analyst)   → Supabase (course_updates) → Dashboard (Kurs-Updates)
+E-Mail-Postfach → n8n Workflow 1 (Gmail Crawler)       → Supabase (newsletter_topics)   → Dashboard (Überblick)
+                  n8n Workflow 2 (Trend Scout)         → Supabase (trend_reports)       → Dashboard (Trends)
+                  n8n Workflow 3 (Deep Dive Analyst)   → Supabase (course_updates)      → Dashboard (Kurs-Updates)
 ```
 
 **Workflow 1 — Gmail Crawler:**
