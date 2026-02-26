@@ -34,6 +34,12 @@ let currentSeverityFilter = "all";
 
 // === Utilities ===
 
+function highlightText(text) {
+  if (!highlightedCategory || !text) return text;
+  const escaped = highlightedCategory.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return text.replace(new RegExp(`(${escaped})`, "gi"), '<mark class="highlight-keyword">$1</mark>');
+}
+
 function slugify(text) {
   return text
     .toLowerCase()
@@ -163,9 +169,7 @@ function initSettings() {
   select.addEventListener("change", (e) => {
     highlightedCategory = e.target.value;
     localStorage.setItem("highlightedCategory", highlightedCategory);
-    if (window.location.hash === "" || window.location.hash === "#") {
-      renderCategories();
-    }
+    handleRoute();
   });
 
   // Supabase settings
@@ -768,7 +772,7 @@ function renderTrendReport(report) {
   // Summary
   document.getElementById("trend-summary").innerHTML = `
     <div class="trend-period">${formatDate(report.period_start)} – ${formatDate(report.period_end)}</div>
-    <p>${ai.weekly_summary}</p>
+    <p>${highlightText(ai.weekly_summary)}</p>
   `;
 
   // Content Recommendations
@@ -795,18 +799,18 @@ function renderRecommendations(reco) {
   grid.innerHTML = `
     <div class="trend-reco-item reco-act">
       <div class="reco-label">Sofort umsetzen</div>
-      <div class="reco-topic">${reco.act_now.topic}</div>
-      <div class="reco-reason">${reco.act_now.reason}</div>
+      <div class="reco-topic">${highlightText(reco.act_now.topic)}</div>
+      <div class="reco-reason">${highlightText(reco.act_now.reason)}</div>
     </div>
     <div class="trend-reco-item reco-monitor">
       <div class="reco-label">Beobachten</div>
-      <div class="reco-topic">${reco.monitor.topic}</div>
-      <div class="reco-reason">${reco.monitor.reason}</div>
+      <div class="reco-topic">${highlightText(reco.monitor.topic)}</div>
+      <div class="reco-reason">${highlightText(reco.monitor.reason)}</div>
     </div>
     <div class="trend-reco-item reco-deprioritize">
       <div class="reco-label">Nicht relevant</div>
-      <div class="reco-topic">${reco.deprioritize.topic}</div>
-      <div class="reco-reason">${reco.deprioritize.reason}</div>
+      <div class="reco-topic">${highlightText(reco.deprioritize.topic)}</div>
+      <div class="reco-reason">${highlightText(reco.deprioritize.reason)}</div>
     </div>
   `;
 }
@@ -820,8 +824,8 @@ function renderRisingTopics(topics) {
   container.innerHTML = topics.map(t => `
     <div class="trend-item">
       <div>
-        <div class="trend-item-name">${t.topic}</div>
-        <div class="trend-item-detail">${t.assessment}</div>
+        <div class="trend-item-name">${highlightText(t.topic)}</div>
+        <div class="trend-item-detail">${highlightText(t.assessment)}</div>
       </div>
       <span class="trend-badge trend-badge-up">${t.current} (${t.change_pct != null ? (t.change_pct > 0 ? "+" : "") + t.change_pct + "%" : "neu"})</span>
     </div>
@@ -837,8 +841,8 @@ function renderNewSignals(signals) {
   container.innerHTML = signals.map(s => `
     <div class="trend-item">
       <div>
-        <div class="trend-item-name">${s.topic}</div>
-        <div class="trend-item-detail">${s.source_count} Quelle${s.source_count !== 1 ? "n" : ""} — ${s.assessment}</div>
+        <div class="trend-item-name">${highlightText(s.topic)}</div>
+        <div class="trend-item-detail">${s.source_count} Quelle${s.source_count !== 1 ? "n" : ""} — ${highlightText(s.assessment)}</div>
       </div>
       <span class="trend-badge trend-badge-new">neu</span>
     </div>
@@ -849,7 +853,7 @@ function renderRegulatory(reg) {
   const container = document.getElementById("trend-regulatory-content");
   const prevText = reg.count_previous != null ? `Vorzeitraum: ${reg.count_previous}` : "";
   const urgentHtml = reg.urgent_topics && reg.urgent_topics.length > 0
-    ? `<ul class="trend-urgent-list">${reg.urgent_topics.map(t => `<li>${t}</li>`).join("")}</ul>`
+    ? `<ul class="trend-urgent-list">${reg.urgent_topics.map(t => `<li>${highlightText(t)}</li>`).join("")}</ul>`
     : "";
 
   container.innerHTML = `
@@ -858,7 +862,7 @@ function renderRegulatory(reg) {
       <span class="stat-prev">${prevText}</span>
     </div>
     ${urgentHtml}
-    <div class="trend-item-detail">${reg.assessment}</div>
+    <div class="trend-item-detail">${highlightText(reg.assessment)}</div>
   `;
 }
 
@@ -870,8 +874,8 @@ function renderClusters(clusters) {
   }
   container.innerHTML = clusters.map(c => `
     <div class="trend-cluster-item">
-      <div class="trend-cluster-topics">${c.topics.join(" + ")}</div>
-      <div class="trend-cluster-impl">${c.implication}</div>
+      <div class="trend-cluster-topics">${highlightText(c.topics.join(" + "))}</div>
+      <div class="trend-cluster-impl">${highlightText(c.implication)}</div>
     </div>
   `).join("");
 }
@@ -1022,8 +1026,9 @@ function renderCourseUpdatesList(updates, severityFilter) {
     const label = severityLabel(severity);
     const courseName = u.course_name || "Unbekannter Kurs";
     const updateCount = (u._ai.consolidated_updates || []).length;
+    const isHighlighted = highlightedCategory && courseName === highlightedCategory;
     return `
-      <tr data-update-idx="${i}">
+      <tr data-update-idx="${i}"${isHighlighted ? ' class="highlighted"' : ''}>
         <td class="update-col-course">${courseName}</td>
         <td><span class="severity-badge severity-${severity}">${label}</span></td>
         <td class="update-col-count">${updateCount}</td>

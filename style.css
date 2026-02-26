@@ -327,12 +327,22 @@ header {
 }
 
 /* Highlighted category row */
-#category-table tbody tr.highlighted {
+#category-table tbody tr.highlighted,
+#updates-table tbody tr.highlighted {
   background: var(--highlight-bg);
 }
 
-#category-table tbody tr.highlighted:hover {
+#category-table tbody tr.highlighted:hover,
+#updates-table tbody tr.highlighted:hover {
   background: var(--highlight-bg-hover);
+}
+
+/* Highlighted keyword in text */
+.highlight-keyword {
+  background: var(--highlight-bg);
+  color: inherit;
+  padding: 0.05em 0.2em;
+  border-radius: 3px;
 }
 
 /* Category Layout */
