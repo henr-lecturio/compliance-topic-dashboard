@@ -51,9 +51,15 @@ body {
 /* Top Navigation */
 #top-nav {
   display: flex;
-  gap: 0;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
+}
+
+#nav-tabs {
+  display: flex;
+  gap: 0;
 }
 
 .nav-tab {
@@ -88,26 +94,23 @@ header {
   color: var(--text-heading);
 }
 
-/* Settings */
-#settings-wrapper {
-  position: relative;
-}
-
+/* Settings Button (in top-nav) */
 #settings-btn {
   background: none;
-  border: 1px solid var(--border);
+  border: 1px solid transparent;
   color: var(--text-secondary);
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: border-color 0.2s, color 0.2s;
+  margin-bottom: -1px;
 }
 
 #settings-btn:hover {
-  border-color: var(--accent);
+  border-color: var(--border);
   color: var(--text-primary);
 }
 
@@ -120,6 +123,123 @@ header {
 
 #settings-btn:hover #settings-icon {
   opacity: 1;
+}
+
+/* Settings Panel Overlay */
+#settings-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+/* Settings Panel */
+#settings-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 380px;
+  max-width: 90vw;
+  height: 100vh;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--border);
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 24px var(--shadow);
+}
+
+.settings-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-panel-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+#settings-close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+#settings-close-btn:hover {
+  color: var(--text-primary);
+}
+
+.settings-panel-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.settings-input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-family: var(--font-family);
+}
+
+.settings-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.settings-toggle-vis {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+.settings-toggle-vis:hover {
+  text-decoration: underline;
+}
+
+.settings-save-btn {
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.settings-save-btn:hover {
+  background: #4f46e5;
 }
 
 /* Filter Bar */
@@ -181,19 +301,6 @@ header {
   opacity: 1;
 }
 
-#settings-dropdown {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1rem;
-  min-width: 260px;
-  z-index: 100;
-  box-shadow: 0 8px 24px var(--shadow);
-}
-
 .settings-label {
   display: block;
   font-size: 0.75rem;
@@ -201,12 +308,11 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
 }
 
 #highlight-select {
   width: 100%;
-  padding: 0.4rem 0.5rem;
+  padding: 0.5rem 0.6rem;
   background: var(--bg-body);
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -563,6 +669,11 @@ header {
   #legend-table-container,
   #email-table-container {
     max-width: 100%;
+  }
+
+  #settings-panel {
+    width: 100vw;
+    max-width: 100vw;
   }
 }
 

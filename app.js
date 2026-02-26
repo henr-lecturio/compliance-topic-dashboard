@@ -11,8 +11,11 @@ const COLORS = [
 
 const GMAIL_BASE = "https://mail.google.com/mail/u/1/#all/";
 
-const SUPABASE_URL = "https://ipuhepfyamxjpqzbcixj.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwdWhlcGZ5YW14anBxemJjaXhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwMDg1MDksImV4cCI6MjA4NzU4NDUwOX0.D3TuhPsXWjmVI0K6gMvfuou5p35qPx34S06MIGuLHI4";
+const SUPABASE_URL_DEFAULT = "https://ipuhepfyamxjpqzbcixj.supabase.co";
+const SUPABASE_KEY_DEFAULT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwdWhlcGZ5YW14anBxemJjaXhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIwMDg1MDksImV4cCI6MjA4NzU4NDUwOX0.D3TuhPsXWjmVI0K6gMvfuou5p35qPx34S06MIGuLHI4";
+
+const SUPABASE_URL = localStorage.getItem("supabaseUrl") || SUPABASE_URL_DEFAULT;
+const SUPABASE_KEY = localStorage.getItem("supabaseKey") || SUPABASE_KEY_DEFAULT;
 
 let rawItems = [];
 let categories = [];
@@ -123,19 +126,29 @@ function applyFilter() {
 
 function initSettings() {
   const btn = document.getElementById("settings-btn");
-  const dropdown = document.getElementById("settings-dropdown");
+  const panel = document.getElementById("settings-panel");
+  const overlay = document.getElementById("settings-overlay");
+  const closeBtn = document.getElementById("settings-close-btn");
+
+  function openPanel() {
+    panel.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  }
+
+  function closePanel() {
+    panel.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }
 
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
-    dropdown.classList.toggle("hidden");
+    openPanel();
   });
 
-  document.addEventListener("click", (e) => {
-    if (!dropdown.contains(e.target) && e.target !== btn) {
-      dropdown.classList.add("hidden");
-    }
-  });
+  closeBtn.addEventListener("click", closePanel);
+  overlay.addEventListener("click", closePanel);
 
+  // Highlight category
   const select = document.getElementById("highlight-select");
   select.innerHTML = '<option value="">Keine</option>';
   categories.forEach(cat => {
@@ -153,6 +166,40 @@ function initSettings() {
     if (window.location.hash === "" || window.location.hash === "#") {
       renderCategories();
     }
+  });
+
+  // Supabase settings
+  const urlInput = document.getElementById("settings-supabase-url");
+  const keyInput = document.getElementById("settings-supabase-key");
+  urlInput.value = localStorage.getItem("supabaseUrl") || SUPABASE_URL_DEFAULT;
+  keyInput.value = localStorage.getItem("supabaseKey") || SUPABASE_KEY_DEFAULT;
+
+  // Toggle key visibility
+  const toggleVis = document.getElementById("toggle-key-visibility");
+  toggleVis.addEventListener("click", () => {
+    const isPassword = keyInput.type === "password";
+    keyInput.type = isPassword ? "text" : "password";
+    toggleVis.textContent = isPassword ? "Verbergen" : "Anzeigen";
+  });
+
+  // Save & reload
+  document.getElementById("settings-save-btn").addEventListener("click", () => {
+    const newUrl = urlInput.value.trim();
+    const newKey = keyInput.value.trim();
+
+    if (newUrl && newUrl !== SUPABASE_URL_DEFAULT) {
+      localStorage.setItem("supabaseUrl", newUrl);
+    } else {
+      localStorage.removeItem("supabaseUrl");
+    }
+
+    if (newKey && newKey !== SUPABASE_KEY_DEFAULT) {
+      localStorage.setItem("supabaseKey", newKey);
+    } else {
+      localStorage.removeItem("supabaseKey");
+    }
+
+    window.location.reload();
   });
 }
 
@@ -207,24 +254,18 @@ function handleRoute() {
     tab.classList.toggle("active", isActive);
   });
 
-  const settingsWrapper = document.getElementById("settings-wrapper");
-
   if (isTrend) {
     filterBar.classList.add("hidden");
-    settingsWrapper.classList.add("hidden");
     showTrends();
   } else if (hash.startsWith("#updates/")) {
     filterBar.classList.add("hidden");
-    settingsWrapper.classList.add("hidden");
     const updateId = hash.split("/")[1];
     showUpdateDetail(updateId);
   } else if (hash === "#updates") {
     filterBar.classList.add("hidden");
-    settingsWrapper.classList.add("hidden");
     showUpdates();
   } else {
     filterBar.classList.remove("hidden");
-    settingsWrapper.classList.remove("hidden");
     if (hash.startsWith("#emails/")) {
       const parts = hash.split("/");
       const catSlug = parts[1];

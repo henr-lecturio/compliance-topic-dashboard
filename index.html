@@ -11,26 +11,47 @@
 <body>
   <div id="app">
     <nav id="top-nav">
-      <a href="#" class="nav-tab active" data-tab="overview">Überblick</a>
-      <a href="#trends" class="nav-tab" data-tab="trends">Trends</a>
-      <a href="#updates" class="nav-tab" data-tab="updates">Kurs-Updates</a>
+      <div id="nav-tabs">
+        <a href="#" class="nav-tab active" data-tab="overview">Überblick</a>
+        <a href="#trends" class="nav-tab" data-tab="trends">Trends</a>
+        <a href="#updates" class="nav-tab" data-tab="updates">Kurs-Updates</a>
+      </div>
+      <button id="settings-btn" aria-label="Einstellungen">
+        <img src="settings-icon.svg" alt="Settings" id="settings-icon">
+      </button>
     </nav>
+
+    <!-- Settings Panel -->
+    <div id="settings-overlay" class="hidden"></div>
+    <div id="settings-panel" class="hidden">
+      <div class="settings-panel-header">
+        <h2 class="settings-panel-title">Einstellungen</h2>
+        <button id="settings-close-btn" aria-label="Schließen">&times;</button>
+      </div>
+      <div class="settings-panel-body">
+        <div class="settings-section">
+          <label class="settings-label">Kategorie hervorheben</label>
+          <select id="highlight-select">
+            <option value="">Keine</option>
+          </select>
+        </div>
+        <div class="settings-section">
+          <label class="settings-label">Supabase URL</label>
+          <input type="text" id="settings-supabase-url" class="settings-input" placeholder="https://xxxxx.supabase.co">
+        </div>
+        <div class="settings-section">
+          <label class="settings-label">Supabase Anon Key</label>
+          <input type="password" id="settings-supabase-key" class="settings-input" placeholder="eyJhbGciOi...">
+          <button id="toggle-key-visibility" class="settings-toggle-vis" type="button">Anzeigen</button>
+        </div>
+        <div class="settings-section">
+          <button id="settings-save-btn" class="settings-save-btn">Speichern & Neu laden</button>
+        </div>
+      </div>
+    </div>
 
     <header>
       <h1 id="page-title">Kategorien</h1>
-      <div id="settings-wrapper">
-        <button id="settings-btn" aria-label="Einstellungen">
-          <img src="settings-icon.svg" alt="Settings" id="settings-icon">
-        </button>
-        <div id="settings-dropdown" class="hidden">
-          <div class="settings-section">
-            <label class="settings-label">Kategorie hervorheben</label>
-            <select id="highlight-select">
-              <option value="">Keine</option>
-            </select>
-          </div>
-        </div>
-      </div>
     </header>
 
     <div id="filter-bar">
