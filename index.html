@@ -15,6 +15,7 @@
         <a href="#" class="nav-tab active" data-tab="overview">Überblick</a>
         <a href="#trends" class="nav-tab" data-tab="trends">Trends</a>
         <a href="#updates" class="nav-tab" data-tab="updates">Kurs-Updates</a>
+        <a href="#script-check" class="nav-tab" data-tab="script-check">Skript-Check</a>
       </div>
       <button id="settings-btn" aria-label="Einstellungen">
         <img src="settings-icon.svg" alt="Settings" id="settings-icon">
@@ -213,6 +214,39 @@
       <div id="update-detail-view" class="hidden">
         <button id="update-back-btn">&larr;</button>
         <div id="update-detail-content"></div>
+      </div>
+
+      <!-- Script Check View -->
+      <div id="script-check-view" class="hidden">
+        <div id="sc-header">
+          <select id="sc-period-select"></select>
+          <div id="sc-status-filter">
+            <button class="status-pill active" data-status="all">Alle</button>
+            <button class="status-pill" data-status="veraltet">Veraltet</button>
+            <button class="status-pill" data-status="pruefbedarf">Prüfbedarf</button>
+            <button class="status-pill" data-status="aktuell">Aktuell</button>
+            <button class="status-pill" data-status="nicht_abgedeckt">Nicht abgedeckt</button>
+          </div>
+        </div>
+        <div id="sc-table-container">
+          <table id="script-check-table">
+            <thead>
+              <tr>
+                <th>Kurs</th>
+                <th>Update</th>
+                <th>Status</th>
+                <th>Priorität</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Script Check Detail View -->
+      <div id="script-check-detail-view" class="hidden">
+        <button id="sc-back-btn">&larr;</button>
+        <div id="sc-detail-content"></div>
       </div>
     </main>
   </div>

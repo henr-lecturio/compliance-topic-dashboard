@@ -1,8 +1,8 @@
+Absatzhelfer: Handelsvertreterrecht, Vertriebsverträge, Kommissionsgeschäft, Maklerpflichten, Vertriebspartner-Compliance
+
 Allgemeines Gleichbehandlungsgesetz (AGG): Diskriminierung am Arbeitsplatz, AGG-Entschädigung, Benachteiligung bei Bewerbung, Gleichbehandlung im Arbeitsverhältnis, AGG-Rechtsprechung
 
 Arbeitsschutz: Gefährdungsbeurteilung, Arbeitsunfälle, Arbeitszeitregelung, Gesundheitsschutz am Arbeitsplatz, Betriebliche Sicherheitsvorschriften
-
-Absatzhelfer: Handelsvertreterrecht, Vertriebsverträge, Kommissionsgeschäft, Maklerpflichten, Vertriebspartner-Compliance
 
 Betrug: Wirtschaftsbetrug, Abrechnungsbetrug, Identitätsbetrug, Betrugsprävention, Subventionsbetrug
 
@@ -12,21 +12,27 @@ Digital Operational Resilience Act (DORA): IKT-Risikomanagement, Meldepflichten 
 
 Diversity: Vielfalt am Arbeitsplatz, Inklusion, Barrierefreiheit, Diversitätsquoten, Interkulturelle Kompetenz
 
-Environmental Social Governance (ESG): Nachhaltigkeitsberichterstattung, CO2-Bilanzierung, ESG-Regulierung, Greenwashing, Taxonomie-Verordnung
+Environmental Social Governance (ESG): Nachhaltigkeitsberichterstattung, CO2-Bilanzierung, ESG-Regulierung, Greenwashing, Taxonomie-Verordnung, Umwelthaftungsrecht
 
 Exportkontrolle: Sanktionen, Dual-Use-Güter, Embargos, Exportgenehmigungen, Außenwirtschaftsrecht
 
 Fahrten im Beruf: Dienstfahrten, Unfallverhütung im Straßenverkehr, Fahrzeugnutzung, Führerscheinkontrolle, Dienstwagen-Regelungen
 
-Franchisenehmer: Franchisevertrag, Franchisegeber-Pflichten, Markennutzung im Franchise, Franchise-Compliance, Vorvertragliche Aufklärung
+Franchise: Franchisevertrag, Franchisegeber-Pflichten, Markennutzung im Franchise, Franchise-Compliance, Vorvertragliche Aufklärung
 
 Geldwäsche: Geldwäscheprävention, Verdachtsmeldungen, Know-Your-Customer (KYC), Sorgfaltspflichten, Geldwäsche-Regulierung
+
+Geschäftsgeheimnisse: Know-how-Schutz, Geheimhaltungsvereinbarungen, Geschäftsgeheimnisgesetz, Reverse Engineering, Schutzmaßnahmen
+
+Haftung und Management: Organhaftung, Geschäftsführerhaftung, D&O-Versicherung, Compliance-Pflichten der Geschäftsleitung, Delegationspflichten
 
 Hygiene und Sicherheit im Lebensmittelbereich: Lebensmittelsicherheit, HACCP-Vorgaben, Hygienevorschriften, Lebensmittelkontrolle, Rückverfolgbarkeit
 
 Informationssicherheit: Cyberangriffe, Phishing, IT-Sicherheitsrichtlinien, Datenverlust, Sicherheitsvorfälle, Passwort-Sicherheit
 
 Insiderhandel: Insiderinformationen, Ad-hoc-Publizität, Handelsverbote, Marktmanipulation, Insiderrecht-Verstöße
+
+Interessenkonflikte: Interessenkollision, Nebentätigkeiten, Zuwendungen und Geschenke, Offenlegungspflichten, Befangenheit
 
 Kartellrecht: Preisabsprachen, Marktmissbrauch, Fusionskontrolle, Kartellbußgelder, Wettbewerbsbeschränkungen
 
@@ -50,6 +56,10 @@ Unconscious Bias: Unbewusste Vorurteile, Bias in Personalentscheidungen, Bias-Tr
 
 Unlauterer Wettbewerb: Irreführende Werbung, Nachahmung, Abmahnungen, Unlautere Geschäftspraktiken, Vergleichende Werbung
 
+Unternehmensvermögen: Vermögensschutz, Diebstahl und Unterschlagung, Zweckentfremdung, IT-Missbrauch, Inventurdifferenzen
+
 Urheberrecht: Urheberrechtsverletzungen, Lizenzrecht, Urheberrecht digital, Nutzungsrechte, Urheberrecht und KI
+
+Whistleblowing: Hinweisgeberschutzgesetz, Meldestellen, Hinweisgeberschutz, Anonyme Meldungen, Repressalienverbot
 
 Widerrufsrecht: Verbraucherwiderruf, Online-Handel Widerruf, Widerrufsbelehrung, Fernabsatz, Widerrufsfristen

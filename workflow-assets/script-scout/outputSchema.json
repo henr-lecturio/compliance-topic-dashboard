@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["veraltet", "pruefbedarf", "aktuell", "nicht_abgedeckt"],
+      "description": "Bewertung des Skript-Status im Kontext des regulatorischen Updates."
+    },
+    "affected_sections": {
+      "type": "array",
+      "description": "Liste der betroffenen Skript-Abschnitte mit Problem und Empfehlung.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chapter": {
+            "type": "string",
+            "description": "Kapitelüberschrift des betroffenen Abschnitts."
+          },
+          "issue": {
+            "type": "string",
+            "description": "Was ist das Problem? 1-2 Sätze."
+          },
+          "action": {
+            "type": "string",
+            "description": "Empfohlene Änderung. 1-2 Sätze."
+          }
+        },
+        "required": ["chapter", "issue", "action"]
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "Gesamtbewertung des Abgleichs Skript vs. Update. 2-3 Sätze."
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["hoch", "mittel", "niedrig"],
+      "description": "Handlungspriorität: hoch (sofort), mittel (zeitnah), niedrig (keine Eile)."
+    }
+  },
+  "required": ["status", "affected_sections", "summary", "priority"]
+}

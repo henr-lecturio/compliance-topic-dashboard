@@ -31,6 +31,9 @@ let trendReports = [];
 let trendBarChartInstance = null;
 let courseUpdates = [];
 let currentSeverityFilter = "all";
+let scriptAnalyses = [];
+let currentStatusFilter = "all";
+let parsedScriptChecksForPeriod = [];
 
 // === Utilities ===
 
@@ -98,6 +101,7 @@ async function init() {
   initExport();
   initTrend();
   initUpdates();
+  initScriptCheck();
   handleRoute();
   window.addEventListener("popstate", handleRoute);
 }
@@ -248,19 +252,28 @@ function handleRoute() {
   const filterBar = document.getElementById("filter-bar");
   const isTrend = hash === "#trends";
   const isUpdates = hash === "#updates" || hash.startsWith("#updates/");
+  const isScriptCheck = hash === "#script-check" || hash.startsWith("#script-check/");
 
   // Update active tab
   document.querySelectorAll(".nav-tab").forEach(tab => {
     const tabTarget = tab.dataset.tab;
     const isActive = (isTrend && tabTarget === "trends")
       || (isUpdates && tabTarget === "updates")
-      || (!isTrend && !isUpdates && tabTarget === "overview");
+      || (isScriptCheck && tabTarget === "script-check")
+      || (!isTrend && !isUpdates && !isScriptCheck && tabTarget === "overview");
     tab.classList.toggle("active", isActive);
   });
 
   if (isTrend) {
     filterBar.classList.add("hidden");
     showTrends();
+  } else if (hash.startsWith("#script-check/")) {
+    filterBar.classList.add("hidden");
+    const scId = hash.split("/")[1];
+    showScriptCheckDetail(scId);
+  } else if (hash === "#script-check") {
+    filterBar.classList.add("hidden");
+    showScriptCheck();
   } else if (hash.startsWith("#updates/")) {
     filterBar.classList.add("hidden");
     const updateId = hash.split("/")[1];
@@ -291,6 +304,8 @@ function hideAllViews() {
   document.getElementById("trend-view").classList.add("hidden");
   document.getElementById("updates-view").classList.add("hidden");
   document.getElementById("update-detail-view").classList.add("hidden");
+  document.getElementById("script-check-view").classList.add("hidden");
+  document.getElementById("script-check-detail-view").classList.add("hidden");
 }
 
 // === View: Category Overview ===
@@ -1100,6 +1115,197 @@ async function showUpdateDetail(updateId) {
       </div>
       ${updatesHtml}
       ${recoHtml}
+    </div>
+  `;
+}
+
+// === View: Script Check ===
+
+function statusLabel(status) {
+  const labels = {
+    veraltet: "Veraltet",
+    pruefbedarf: "Prüfbedarf",
+    aktuell: "Aktuell",
+    nicht_abgedeckt: "Nicht abgedeckt"
+  };
+  return labels[status] || status || "Unbekannt";
+}
+
+function priorityLabel(priority) {
+  const labels = {
+    hoch: "Hoch",
+    mittel: "Mittel",
+    niedrig: "Niedrig"
+  };
+  return labels[priority] || priority || "Unbekannt";
+}
+
+function initScriptCheck() {
+  document.getElementById("sc-period-select").addEventListener("change", (e) => {
+    const periodEnd = e.target.value;
+    const filtered = scriptAnalyses.filter(a => a.period_end === periodEnd);
+    renderScriptCheckList(filtered, currentStatusFilter);
+  });
+
+  document.querySelectorAll(".status-pill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".status-pill").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentStatusFilter = btn.dataset.status;
+
+      const select = document.getElementById("sc-period-select");
+      const periodEnd = select.value;
+      const filtered = scriptAnalyses.filter(a => a.period_end === periodEnd);
+      renderScriptCheckList(filtered, currentStatusFilter);
+    });
+  });
+
+  document.getElementById("sc-back-btn").onclick = () => {
+    window.location.hash = "script-check";
+  };
+}
+
+async function showScriptCheck() {
+  hideAllViews();
+  document.getElementById("script-check-view").classList.remove("hidden");
+  document.getElementById("page-title").textContent = "Skript-Check";
+
+  if (scriptAnalyses.length === 0) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/script_analyses?select=*&order=period_end.desc`,
+      { headers: { "apikey": SUPABASE_KEY } }
+    );
+    scriptAnalyses = await res.json();
+  }
+
+  const tbody = document.querySelector("#script-check-table tbody");
+  if (scriptAnalyses.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" class="updates-empty">Noch keine Skript-Analysen vorhanden.</td></tr>';
+    return;
+  }
+
+  const periods = [...new Set(scriptAnalyses.map(a => a.period_end))];
+  const select = document.getElementById("sc-period-select");
+  select.innerHTML = "";
+  periods.forEach(p => {
+    const opt = document.createElement("option");
+    opt.value = p;
+    opt.textContent = formatDate(p);
+    select.appendChild(opt);
+  });
+
+  const filtered = scriptAnalyses.filter(a => a.period_end === periods[0]);
+  renderScriptCheckList(filtered, currentStatusFilter);
+}
+
+function renderScriptCheckList(analyses, statusFilter) {
+  const tbody = document.querySelector("#script-check-table tbody");
+
+  const parsed = analyses.map(a => {
+    const rawAi = typeof a.ai_analysis === "string" ? JSON.parse(a.ai_analysis) : a.ai_analysis;
+    const ai = rawAi.output || rawAi;
+    return { ...a, _ai: ai };
+  });
+
+  const filtered = statusFilter === "all"
+    ? parsed
+    : parsed.filter(a => a._ai.status === statusFilter);
+
+  parsedScriptChecksForPeriod = filtered;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="4" class="updates-empty">Keine Analysen für diesen Filter.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = filtered.map((a, i) => {
+    const status = a._ai.status || "nicht_abgedeckt";
+    const priority = a._ai.priority || "niedrig";
+    const courseName = a.course_name || "Unbekannter Kurs";
+    const updateTitle = a.update_title || "";
+    return `
+      <tr data-sc-idx="${i}">
+        <td class="sc-col-course">${courseName}</td>
+        <td class="sc-col-update">${updateTitle}</td>
+        <td><span class="status-badge status-${status}">${statusLabel(status)}</span></td>
+        <td><span class="priority-badge priority-${priority}">${priorityLabel(priority)}</span></td>
+      </tr>
+    `;
+  }).join("");
+
+  tbody.querySelectorAll("tr[data-sc-idx]").forEach(row => {
+    row.addEventListener("click", () => {
+      const idx = parseInt(row.dataset.scIdx, 10);
+      const analysis = parsedScriptChecksForPeriod[idx];
+      if (analysis) window.location.hash = `script-check/${analysis.id}`;
+    });
+  });
+}
+
+async function showScriptCheckDetail(analysisId) {
+  if (scriptAnalyses.length === 0) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/script_analyses?select=*&order=period_end.desc`,
+      { headers: { "apikey": SUPABASE_KEY } }
+    );
+    scriptAnalyses = await res.json();
+  }
+
+  const raw = scriptAnalyses.find(a => String(a.id) === String(analysisId));
+  if (!raw) return;
+
+  const rawAi = typeof raw.ai_analysis === "string" ? JSON.parse(raw.ai_analysis) : raw.ai_analysis;
+  const ai = rawAi.output || rawAi;
+
+  hideAllViews();
+  document.getElementById("script-check-detail-view").classList.remove("hidden");
+  document.getElementById("page-title").textContent = raw.course_name || "Unbekannter Kurs";
+
+  const status = ai.status || "nicht_abgedeckt";
+  const priority = ai.priority || "niedrig";
+
+  const sectionsHtml = (ai.affected_sections || []).length > 0
+    ? `<div class="sc-sections">
+        <h3 class="sc-detail-label">Betroffene Abschnitte</h3>
+        ${ai.affected_sections.map(s => `
+          <div class="sc-section-item">
+            <div class="sc-section-chapter">${s.chapter || ""}</div>
+            <div class="sc-section-issue">${s.issue || ""}</div>
+            <div class="sc-section-action">${s.action || ""}</div>
+          </div>
+        `).join("")}
+      </div>`
+    : "";
+
+  const chunks = raw.matched_chunks || [];
+  const parsedChunks = typeof chunks === "string" ? JSON.parse(chunks) : chunks;
+  const chunksHtml = parsedChunks.length > 0
+    ? `<div class="sc-chunks">
+        <h3 class="sc-detail-label">Verglichene Skript-Abschnitte</h3>
+        ${parsedChunks.map(c => `
+          <div class="sc-chunk-item">
+            <span class="sc-chunk-chapter">${c.chapter || "Chunk " + (c.chunk_index ?? "")}</span>
+            <span class="sc-chunk-similarity">${(c.similarity * 100).toFixed(0)}% Match</span>
+          </div>
+        `).join("")}
+      </div>`
+    : "";
+
+  document.getElementById("sc-detail-content").innerHTML = `
+    <div class="sc-detail-card">
+      <div class="sc-detail-header">
+        <div>
+          <div class="sc-detail-course">${raw.course_name || "Unbekannter Kurs"}</div>
+          <div class="sc-detail-update">${raw.update_title || ""}</div>
+        </div>
+        <div class="sc-detail-badges">
+          <span class="status-badge status-${status}">${statusLabel(status)}</span>
+          <span class="priority-badge priority-${priority}">${priorityLabel(priority)}</span>
+        </div>
+      </div>
+      ${ai.summary ? `<div class="sc-detail-summary">${ai.summary}</div>` : ""}
+      ${sectionsHtml}
+      ${chunksHtml}
     </div>
   `;
 }

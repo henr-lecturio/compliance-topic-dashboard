@@ -1,0 +1,233 @@
+[
+  {
+    "courseName": "Absatzhelfer",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "053_Absatzhelfer_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Allgemeines Gleichbehandlungsgesetz (AGG)",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "120_AGG_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "021_AGG_MA", "type": "MA" },
+      { "docId": "1J2JILAX_EkWM9guGeELYf9TCs5pf-S7F", "docTitle": "21_AGG_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Arbeitsschutz",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "095_Arbeitsschutz_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "022_Arbeitsschutz_MA", "type": "MA" },
+      { "docId": "1J0CdZfSCT0vHoMoYzt1AOPHY_K6B9M6L", "docTitle": "22_Arbeitsschutz_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Betrug",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "015_Betrugsprävention_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "014_Betrug_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Datenschutz",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "094_Datenschutz_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "033-5_Datenschutz5_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "033-1_Datenschutz1_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "033-2_Datenschutz2_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "033-3_Datenschutz3_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "033-4_Datenschutz4_MA", "type": "MA" },
+      { "docId": "1IZb0VkUM_u-1bvemjEd4ohaLCiZKDoFe", "docTitle": "33_Datenschutz_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Digital Operational Resilience Act (DORA)",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "112_DORA_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "114_DORA_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Diversity",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "102_Diversity_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Environmental Social Governance (ESG)",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "104_ESG_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "092_Umwelthaftungsrecht_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "103_ESG_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "92_Nachhaltigkeit_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Exportkontrolle",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "097_Exportkontrolle_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "051_Exportkontrolle_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Fahrten im Beruf",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "110_Fahrerunterweisung-Dienstfahrten_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "111_Fahrerunterweisung-EAuto_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Franchise",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "054_Franchise_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Geldwäsche",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "061-2_Geldwäsche2_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "061-1_Geldwäsche1_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "065_Know-Your-Customer_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Geschäftsgeheimnisse",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "034_Geschäftsgeheimnisse_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Haftung und Management",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "071_Haftung-Management_FK", "type": "FK" }
+    ]
+  },
+  {
+    "courseName": "Hygiene und Sicherheit im Lebensmittelbereich",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "116_Lebensmittelsicherheit_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Informationssicherheit",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "031_ITS-sensible-Daten-Passwortschutz_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "032_ITS-Geheimhaltung-Datenverlust_MA", "type": "MA" },
+      { "docId": "1Iiqxg9ZSdK49bnxYPLplinDtTK3EI3To", "docTitle": "31_Informationssicherheit_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Insiderhandel",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "096_Insiderhandel_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "047_Insiderhandel_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Interessenkonflikte",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "46_Interessenkonflikte_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Kartellrecht",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "044-1_Kartellrecht1_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "044-2_Kartellrecht2_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "044-3_Kartellrecht3_MA", "type": "MA" },
+      { "docId": "1ISAo3uGSjay83skXKyqKQA2WK19DXeaR", "docTitle": "44_Kartellrecht_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "KI Anwendungen im Unternehmen",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "106_KI-Verordnung_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "105_KI-Anwendungen_MA", "type": "MA" },
+      { "docId": "1xzeI5MQ57n4nP5vf-OGeKPBYUki1fdx-RjcA3sfVGMI", "docTitle": "105_KI-Grundlagen_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Korruption",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "093_Prävention-Korruption-Bestechung_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "041_Korruption_MA", "type": "MA" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "042_Korruption-International_MA", "type": "MA" },
+      { "docId": "1IVNYMrWW2dsc6-Nmozd3f2zyRINin8Fz", "docTitle": "41_Korruption_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Lieferkettengesetz",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "049_Lieferkettengesetz_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Mobbing",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "026_Mobbing_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "025_Mobbing_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Produkthaftung",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "101_Produkthaftung_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Richtlinien für Wertpapierdienstleister",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "048_Wertpapierdienstleistungsunternehmen_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Sexuelle Belästigung",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "024_Sexuelle-Belästigung_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "023_SexuelleBelästigung_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Umgang mit Ermittlungsbehörden",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "028_Ermittlungsbehörde_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Unconscious Bias",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "115_Unconscious_Bias_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Unlauterer Wettbewerb",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "043_Unlauterer-Wettbewerb_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Unternehmensvermögen",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "27_Unternehmensvermögen_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Urheberrecht",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "081_Urheberrecht_MA", "type": "MA" }
+    ]
+  },
+  {
+    "courseName": "Whistleblowing",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "072_Whistleblowing_FK", "type": "FK" },
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "72_Whistleblowing_Essentials", "type": "Essentials" }
+    ]
+  },
+  {
+    "courseName": "Widerrufsrecht",
+    "docs": [
+      { "docId": "GOOGLE_DOC_ID_HERE", "docTitle": "052_Widerrufsrecht_MA", "type": "MA" }
+    ]
+  }
+]
